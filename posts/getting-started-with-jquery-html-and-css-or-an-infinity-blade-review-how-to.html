@@ -1,0 +1,204 @@
+<!doctype html>
+<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+                <meta charset="utf-8" />
+
+        <!-- 
+            Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+            Remove this if you use the .htaccess 
+        -->
+        <meta http-equiv="X-UA-Compatible" content="" />
+        <title>Getting Started with jQuery, HTML, and CSS</title>
+        <meta name="description" content="" />
+        <meta name="author" content="J. Nicholas Geist" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+
+                    <!-- Place favicon.ico & apple-touch-icon.png
+            in the root of your domain and delete these references -->
+            <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+                    <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
+        
+                    <!-- All JavaScript at the bottom, except for Modernizr which
+            enables HTML5 elements & feature detects -->
+            <script src="/media/js/libs/modernizr.custom.min.js"></script>
+                    </head>
+    <body id="getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to" class="post ">
+        
+<header id='siteheader' class='siteheader'>
+    <a class='home' href="/">Home</a>
+    <a class='nav' href="#sitenav">Navigation</a>
+    <hgroup>
+        <h1><a href='http://geekabouttown.com/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
+        <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
+    </hgroup>
+</header>
+<nav id='sitenav'>
+    <ul class='sitenav'>
+                <li>
+            <a title="Home Page"
+                
+                href="/">
+                Home
+            </a>
+        </li>        <li>
+            <a title="Blog"
+                
+                href="/blog">
+                Blog
+            </a>
+        </li>        <li>
+            <a title="Post Categories"
+                
+                href="/categories">
+                Categories
+            </a>
+        </li>        <li>
+            <a title="About"
+                
+                href="/about">
+                About
+            </a>
+        </li>        <li>
+            <a title="Now Playing"
+                
+                href="/now_playing">
+                Now Playing
+            </a>
+        </li>    </ul>
+</nav>
+
+<div id='main'>
+    <article class='post'>
+        <header class='post_header'>
+        <hgroup>
+            <h2 class='or'><a href="/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to">Getting Started with jQuery, HTML, and CSS</a></h2>
+                            <h3 class='subtitle'>An Infinity Blade Review How To</h3>
+                    </hgroup>
+         
+    <span class="postinfo">             <span class='flavor' data-key='Category'>
+            Being a consideration of 
+        </span>
+    
+                        <a href='/categories/code' class='category'>code</a>        <span class='flavor vis'>and </span><a href='/categories/geek' class='category'>geekery</a>
+                    <span class='flavor' data-key='Date'>
+             furnished on
+        </span>
+    
+        <time pubdate="pubdate" datetime="2011-08-10"> 
+            August 10, 2011
+        </time> 
+    </span>
+
+    </header>
+
+    <section class='content'>
+        <p>A while ago, someone asked me how to get started making something like my
+<a href="http://killscreendaily.com/articles/reviews/infinity-blade">Infinity Blade Review</a> over at <a href="http://www.killscreendaily.com">Kill Screen</a>. I started writing her an
+email, and it became huge, so I decided I’d post it here in case it might be of
+use to somebody else, as well. Here it&nbsp;is.</p>
+<p>The short answer to your question is that while I think the stuff I
+used–<a href="http://jquery.com/">jQuery</a>, mostly–will do exactly what you need it to do, it’s probably
+kind of a long road from just starting out to being able to do something like
+that. I’ve been programming for most of my life (wow, I just realized that’s
+true. I’m old), and still, the programming part of that review took
+longer–significantly longer, I think–than the writing&nbsp;part.</p>
+<p>But I am absolutely no good at short answers, so here’s a much longer&nbsp;one.</p>
+<p>I don’t know what your level of experience with web technologies is, or what
+exactly you mean when you say “programming novice,” so forgive me if I assume
+you don’t know stuff you already do. I’m going to assume that you’ve never made
+a web page or written a program before. That said, here are some things you’ll
+need to understand and, after that, some things to look at to help you get&nbsp;there.</p>
+<p>First and most fundamental is <span class="caps">HTML</span>, the language that web pages are made of. You
+don’t have to know all the fancy stuff, but in order to get what you want going,
+you need to be able to use <span class="caps">HTML</span> at least on a basic level. (<span class="caps">HTML</span> is the tool
+you’ll use to establish the structure of your&nbsp;document.)</p>
+<p>Second, and most important, is <a href="http://jquery.com/">jQuery</a>. <a href="http://jquery.com/">jQuery</a> is what’s called an <span class="caps">API</span>
+for Javascript,<sup id="fnref:a1"><a href="#fn:a1" rel="footnote">1</a></sup> and this is what’ll move stuff around, hide stuff,
+show stuff, etc. In my Infinity Blade review, jQuery is what fades stuff in and
+out, and basically makes the whole thing&nbsp;go.</p>
+<p>Third, and probably least important (but still significant) is <a href="http://en.wikipedia.org/wiki/Css"><span class="caps">CSS</span></a>. <span class="caps">CSS</span> is
+what will allow you to decide how things look. (jQuery hides and shows things in
+my review by changing the <span class="caps">CSS</span> properties, which tells your browser what things
+should look&nbsp;like.)</p>
+<p>And, to make things even more complicated, each of these tools requires a
+completely different way of thinking. jQuery is closest to normal programming,
+but <span class="caps">HTML</span> and <span class="caps">CSS</span> are their own&nbsp;beasts.</p>
+<p>I don’t say any of this to discourage you; quite frankly, anybody who can beat
+<span class="caps">SMB</span>, no warps, one life is probably capable of handling any challenge, and
+should probably be an astronaut or a surgeon or president or something. I’m sure
+you can handle this, and what you’re wanting is actually pretty simple–it’s just
+a simple combination of what might be three unfamiliar&nbsp;technologies.</p>
+<p>Here’s basically what your process will look&nbsp;like:</p>
+<ul>
+<li>
+<p>lay out your document in&nbsp;<span class="caps">HTML</span>. </p>
+</li>
+<li>
+<p>use jQuery to do stuff with the <span class="caps">HTML</span>, probably either moving stuff around or adding/removing <span class="caps">CSS</span> properties or&nbsp;classes.</p>
+</li>
+<li>
+<p>use <span class="caps">CSS</span> to make everything look the way you&nbsp;want.</p>
+</li>
+</ul>
+<p>That’s a big process, I know, so here are some resources to help you get&nbsp;started:</p>
+<ul>
+<li>
+<p><a href="http://code.google.com/edu/submissions/html-css-javascript/">Google’s “From the Ground Up” series</a>. I haven’t watched these myself,
+    but they’re supposed to be a good resource on web design for beginners, and they
+    should at least help you get the basics of <span class="caps">HTML</span> and&nbsp;<span class="caps">CSS</span>.</p>
+</li>
+<li>
+<p><a href="http://htmldog.com/">HTMLDog</a> also has some good tutorials and whatnot to get you&nbsp;started.</p>
+</li>
+<li>
+<p>Forgive me if you are disdainful of Reddit, but <a href="http://www.reddit.com/r/learnprogramming/">Reddit’s
+    /r/learnprogramming subreddit</a> is a good place to ask questions, and their
+    <a href="http://www.reddit.com/r/learnprogramming/top/?sort=top&amp;t=all">top links of all time</a> also has some good resources in&nbsp;it.</p>
+</li>
+<li>
+<p><a href="http://docs.jquery.com/Main_Page">jQuery’s documentaton</a> and <a href="http://docs.jquery.com/Tutorials">tutorials</a> are really&nbsp;good.</p>
+</li>
+<li>
+<p>Once you get your bearings, <a href="http://reference.sitepoint.com/html">Sitepoint’s Reference Section</a> has a lot of
+    good information, but it’s designed as a reference, not a&nbsp;how-to.</p>
+</li>
+</ul>
+<p>Last thing I’ll say is this: jQuery is really powerful, and pretty simple. It
+can do all kinds of things, so try to keep in mind that what you saw in my
+review is really just an example of things that you can do, and there are
+probably much cooler things that you can do in your&nbsp;situation.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:a1">
+<p>You don’t need to know what this means, except to understand that jQuery
+  is an extension of Javascript. For your purposes, you don’t need to worry about
+  plain Javascript; jQuery will make that way easier for you.&#160;<a href="#fnref:a1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>    </section>
+        <footer>
+                    </footer>
+
+</article>
+</div>
+
+
+                    <!-- Javascript at the bottom for fast page loading -->
+                            <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+                                                    <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
+    
+            
+            <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+            <![endif]-->
+            </body>
+</html>
