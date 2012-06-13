@@ -246,7 +246,4 @@ body.post #main{max-width:52em;margin:0 auto}
 body.post article{overflow:visible;float:right;max-width:32em;}
 body.post article header{width:17em;margin-left:-18em;margin-right:1em;float:left}
 .foot{clear:none;max-width:33%;width:17em}
-}#grid{width:100%;position:absolute;top:0;left:50%;margin-left:-50%;z-index:50;max-width:100%}
-#grid div.vert{width:24px;margin-left:100px;background-color:#800000;opacity:0}
-#grid div.horiz{height:1.6rem;margin:0;padding:0;}
-#grid div.horiz:nth-child(2n-1){background:#90a3b1;opacity:.4}
+}
