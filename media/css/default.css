@@ -47,33 +47,33 @@ textarea{overflow:auto;vertical-align:top;}
 table{border-collapse:collapse;border-spacing:0}
 @font-face {
       font-family: 'Inconsolata';
-      src: url('../fonts/Inconsolata-webfont.eot');
-      src: url('../fonts/Inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/Inconsolata-webfont.woff') format('woff'),
-           url('../fonts/Inconsolata-webfont.ttf') format('truetype'),
-           url('../fonts/Inconsolata-webfont.svg#InconsolataMedium') format('svg');
+      src: url('../fonts/inconsolata-webfont.eot');
+      src: url('../fonts/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/inconsolata-webfont.woff') format('woff'),
+           url('../fonts/inconsolata-webfont.ttf') format('truetype'),
+           url('../fonts/inconsolata-webfont.svg#inconsolatamedium') format('svg');
       font-weight: normal;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'League Gothic';
-      src: url('../fonts/League_Gothic-webfont.eot');
-      src: url('../fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/League_Gothic-webfont.woff') format('woff'),
-           url('../fonts/League_Gothic-webfont.ttf') format('truetype'),
-           url('../fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+      src: url('../fonts/league_gothic-webfont.eot');
+      src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/league_gothic-webfont.woff') format('woff'),
+           url('../fonts/league_gothic-webfont.ttf') format('truetype'),
+           url('../fonts/league_gothic-webfont.svg#leaguegothicregular') format('svg');
       font-weight: normal;
       font-style: normal;
 
   }
   @font-face {
       font-family: 'Colaborate';
-      src: url('../fonts/ColabLig-webfont.eot');
-      src: url('../fonts/ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/ColabLig-webfont.woff') format('woff'),
-           url('../fonts/ColabLig-webfont.ttf') format('truetype'),
-           url('../fonts/ColabLig-webfont.svg#ColaborateLightRegular') format('svg');
+      src: url('../fonts/colablig-webfont.eot');
+      src: url('../fonts/colablig-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/colablig-webfont.woff') format('woff'),
+           url('../fonts/colablig-webfont.ttf') format('truetype'),
+           url('../fonts/colablig-webfont.svg#colaboratelightregular') format('svg');
       font-weight: normal;
       font-style: normal;
 
@@ -81,22 +81,22 @@ table{border-collapse:collapse;border-spacing:0}
 
   @font-face {
       font-family: 'Colaborate';
-      src: url('../fonts/ColabReg-webfont.eot');
-      src: url('../fonts/ColabReg-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/ColabReg-webfont.woff') format('woff'),
-           url('../fonts/ColabReg-webfont.ttf') format('truetype'),
-           url('../fonts/ColabReg-webfont.svg#ColaborateRegular') format('svg');
+      src: url('../fonts/colabreg-webfont.eot');
+      src: url('../fonts/colabreg-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/colabreg-webfont.woff') format('woff'),
+           url('../fonts/colabreg-webfont.ttf') format('truetype'),
+           url('../fonts/colabreg-webfont.svg#colaborateregular') format('svg');
       font-weight: bold;
       font-style: normal;
   }
 
   @font-face {
       font-family: 'Alegreya';
-      src: url('../fonts/Alegreya-Regular-webfont.eot');
-      src: url('../fonts/Alegreya-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/Alegreya-Regular-webfont.woff') format('woff'),
-           url('../fonts/Alegreya-Regular-webfont.ttf') format('truetype'),
-           url('../fonts/Alegreya-Regular-webfont.svg#AlegreyaRegular') format('svg');
+      src: url('../fonts/alegreya-regular-webfont.eot');
+      src: url('../fonts/alegreya-regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/alegreya-regular-webfont.woff') format('woff'),
+           url('../fonts/alegreya-regular-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-regular-webfont.svg#alegreyaregular') format('svg');
       font-weight: normal;
       font-style: normal;
 
@@ -104,11 +104,11 @@ table{border-collapse:collapse;border-spacing:0}
 
   @font-face {
       font-family: 'Alegreya';
-      src: url('../fonts/Alegreya-Italic-webfont.eot');
-      src: url('../fonts/Alegreya-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/Alegreya-Italic-webfont.woff') format('woff'),
-           url('../fonts/Alegreya-Italic-webfont.ttf') format('truetype'),
-           url('../fonts/Alegreya-Italic-webfont.svg#AlegreyaItalic') format('svg');
+      src: url('../fonts/alegreya-italic-webfont.eot');
+      src: url('../fonts/alegreya-italic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/alegreya-italic-webfont.woff') format('woff'),
+           url('../fonts/alegreya-italic-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-italic-webfont.svg#alegreyaitalic') format('svg');
       font-weight: normal;
       font-style: italic;
 
@@ -116,23 +116,23 @@ table{border-collapse:collapse;border-spacing:0}
 
   @font-face {
       font-family: 'Alegreya';
-      src: url('../fonts/Alegreya-Bold-webfont.eot');
-      src: url('../fonts/Alegreya-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/Alegreya-Bold-webfont.woff') format('woff'),
-           url('../fonts/Alegreya-Bold-webfont.ttf') format('truetype'),
-           url('../fonts/Alegreya-Bold-webfont.svg#AlegreyaBold') format('svg');
+      src: url('../fonts/alegreya-bold-webfont.eot');
+      src: url('../fonts/alegreya-bold-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/alegreya-bold-webfont.woff') format('woff'),
+           url('../fonts/alegreya-bold-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-bold-webfont.svg#alegreyabold') format('svg');
       font-weight: bold;
       font-style: normal;
 
   }
 
   @font-face {
-      font-family: 'AlegreyaBold';
-      src: url('../fonts/Alegreya-BoldItalic-webfont.eot');
-      src: url('../fonts/Alegreya-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-           url('../fonts/Alegreya-BoldItalic-webfont.woff') format('woff'),
-           url('../fonts/Alegreya-BoldItalic-webfont.ttf') format('truetype'),
-           url('../fonts/Alegreya-BoldItalic-webfont.svg#AlegreyaBoldItalic') format('svg');
+      font-family: 'Alegreya';
+      src: url('../fonts/alegreya-bolditalic-webfont.eot');
+      src: url('../fonts/alegreya-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/alegreya-bolditalic-webfont.woff') format('woff'),
+           url('../fonts/alegreya-bolditalic-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-bolditalic-webfont.svg#alegreyabolditalic') format('svg');
       font-weight: bold;
       font-style: italic;
 
