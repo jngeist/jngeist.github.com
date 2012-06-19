@@ -1,1 +1,263 @@
-(function(a,b){function h(a,b,c,d,e,f){var g;return a.css(c,d+f),g=a.width(),g>=b?(a.css(c,""),g==b?{match:"exact",size:parseFloat((parseFloat(d)-.1).toFixed(3))}:{match:"estimate",size:parseFloat((parseFloat(d)-e).toFixed(3))}):!1}function i(a,c,d,e,f){var i=a.clone(!0).addClass("bigtext-cloned").css({"min-width":parseInt(d,10),width:"auto",position:"absolute",left:-9999,top:-9999}).appendTo(document.body),j=[],k=[],l=[],m=[];return i.find(c).css({"float":"left",clear:"left"}).each(function(a){var c=b(this),i=[4,1,.4,.1],k;if(c.hasClass(g.EXEMPT_CLASS)){j.push(null),m.push(null),l.push(!1);return}var n=20,o=parseFloat(c.css("font-size")),p=c.width(),q=(p/o).toFixed(6),r=parseFloat(((d-n)/q).toFixed(3));a:for(var s=0,t=i.length;s<t;s++)b:for(var u=1,v=4;u<=v;u++){if(r+u*i[s]>e){r=e;break a}k=h(c,d,"font-size",r+u*i[s],i[s],"px");if(k!==!1){r=k.size;if(k.match=="exact")break a;break b}}m.push(d/r),r>e?(j.push(e),l.push(!1)):!!f&&r<f?(j.push(f),l.push(!0)):(j.push(r),l.push(!1))}).each(function(a){var c=b(this),e=0,f=1,i;if(c.hasClass(g.EXEMPT_CLASS)){k.push(null);return}c.css("font-size",j[a]+"px");for(var l=1,m=5;l<m;l+=f){i=h(c,d,"word-spacing",l,f,"px");if(i!==!1){e=i.size;break}}c.css("font-size",""),k.push(e)}).removeAttr("style"),i.remove(),{fontSizes:j,wordSpacings:k,ratios:m,minFontSizes:l}}var c=0,d=b("head"),e=a.BigText,f=b.fn.bigtext,g={DEFAULT_MIN_FONT_SIZE_PX:null,DEFAULT_MAX_FONT_SIZE_PX:528,GLOBAL_STYLE_ID:"bigtext-style",STYLE_ID:"bigtext-id",LINE_CLASS_PREFIX:"bigtext-line",EXEMPT_CLASS:"bigtext-exempt",DEFAULT_CHILD_SELECTOR:"> div",childSelectors:{div:"> div",ol:"> li",ul:"> li"},noConflict:function(c){return c&&(b.fn.bigtext=f,a.BigText=e),g},init:function(){b("#"+g.GLOBAL_STYLE_ID).length||d.append(g.generateStyleTag(g.GLOBAL_STYLE_ID,[".bigtext * { white-space: nowrap; }",".bigtext ."+g.EXEMPT_CLASS+", .bigtext ."+g.EXEMPT_CLASS+" * { white-space: normal; }"]))},bindResize:function(c,d){b.throttle?b(a).unbind(c).bind(c,b.throttle(100,d)):(b.fn.smartresize&&(c="smartresize."+c),b(a).unbind(c).bind(c,d))},getStyleId:function(a){return g.STYLE_ID+"-"+a},generateStyleTag:function(a,c){return b("<style>"+c.join("\n")+"</style>").attr("id",a)},clearCss:function(a){var c=g.getStyleId(a);b("#"+c).remove()},generateCss:function(a,b,c,d){var e=[];g.clearCss(a);for(var f=0,h=b.length;f<h;f++)e.push("#"+a+" ."+g.LINE_CLASS_PREFIX+f+" {"+(d[f]?" white-space: normal;":"")+(b[f]?" font-size: "+b[f]+"px;":"")+(c[f]?" word-spacing: "+c[f]+"px;":"")+"}");return g.generateStyleTag(g.getStyleId(a),e)},jQueryMethod:function(a){return g.init(),a=b.extend({minfontsize:g.DEFAULT_MIN_FONT_SIZE_PX,maxfontsize:g.DEFAULT_MAX_FONT_SIZE_PX,childSelector:"",resize:!0},a||{}),this.each(function(){var e=b(this).addClass("bigtext"),f=a.childSelector||g.childSelectors[this.tagName.toLowerCase()]||g.DEFAULT_CHILD_SELECTOR,h=e.width(),j=e.attr("id");j||(j="bigtext-id"+c++,e.attr("id",j)),a.resize&&g.bindResize("resize.bigtext-event-"+j,function(){g.jQueryMethod.call(b("#"+j),a)}),g.clearCss(j),e.find(f).addClass(function(a,b){return[b.replace(new RegExp("\\b"+g.LINE_CLASS_PREFIX+"\\d+\\b"),""),g.LINE_CLASS_PREFIX+a].join(" ")});var k=i(e,f,h,a.maxfontsize,a.minfontsize);d.append(g.generateCss(j,k.fontSizes,k.wordSpacings,k.minFontSizes))})}};b.fn.bigtext=g.jQueryMethod,a.BigText=g})(this,jQuery);
+;(function(window, $)
+{
+    var counter = 0,
+        $headCache = $('head'),
+        oldBigText = window.BigText,
+        oldjQueryMethod = $.fn.bigtext,
+        BigText = {
+            DEFAULT_MIN_FONT_SIZE_PX: null,
+            DEFAULT_MAX_FONT_SIZE_PX: 528,
+            GLOBAL_STYLE_ID: 'bigtext-style',
+            STYLE_ID: 'bigtext-id',
+            LINE_CLASS_PREFIX: 'bigtext-line',
+            EXEMPT_CLASS: 'bigtext-exempt',
+            DEFAULT_CHILD_SELECTOR: '> div',
+            childSelectors: {
+                div: '> div',
+                ol: '> li',
+                ul: '> li'
+            },
+            noConflict: function(restore)
+            {
+                if(restore) {
+                    $.fn.bigtext = oldjQueryMethod;
+                    window.BigText = oldBigText;
+                }
+                return BigText;
+            },
+            init: function()
+            {
+                if(!$('#'+BigText.GLOBAL_STYLE_ID).length) {
+                    $headCache.append(BigText.generateStyleTag(BigText.GLOBAL_STYLE_ID, ['.bigtext * { white-space: nowrap; }',
+                                                                                    '.bigtext .' + BigText.EXEMPT_CLASS + ', .bigtext .' + BigText.EXEMPT_CLASS + ' * { white-space: normal; }']));
+                }
+            },
+            bindResize: function(eventName, resizeFunction)
+            {
+                if($.throttle) {
+                    // https://github.com/cowboy/jquery-throttle-debounce
+                    $(window).unbind(eventName).bind(eventName, $.throttle(100, resizeFunction));
+                } else {
+                    if($.fn.smartresize) {
+                        // https://github.com/lrbabe/jquery-smartresize/
+                        eventName = 'smartresize.' + eventName;
+                    }
+                    $(window).unbind(eventName).bind(eventName, resizeFunction);
+                }
+            },
+            getStyleId: function(id)
+            {
+                return BigText.STYLE_ID + '-' + id;
+            },
+            generateStyleTag: function(id, css)
+            {
+                return $('<style>' + css.join('\n') + '</style>').attr('id', id);
+            },
+            clearCss: function(id)
+            {
+                var styleId = BigText.getStyleId(id);
+                $('#' + styleId).remove();
+            },
+            generateCss: function(id, linesFontSizes, lineWordSpacings, minFontSizes)
+            {
+                var css = [];
+
+                BigText.clearCss(id);
+
+                for(var j=0, k=linesFontSizes.length; j<k; j++) {
+                    css.push('#' + id + ' .' + BigText.LINE_CLASS_PREFIX + j + ' {' + 
+                        (minFontSizes[j] ? ' white-space: normal;' : '') + 
+                        (linesFontSizes[j] ? ' font-size: ' + linesFontSizes[j] + 'px;' : '') + 
+                        (lineWordSpacings[j] ? ' word-spacing: ' + lineWordSpacings[j] + 'px;' : '') +
+                        '}');
+                }
+
+                return BigText.generateStyleTag(BigText.getStyleId(id), css);
+            },
+            jQueryMethod: function(options)
+            {
+                BigText.init();
+        
+                options = $.extend({
+                            minfontsize: BigText.DEFAULT_MIN_FONT_SIZE_PX,
+                            maxfontsize: BigText.DEFAULT_MAX_FONT_SIZE_PX,
+                            childSelector: '',
+                            resize: true
+                        }, options || {});
+            
+                return this.each(function()
+                {
+                    var $t = $(this).addClass('bigtext'),
+                        childSelector = options.childSelector ||
+                                    BigText.childSelectors[this.tagName.toLowerCase()] ||
+                                    BigText.DEFAULT_CHILD_SELECTOR,
+                        maxWidth = $t.width(),
+                        id = $t.attr('id');
+        
+                    if(!id) {
+                        id = 'bigtext-id' + (counter++);
+                        $t.attr('id', id);
+                    }
+        
+                    if(options.resize) {
+                        BigText.bindResize('resize.bigtext-event-' + id, function()
+                        {
+                            BigText.jQueryMethod.call($('#' + id), options);
+                        });
+                    }
+        
+                    BigText.clearCss(id);
+        
+                    $t.find(childSelector).addClass(function(lineNumber, className)
+                    {
+                        // remove existing line classes.
+                        return [className.replace(new RegExp('\\b' + BigText.LINE_CLASS_PREFIX + '\\d+\\b'), ''),
+                                BigText.LINE_CLASS_PREFIX + lineNumber].join(' ');
+                    });
+        
+                    var sizes = calculateSizes($t, childSelector, maxWidth, options.maxfontsize, options.minfontsize);
+                    $headCache.append(BigText.generateCss(id, sizes.fontSizes, sizes.wordSpacings, sizes.minFontSizes));
+                });
+            }
+        };
+
+    function testLineDimensions($line, maxWidth, property, size, interval, units)
+    {
+        var width;
+        $line.css(property, size + units);
+
+        width = $line.width();
+
+        if(width >= maxWidth) {
+            $line.css(property, '');
+
+            if(width == maxWidth) {
+                return {
+                    match: 'exact',
+                    size: parseFloat((parseFloat(size) - .1).toFixed(3))
+                };
+            }
+
+            return {
+                match: 'estimate',
+                size: parseFloat((parseFloat(size) - interval).toFixed(3))
+            };
+        }
+
+        return false;
+    }
+
+    function calculateSizes($t, childSelector, maxWidth, maxFontSize, minFontSize)
+    {
+        var $c = $t.clone(true)
+                    .addClass('bigtext-cloned')
+                    .css({
+                        'min-width': parseInt(maxWidth, 10),
+                        width: 'auto',
+                        position: 'absolute',
+                        left: -9999,
+                        top: -9999
+                    }).appendTo(document.body);
+
+        // font-size isn't the only thing we can modify, we can also mess with:
+        // word-spacing and letter-spacing.
+        // Note: webkit does not respect subpixel letter-spacing or word-spacing,
+        // nor does it respect hundredths of a font-size em.
+        var fontSizes = [],
+            wordSpacings = [],
+            minFontSizes = [],
+            ratios = [];
+
+        $c.find(childSelector).css({
+            'float': 'left',
+            'clear': 'left'
+        }).each(function(lineNumber) {
+            var $line = $(this),
+                intervals = [4,1,.4,.1],
+                lineMax;
+
+            if($line.hasClass(BigText.EXEMPT_CLASS)) {
+                fontSizes.push(null);
+                ratios.push(null);
+                minFontSizes.push(false);
+                return;
+            }
+
+            // TODO we can cache this ratio?
+            var autoGuessSubtraction = 20, // px
+                currentFontSize = parseFloat($line.css('font-size')),
+                lineWidth = $line.width(),
+                ratio = (lineWidth / currentFontSize).toFixed(6),
+                newFontSize = parseFloat(((maxWidth - autoGuessSubtraction) / ratio).toFixed(3));
+
+            outer: for(var m=0, n=intervals.length; m<n; m++) {
+                inner: for(var j=1, k=4; j<=k; j++) {
+                    if(newFontSize + j*intervals[m] > maxFontSize) {
+                        newFontSize = maxFontSize;
+                        break outer;
+                    }
+
+                    lineMax = testLineDimensions($line, maxWidth, 'font-size', newFontSize + j*intervals[m], intervals[m], 'px');
+                    if(lineMax !== false) {
+                        newFontSize = lineMax.size;
+
+                        if(lineMax.match == 'exact') {
+                            break outer;
+                        }
+                        break inner;
+                    }
+                }
+            }
+
+            ratios.push(maxWidth / newFontSize);
+
+            if(newFontSize > maxFontSize) {
+                fontSizes.push(maxFontSize);
+                minFontSizes.push(false);
+            } else if(!!minFontSize && newFontSize < minFontSize) {
+                fontSizes.push(minFontSize);
+                minFontSizes.push(true);
+            } else {
+                fontSizes.push(newFontSize);
+                minFontSizes.push(false);
+            }
+        }).each(function(lineNumber) {
+            var $line = $(this),
+                wordSpacing = 0,
+                interval = 1,
+                maxWordSpacing;
+
+            if($line.hasClass(BigText.EXEMPT_CLASS)) {
+                wordSpacings.push(null);
+                return;
+            }
+
+            // must re-use font-size, even though it was removed above.
+            $line.css('font-size', fontSizes[lineNumber] + 'px');
+
+            for(var m=1, n=5; m<n; m+=interval) {
+                maxWordSpacing = testLineDimensions($line, maxWidth, 'word-spacing', m, interval, 'px');
+                if(maxWordSpacing !== false) {
+                    wordSpacing = maxWordSpacing.size;
+                    break;
+                }
+            }
+
+            $line.css('font-size', '');
+            wordSpacings.push(wordSpacing);
+        }).removeAttr('style');
+
+        $c.remove();
+
+        return {
+            fontSizes: fontSizes,
+            wordSpacings: wordSpacings,
+            ratios: ratios,
+            minFontSizes: minFontSizes
+        };
+    }
+
+    $.fn.bigtext = BigText.jQueryMethod;
+    window.BigText = BigText;
+
+})(this, jQuery);

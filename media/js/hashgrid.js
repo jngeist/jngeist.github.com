@@ -1,1 +1,425 @@
-typeof jQuery=="undefined"&&alert("Hashgrid: jQuery not loaded. Make sure it's linked to your pages.");var hashgrid=function(a){function w(a){if(b.modifierKey==null)return!0;var c=!0;switch(b.modifierKey){case"ctrl":c=a.ctrlKey?a.ctrlKey:!1;break;case"alt":c=a.altKey?a.altKey:!1;break;case"shift":c=a.shiftKey?a.shiftKey:!1}return c}function x(a){var b=!1,c=a.keyCode?a.keyCode:a.which;return c==13?b="enter":b=String.fromCharCode(c).toLowerCase(),b}function y(){C(b.cookiePrefix+b.id,(u?"1":"0")+","+o+","+c,1)}function z(){j.show(),n.css({width:j.width()}),n.children(".vert").each(function(){$(this).css("display","inline-block"),$(this).offset().top>0&&$(this).hide()})}function A(a){var d,e,f=a.target.tagName.toLowerCase();if(f=="input"||f=="textarea"||f=="select")return!0;e=w(a);if(!e)return!0;d=x(a);if(!d)return!0;switch(d){case b.showGridKey:m?u&&(j.hide(),m=!1,u=!1,y()):(z(),m=!0);break;case b.holdGridKey:m&&!u&&(u=!0,y());break;case b.foregroundKey:m&&(j.css("z-index")==q?(j.css("z-index",p),o="B"):(j.css("z-index",q),o="F"),y());break;case b.jumpGridsKey:m&&b.numberOfGrids>1&&(j.removeClass(b.classPrefix+c),c++,c>b.numberOfGrids&&(c=1),j.addClass(b.classPrefix+c),z(),/webkit/.test(navigator.userAgent.toLowerCase())&&F(),y())}return!0}function B(a){var c,d=w(a);return d?(c=x(a),c&&c==b.showGridKey&&!u&&(j.hide(),m=!1),!0):!0}function C(a,b,c){var d,e="";c&&(d=new Date,d.setTime(d.getTime()+c*24*60*60*1e3),e="; expires="+d.toGMTString()),document.cookie=a+"="+b+e+"; path=/"}function D(a){var b,c=document.cookie.split(";"),d=0,e=c.length,f=a+"=";for(;d<e;d++){b=c[d];while(b.charAt(0)==" ")b=b.substring(1,b.length);if(b.indexOf(f)==0)return b.substring(f.length,b.length)}return null}function E(a){C(a,"",-1)}function F(){var a=document.styleSheets[0];try{a.addRule(".xxxxxx","position: relative"),a.removeRule(a.rules.length-1)}catch(b){}}var b={id:"grid",modifierKey:null,showGridKey:"g",holdGridKey:"h",foregroundKey:"f",jumpGridsKey:"j",numberOfGrids:1,classPrefix:"grid-",cookiePrefix:"hashgrid"},c=1,d,e,f,g,h,i,j,k,l,m=!1,n,o="B",p=-1,q=9999,r,s,t,u=!1,v;if(typeof a=="object")for(s in a)b[s]=a[s];else typeof a=="string"&&(b.id=a);$("#"+b.id).length>0&&$("#"+b.id).remove(),l=$("<div></div>"),l.attr("id",b.id).css({display:"none","pointer-events":"none"}),$("body").prepend(l),j=$("#"+b.id),j.css("z-index")=="auto"&&j.css("z-index",p),r=parseFloat($(document).height()),j.height(r),j.append('<div id="'+b.id+'-horiz" class="horiz first-line">'),v=j.css("top"),j.css({top:"-999px",display:"block"}),g=$("#"+b.id+"-horiz"),h=g.outerHeight(),j.css({display:"none",top:v});if(h<=0)return!1;i=Math.floor(r/h),d="";for(f=i-1;f>=1;f--)d+='<div class="horiz"></div>';j.append(d),j.append($('<div class="vert-container"></div>')),n=j.children(".vert-container"),e=j.width(),n.css({width:e,position:"absolute",top:0}),n.append('<div class="vert first-line">&nbsp;</div>'),d="";for(f=0;f<30;f++)d+='<div class="vert">&nbsp;</div>';return n.append(d),n.children().height(r).css({display:"inline-block"}),k=D(b.cookiePrefix+b.id),typeof k=="string"?(t=k.split(","),t[2]=Number(t[2]),typeof t[2]=="number"&&!isNaN(t[2])&&(c=t[2].toFixed(0),j.addClass(b.classPrefix+c)),t[1]=="F"&&(o="F",j.css("z-index",q)),t[0]=="1"&&(m=!0,u=!0,z())):j.addClass(b.classPrefix+c),$(document).bind("keydown",A),$(document).bind("keyup",B),{}};$(document).ready(function(){var a=new hashgrid({numberOfGrids:2})});
+/**
+ * hashgrid (jQuery version)
+ * http://github.com/dotjay/hashgrid
+ * Version 6, 10 Jun 2011
+ * Written by Jon Gibbins at Analog, http://analog.coop/
+ *
+ * Contibutors:
+ * Sean Coates, http://seancoates.com/
+ * Phil Dokas, http://jetless.org/
+ * Andrew Jaswa, http://andrewjaswa.com/
+ */
+
+/**
+ * @license Copyright 2011 Analog Coop Limited
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Usage
+ *
+ * // The basic #grid setup looks like this
+ * var grid = new hashgrid();
+ *
+ * // Or you can set a custom id for your grid, e.g. #mygrid
+ * var grid = new hashgrid("mygrid");
+ *
+ * // But there are a whole bunch of additional options you can set
+ * var grid = new hashgrid({
+ *     id: 'mygrid',            // id for the grid container
+ *     modifierKey: 'alt',      // optional 'ctrl', 'alt' or 'shift'
+ *     showGridKey: 's',        // key to show the grid
+ *     holdGridKey: 'enter',    // key to hold the grid in place
+ *     foregroundKey: 'f',      // key to toggle foreground/background
+ *     jumpGridsKey: 'd',       // key to cycle through the grid classes
+ *     numberOfGrids: 2,        // number of grid classes used
+ *     classPrefix: 'class',    // prefix for the grid classes
+ *     cookiePrefix: 'mygrid'   // prefix for the cookie name
+ * });
+ */
+
+
+/**
+ * Make sure we have the library
+ * TODO: Use an adapter
+ */
+if (typeof jQuery == "undefined") {
+	alert("Hashgrid: jQuery not loaded. Make sure it's linked to your pages.");
+}
+
+
+/**
+ * hashgrid overlay
+ * @constructor
+ */
+var hashgrid = function(set) {
+
+	var options = {
+			id: 'grid',             // id for the grid container
+			modifierKey: null,      // optional 'ctrl', 'alt' or 'shift'
+			showGridKey: 'g',       // key to show the grid
+			holdGridKey: 'h',       // key to hold the grid in place
+			foregroundKey: 'f',     // key to toggle foreground/background
+			jumpGridsKey: 'j',      // key to cycle through the grid classes
+			numberOfGrids: 1,       // number of grid classes used
+			classPrefix: 'grid-',   // prefix for the grid classes
+			cookiePrefix: 'hashgrid'// prefix for the cookie name
+		},
+		classNumber = 1,
+		gridLines,
+		gridWidth,
+		i,
+		line,
+		lineHeight,
+		numGridLines,
+		overlay,
+		overlayCookie,
+		overlayEl,
+		overlayOn = false,
+		overlayVert,
+		overlayZState = 'B',
+		overlayZBackground = -1,
+		overlayZForeground = 9999,
+		pageHeight,
+		setKey,
+		state,
+		sticky = false,
+		top;
+
+	// Apply options
+	if (typeof set == 'object') {
+		for (setKey in set) {
+			options[setKey] = set[setKey];
+		}
+	}
+	else if (typeof set == 'string') {
+		options.id = set;
+	}
+
+	// Remove any conflicting overlay
+	if ($('#' + options.id).length > 0) {
+		$('#' + options.id).remove();
+	}
+
+	// Create overlay, hidden before adding to DOM
+	overlayEl = $('<div></div>');
+	overlayEl
+		.attr('id', options.id)
+		.css({
+			display: 'none',
+			'pointer-events': 'none'
+		});
+	$("body").prepend(overlayEl);
+	overlay = $('#' + options.id);
+
+	// Unless a custom z-index is set, ensure the overlay will be behind everything
+	if (overlay.css('z-index') == 'auto') overlay.css('z-index', overlayZBackground);
+
+	// Override the default overlay height with the actual page height
+	pageHeight = parseFloat($(document).height());
+	overlay.height(pageHeight);
+
+	// Add the first grid line so that we can measure it
+	overlay.append('<div id="' + options.id + '-horiz" class="horiz first-line">');
+
+	// Position off-screen and display to calculate height
+	top = overlay.css("top");
+	overlay.css({
+		top: "-999px",
+		display: "block"
+	});
+
+	// Calculate the number of grid lines needed
+	line = $('#' + options.id + '-horiz');
+	lineHeight = line.outerHeight();
+
+	// Hide and reset top
+	overlay.css({
+		display: "none",
+		top: top
+	});
+
+	// Break on zero line height
+	if (lineHeight <= 0) {
+		return false;
+	}
+
+	// Add the remaining grid lines
+	numGridLines = Math.floor(pageHeight / lineHeight);
+	gridLines = '';
+
+	for (i = numGridLines - 1; i >= 1; i--) {
+		gridLines += '<div class="horiz"></div>';
+	}
+	overlay.append(gridLines);
+
+	// vertical grid
+	overlay.append($('<div class="vert-container"></div>'));
+	overlayVert = overlay.children('.vert-container');
+	gridWidth = overlay.width();
+	overlayVert.css({width: gridWidth, position: 'absolute', top: 0});
+	overlayVert.append('<div class="vert first-line">&nbsp;</div>');
+
+	// 30 is an arbitrarily large number...
+	// can't calculate the margin width properly
+	gridLines = '';
+	for (i = 0; i < 30; i++) {
+		gridLines += '<div class="vert">&nbsp;</div>';
+	}
+	overlayVert.append(gridLines);
+	overlayVert.children()
+		.height(pageHeight)
+		.css({ display: 'inline-block' });
+
+	// Check for saved state
+	overlayCookie = readCookie(options.cookiePrefix + options.id);
+	if (typeof overlayCookie == 'string') {
+		state = overlayCookie.split(',');
+		state[2] = Number(state[2]);
+		if ((typeof state[2] == 'number') && !isNaN(state[2])) {
+			classNumber = state[2].toFixed(0);
+			overlay.addClass(options.classPrefix + classNumber);
+		}
+		if (state[1] == 'F') {
+			overlayZState = 'F';
+			overlay.css('z-index', overlayZForeground);
+		}
+		if (state[0] == '1') {
+			overlayOn = true;
+			sticky = true;
+			showOverlay();
+		}
+	}
+	else {
+		overlay.addClass(options.classPrefix + classNumber);
+	}
+
+	// Keyboard controls
+	$(document).bind('keydown', keydownHandler);
+	$(document).bind('keyup', keyupHandler);
+
+	/**
+	 * Helpers
+	 */
+
+	function getModifier(e) {
+		if (options.modifierKey == null) return true; // Bypass by default
+		var m = true;
+		switch(options.modifierKey) {
+			case 'ctrl':
+				m = (e.ctrlKey ? e.ctrlKey : false);
+				break;
+
+			case 'alt':
+				m = (e.altKey ? e.altKey : false);
+				break;
+
+			case 'shift':
+				m = (e.shiftKey ? e.shiftKey : false);
+				break;
+		}
+		return m;
+	}
+
+	function getKey(e) {
+		var k = false, c = (e.keyCode ? e.keyCode : e.which);
+		// Handle keywords
+		if (c == 13) k = 'enter';
+		// Handle letters
+		else k = String.fromCharCode(c).toLowerCase();
+		return k;
+	}
+
+	function saveState() {
+		createCookie(options.cookiePrefix + options.id, (sticky ? '1' : '0') + ',' + overlayZState + ',' + classNumber, 1);
+	}
+
+	function showOverlay() {
+		overlay.show();
+		overlayVert.css({width: overlay.width()});
+		// hide any vertical blocks that aren't at the top of the viewport
+		overlayVert.children('.vert').each(function () {
+			$(this).css('display','inline-block');
+			if ($(this).offset().top > 0) {
+				$(this).hide();
+			}
+		});
+	}
+
+	/**
+	 * Event handlers
+	 */
+
+	function keydownHandler(e) {
+		var k,
+			m,
+			source = e.target.tagName.toLowerCase();
+
+		if ((source == 'input') || (source == 'textarea') || (source == 'select')) {
+			return true;
+		}
+
+		m = getModifier(e);
+		if (!m) {
+			return true;
+		}
+
+		k = getKey(e);
+		if (!k) {
+			return true;
+		}
+
+		switch(k) {
+			case options.showGridKey:
+				if (!overlayOn) {
+					showOverlay();
+					overlayOn = true;
+				}
+				else if (sticky) {
+					overlay.hide();
+					overlayOn = false;
+					sticky = false;
+					saveState();
+				}
+				break;
+			case options.holdGridKey:
+				if (overlayOn && !sticky) {
+					// Turn sticky overlay on
+					sticky = true;
+					saveState();
+				}
+				break;
+			case options.foregroundKey:
+				if (overlayOn) {
+					// Toggle sticky overlay z-index
+					if (overlay.css('z-index') == overlayZForeground) {
+						overlay.css('z-index', overlayZBackground);
+						overlayZState = 'B';
+					}
+					else {
+						overlay.css('z-index', overlayZForeground);
+						overlayZState = 'F';
+					}
+					saveState();
+				}
+				break;
+			case options.jumpGridsKey:
+				if (overlayOn && (options.numberOfGrids > 1)) {
+					// Cycle through the available grids
+					overlay.removeClass(options.classPrefix + classNumber);
+					classNumber++;
+					if (classNumber > options.numberOfGrids) classNumber = 1;
+					overlay.addClass(options.classPrefix + classNumber);
+					showOverlay();
+					if (/webkit/.test( navigator.userAgent.toLowerCase() )) {
+						forceRepaint();
+					}
+					saveState();
+				}
+				break;
+		}
+
+		return true;
+	}
+
+	function keyupHandler(e) {
+		var k,
+			m = getModifier(e);
+
+		if (!m) {
+			return true;
+		}
+
+		k = getKey(e);
+
+		if (k && (k == options.showGridKey) && !sticky) {
+			overlay.hide();
+			overlayOn = false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * Cookie functions
+	 *
+	 * By Peter-Paul Koch:
+	 * http://www.quirksmode.org/js/cookies.html
+	 */
+	function createCookie(name, value, days) {
+		var date,
+			expires = "";
+
+		if (days) {
+			date = new Date();
+			date.setTime( date.getTime() + (days*24*60*60*1000) );
+			expires = "; expires=" + date.toGMTString();
+		}
+
+		document.cookie = name + "=" + value + expires + "; path=/";
+	}
+
+	function readCookie(name) {
+		var c,
+			ca = document.cookie.split(';'),
+			i = 0,
+			len = ca.length,
+			nameEQ = name + "=";
+
+		for (; i < len; i++) {
+			c = ca[i];
+
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1, c.length);
+			}
+
+			if (c.indexOf(nameEQ) == 0) {
+				return c.substring(nameEQ.length, c.length);
+			}
+		}
+		return null;
+	}
+
+	function eraseCookie(name) {
+		createCookie(name, "", -1);
+	}
+
+	/**
+	 * Forces a repaint (because WebKit has issues)
+	 * http://www.sitepoint.com/forums/showthread.php?p=4538763
+	 * http://www.phpied.com/the-new-game-show-will-it-reflow/
+	 */
+	function forceRepaint() {
+		var ss = document.styleSheets[0];
+		try {
+			ss.addRule('.xxxxxx', 'position: relative');
+			ss.removeRule(ss.rules.length - 1);
+		} catch(e) {}
+	}
+
+	return {};
+};
+
+
+/**
+ * You can call hashgrid from your own code, but it's loaded here as
+ * an example for your convenience.
+ */
+$(document).ready(function() {
+
+	var grid = new hashgrid({
+		numberOfGrids: 2
+	});
+
+});

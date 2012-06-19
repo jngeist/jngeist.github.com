@@ -1,26 +1,14 @@
 <!doctype html>
-<!-- https://github.com/paulirish/html5-boilerplate/blob/master/index.html -->
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <html lang="en">
     <head>
                 <meta charset="utf-8" />
-
-        <!-- 
-            Always force latest IE rendering engine (even in intranet) & Chrome Frame 
-            Remove this if you use the .htaccess 
-        -->
         <meta http-equiv="X-UA-Compatible" content="" />
         <title>Now Playing</title>
         <meta name="description" content="" />
         <meta name="author" content="J. Nicholas Geist" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                    <!-- Place favicon.ico & apple-touch-icon.png
-            in the root of your domain and delete these references -->
-            <link rel="shortcut icon" href="/favicon.ico" />
+                    <link rel="shortcut icon" href="/favicon.ico" />
             <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
                     <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
@@ -32,8 +20,6 @@
     <body id="now_playing" class="">
         
 <header id='siteheader' class='siteheader'>
-    <a class='home' href="/">Home</a>
-    <a class='nav' href="#sitenav">Navigation</a>
     <hgroup>
         <h1><a href='http://geekabouttown.com/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
         <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
@@ -72,6 +58,7 @@
                 Now Playing
             </a>
         </li>    </ul>
+    <a class='shownav' href="#sitenav">Navigation</a>
 </nav>
 <div class='sidebar'>
     <img class='logo' src="/media/images/gat_logo.svg" alt="geek about town logo" />
@@ -87,138 +74,143 @@
 </ul></div>
 
 <div id='footer'>
-        <div class='tweets foot'>
-        <h2><a href="http://twitter.com/jnicholasgeist/">tweetcraft</a></h2>
-        <ul>
-                            <li class='tweet item'>
-                    <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
-                    <p>S04E12, part 2: the moment Battlestar Galactica LOST ITS FRAKKING MIND. RIP reason; sanity.
-
-I feel like someone’s defecated in my brain.</p>
-                                        <a href='http://twitter.com/jnicholasgeist/status/213015296552869889'>
-                        <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  9:09 <span class="caps">PM</span></time>
-                    </a>
-                </li>
-                            <li class='tweet item'>
-                    <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
-                    <p>Well on my way to productivity. <a href="http://t.co/0zTsJGfY">http://t.co/0zTsJGfY</a></p>
-                                                                    <img class='media' src='http://p.twimg.com/AvSOsc5CEAAujus.png' />
-                                                                <a href='http://twitter.com/jnicholasgeist/status/212951976709853185'>
-                        <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  4:58 <span class="caps">PM</span></time>
-                    </a>
-                </li>
-                            <li class='tweet item'>
-                    <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
-                    <p>Yes: these are flossers.
-Yes: it is June.
-Yes: someone deeply misunderstands holidays. <a href="http://t.co/FRjBZSlA">http://t.co/FRjBZSlA</a></p>
-                                                                    <img class='media' src='http://p.twimg.com/AvPDFYJCIAAZBiW.jpg' />
-                                                                <a href='http://twitter.com/jnicholasgeist/status/212728104559452160'>
-                        <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  2:08 <span class="caps">AM</span></time>
-                    </a>
-                </li>
-                            <li class='tweet item'>
-                    <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
-                    <p>This is our concern, dude.</p>
-                                        <a href='http://twitter.com/jnicholasgeist/status/212666324206370816'>
-                        <time>Tuesday, June 12, 2012 <span class="flavor">at</span> 10:02 <span class="caps">PM</span></time>
-                    </a>
-                </li>
-                            <li class='tweet item'>
-                    <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
-                    <p>@savetherobot Yes.</p>
-                                        <a href='http://twitter.com/jnicholasgeist/status/212404797058465796'>
-                        <time>Tuesday, June 12, 2012 <span class="flavor">at</span>  4:43 <span class="caps">AM</span></time>
-                    </a>
-                </li>
-                    </ul>
+        <div class='pager'>
+        <div class='twitter-pager'></div>
+        <div class='posts-pager'></div>
+        <div class='tumblr-pager'></div>
     </div>
+    <div class='pagerwrapper'>
+        <div class='tweets foot'>
+            <h2><a href="http://twitter.com/jnicholasgeist/">tweetcraft</a></h2>
+            <ul>
+                                    <li class='tweet item'>
+                        <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
+                        <p>I feel like we have a duty to remind one another that things like this exist.
 
-    <div class='posts foot'>
-        <h2><a href="/blog/">blather</a></h2>
-        <ul class='postlist'>
+&#34;Paradise by the Dashboard Light.&#34;  <a href="http://t.co/68tm5nGI">http://t.co/68tm5nGI</a></p>
+                                                <a href='http://twitter.com/jnicholasgeist/status/214947964089671680'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span> 10:09 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tweet item'>
+                        <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
+                        <p>@Pixel_Kaiser Yah. Just because Parker’s supposed to be awkward doesn’t mean all you need is an awkward guy for a good movie.</p>
+                                                <a href='http://twitter.com/jnicholasgeist/status/214943283078639616'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span>  9:50 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tweet item'>
+                        <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
+                        <p>Spider-Man’s credits rolled over Nickelback. Spider-Man 2: Dashboard Confessional.
+
+I’m watching 3 on mute.</p>
+                                                <a href='http://twitter.com/jnicholasgeist/status/214943024340402176'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span>  9:49 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tweet item'>
+                        <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
+                        <p>However: J. K. Simmons as J. Jonah Jameson was THE BEST casting decision ever made by anyone in the history of ever.</p>
+                                                <a href='http://twitter.com/jnicholasgeist/status/214928494117924865'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span>  8:52 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tweet item'>
+                        <img class='avatar' src='http://a0.twimg.com/profile_images/933564317/avatarpic-l_normal.png' />
+                        <p>It&#39;s been a while since I&#39;ve watched Spider-Man, sure, but I don&#39;t remember it being this…awful.</p>
+                                                <a href='http://twitter.com/jnicholasgeist/status/214887460738568192'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span>  6:08 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                            </ul>
+        </div>
+
+        <div class='posts foot'>
+            <h2><a href="/blog/">blather</a></h2>
+            <ul class='postlist'>
         <li class='post item'>
-           <a href="/posts/events-excitement-exclamation-points">Events! Excitement! Exclamation Points!</a><br />
+           <a href="/posts/amw-publication"><p><span class="dquo">&#8220;</span>A Murderer&#8217;s Work&#8221; out in <em>Creative&nbsp;Nonfiction</em></p></a><br />
+    <time pubdate="pubdate" datetime="2012-06-18"> 
+        Monday, June 18, 2012 <span class="flavor">at</span> 12:05 <span class="caps">PM</span>
+    </time> 
+ 
+    </li>
+        <li class='post item'>
+           <a href="/posts/events-excitement-exclamation-points"><p>Events! Excitement! Exclamation&nbsp;Points!</p></a><br />
     <time pubdate="pubdate" datetime="2012-06-13"> 
         Wednesday, June 13, 2012 <span class="flavor">at</span> 12:05 <span class="caps">AM</span>
     </time> 
  
     </li>
         <li class='post item'>
-           <a href="/posts/contrary-to-appearances">Contrary to appearances&hellip;</a><br />
+           <a href="/posts/contrary-to-appearances"><p>Contrary to&nbsp;appearances&hellip;</p></a><br />
     <time pubdate="pubdate" datetime="2012-04-02"> 
         Monday, April  2, 2012 <span class="flavor">at</span>  8:39 <span class="caps">PM</span>
     </time> 
  
     </li>
         <li class='post item'>
-           <a href="/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to">Getting Started with jQuery, HTML, and CSS</a><br />
+           <a href="/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to"><p>Getting Started with jQuery, <span class="caps">HTML</span>, and&nbsp;<span class="caps">CSS</span></p></a><br />
     <time pubdate="pubdate" datetime="2011-08-10"> 
         Wednesday, August 10, 2011 <span class="flavor">at</span>  4:13 <span class="caps">PM</span>
     </time> 
  
     </li>
         <li class='post item'>
-           <a href="/posts/so-this-is-happening">So, this is happening.</a><br />
+           <a href="/posts/so-this-is-happening"><p>So, this is&nbsp;happening.</p></a><br />
     <time pubdate="pubdate" datetime="2011-05-21"> 
         Saturday, May 21, 2011 <span class="flavor">at</span> 12:53 <span class="caps">AM</span>
     </time> 
  
     </li>
-        <li class='post item'>
-           <a href="/posts/heavy-rain-art-and-craft">Heavy Rain, art, and craft</a><br />
-    <time pubdate="pubdate" datetime="2011-03-23"> 
-        Wednesday, March 23, 2011 <span class="flavor">at</span>  8:37 <span class="caps">PM</span>
-    </time> 
- 
-    </li>
     </ul>
 
+        </div>
+
+        <div class='tumblr foot'>
+            <h2><a href="http://inthecourseofmyduties.tumblr.com/">tumblage</a></h2>
+            <ul>
+                                    <li class='tumbl item'>
+                        <img class='media' src='http://25.media.tumblr.com/tumblr_m5u3x8ISRu1rsprv3o1_400.png' />
+                        <a href='http://inthecourseofmyduties.tumblr.com/post/25391436639'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span>  3:31 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tumbl item'>
+                        <img class='media' src='http://25.media.tumblr.com/tumblr_m5tqikXQ4l1rsprv3o1_250.png' />
+                        <a href='http://inthecourseofmyduties.tumblr.com/post/25372709924'>
+                            <time>Monday, June 18, 2012 <span class="flavor">at</span> 10:42 <span class="caps">AM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tumbl item'>
+                        <img class='media' src='http://24.media.tumblr.com/tumblr_m5knpvMvPj1rsprv3o1_400.png' />
+                        <a href='http://inthecourseofmyduties.tumblr.com/post/25039816815'>
+                            <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  1:03 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tumbl item'>
+                        <img class='media' src='http://24.media.tumblr.com/tumblr_m5jnle6Ai11rsprv3o1_250.png' />
+                        <a href='http://inthecourseofmyduties.tumblr.com/post/25010494805'>
+                            <time>Wednesday, June 13, 2012 <span class="flavor">at</span> 12:03 <span class="caps">AM</span></time>
+                        </a>
+                    </li>
+                                    <li class='tumbl item'>
+                        <img class='media' src='http://25.media.tumblr.com/tumblr_m492dsGVra1rsprv3o1_1280.png' />
+                        <a href='http://inthecourseofmyduties.tumblr.com/post/23329226211'>
+                            <time>Friday, May 18, 2012 <span class="flavor">at</span>  8:15 <span class="caps">PM</span></time>
+                        </a>
+                    </li>
+                            </ul>
+        </div>
     </div>
 
-    <div class='tumblr foot'>
-        <h2><a href="http://inthecourseofmyduties.tumblr.com/">tumblage</a></h2>
-        <ul>
-                            <li class='tumbl item'>
-                    <img class='media' src='http://24.media.tumblr.com/tumblr_m5knpvMvPj1rsprv3o1_400.png' />
-                    <a href='http://inthecourseofmyduties.tumblr.com/post/25039816815'>
-                        <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  8:03 <span class="caps">PM</span></time>
-                    </a>
-                </li>
-                            <li class='tumbl item'>
-                    <img class='media' src='http://24.media.tumblr.com/tumblr_m5jnle6Ai11rsprv3o1_250.png' />
-                    <a href='http://inthecourseofmyduties.tumblr.com/post/25010494805'>
-                        <time>Wednesday, June 13, 2012 <span class="flavor">at</span>  7:03 <span class="caps">AM</span></time>
-                    </a>
-                </li>
-                            <li class='tumbl item'>
-                    <img class='media' src='http://25.media.tumblr.com/tumblr_m492dsGVra1rsprv3o1_1280.png' />
-                    <a href='http://inthecourseofmyduties.tumblr.com/post/23329226211'>
-                        <time>Saturday, May 19, 2012 <span class="flavor">at</span>  3:15 <span class="caps">AM</span></time>
-                    </a>
-                </li>
-                            <li class='tumbl item'>
-                    <img class='media' src='http://24.media.tumblr.com/tumblr_m2m0h3pK8Z1rsprv3o1_500.png' />
-                    <a href='http://inthecourseofmyduties.tumblr.com/post/21257679626'>
-                        <time>Tuesday, April 17, 2012 <span class="flavor">at</span>  5:55 <span class="caps">AM</span></time>
-                    </a>
-                </li>
-                            <li class='tumbl item'>
-                    <img class='media' src='http://24.media.tumblr.com/tumblr_m1bluewBXc1rsprv3o1_250.png' />
-                    <a href='http://inthecourseofmyduties.tumblr.com/post/19906982267'>
-                        <time>Sunday, March 25, 2012 <span class="flavor">at</span>  7:05 <span class="caps">PM</span></time>
-                    </a>
-                </li>
-                    </ul>
-    </div>
     </div>                    <!-- Javascript at the bottom for fast page loading -->
                             <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
                 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
                                                     <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
     
-            
-            <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+                        <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
             <![endif]-->
             </body>
 </html>

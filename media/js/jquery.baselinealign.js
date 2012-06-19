@@ -1,1 +1,115 @@
-(function(a){var b={baselineAlign:function(b){var c=a.extend({container:!1},b);return this.each(function(){var b=a(this);if(b.css("display")==="inline")return;b.attr("style","");var d=Math.floor(b.height());b.css("height",d);var e=parseFloat(a("html").css("line-height").replace("px","")),f=parseFloat(a("html").css("font-size").replace("px","")),g=d;if(c.container!==!1&&b.parents(c.container).length>0){var h=b.parents(c.container);h.attr("style","");var i=Math.ceil(h.height());h.css("height",i),g=Math.floor(h.outerHeight(!1))}var j=parseFloat(g%e),k=parseFloat(e-j);k<e/4&&(k+=e);if(c.container===!1){b.css("margin-bottom",k+"px");return}if(b.parents(c.container).length>0){b.parents(c.container).css("margin-bottom",k+"px");return}b.css("margin-bottom",k+"px")})},init:function(){var c=!1,d=!1,e=this,f=arguments;a(window).resize(function(){c=!0}),a(window).load(b.baselineAlign.apply(e,f)),setInterval(function(){if(c)return c=!1,b.baselineAlign.apply(e,f)},500)}};a.fn.baselineAlign=function(c){if(b[c])return b[c].apply(this,Array.prototype.slice.call(arguments,1));if(typeof c=="object"||!c)return b.init.apply(this,arguments);a.error("Method "+c+" does not exist on jQuery.baselineAlign")}})(jQuery);
+/*
+  JQUERY.BASELINEALIGN-1.0.JS
+  http://baselinealign.mattwilcox.net
+  https://github.com/MattWilcox/jQuery-Baseline-Align
+  
+  This plugin operates on a given set of images, it:
+    * detects the docuemnt baseline
+    * applies the margin needed to ensure the baseline is maintained
+  
+  --------------------------------------------------------------------------------------------------------------------------
+  FILE INFO
+  Last updated:     2012/02/11
+  Last updated by:  Matt Wilcox
+  ----------------------------------------------------------------------------------------------------------------------- */
+
+(function( $ ) {
+
+  var methods = {
+    baselineAlign : function(options) {
+
+      // Create some configuration options, and give sensible defaults
+      var settings = $.extend({
+        'container' : false // specify a container to apply the margin to rather than the image itself
+      }, options);
+  
+      return this.each(function() {
+        var this_img = $(this);
+
+        // abort now if the image is inline
+        if(this_img.css('display') === 'inline') { return; }
+
+        // reset JS applied margins on the image
+        this_img.attr('style','');
+
+        // shrink the image height to a whole pixel value to avoid rounding errors in the layout engine
+        // NOTE, this introduces a very slight difference in aspect ratio. You'll never see it.
+        var img_height = Math.floor(this_img.height());
+        this_img.css("height",img_height);
+
+        /* setup variables */
+        var baseline        = parseFloat($("html").css("line-height").replace("px",""));
+        var fontsize        = parseFloat($("html").css("font-size").replace("px",""));
+        var total_footprint = img_height;
+
+        // IF: the image is inside a container box
+        if(settings.container !== false &&
+           this_img.parents(settings.container).length > 0
+          ){
+            var container = this_img.parents(settings.container);
+
+            // reset JS applied margins on the container
+            container.attr('style','');
+
+            // shrink the image height to a whole pixel value to avoid rounding errors in the layout engine
+            // NOTE, this introduces a very very slight difference in aspect ratio. You'll never see it.
+            var container_height = Math.ceil(container.height());
+            container.css("height",container_height);
+
+            total_footprint = Math.floor(container.outerHeight(false));
+        }
+
+        var remainder = parseFloat(total_footprint%baseline);
+        var offset    = parseFloat(baseline-remainder);
+        
+        // avoid the text wrapping directly underneath, there needs to be at least 1/4 line-height gap
+        if(offset<(baseline/4)) { offset = offset+baseline; }
+
+        if(settings.container === false) { // apply directly to the image
+          this_img.css("margin-bottom",offset+"px");
+          return; // stop processing this loop
+        }
+        if(this_img.parents(settings.container).length > 0) { /* apply margin to specified container box, if it exists */
+          this_img.parents(settings.container).css("margin-bottom",offset+"px"); 
+          return;
+        }
+        /* apply margin to image itself */
+        this_img.css("margin-bottom",offset+"px");
+      });
+    },
+
+    init : function() {
+      var didResize = false;
+      var didLoad   = false;
+      var a = this; // I wish I knew why this works
+      var b = arguments; // I wish I knew why this works
+
+      $(window).resize(function(){
+        didResize = true;
+      });
+
+      $(window).load( methods.baselineAlign.apply(a,b)); // I wish I knew why this works
+      // and I wish I knew why this line also throws an error in jQuery 1.7.1
+      // Error: ((f.event.special[r.origType] || {}).handle || r.handler).apply is not a function
+      // it doesn't, however, actually seem to break anything.
+
+      setInterval(function(){
+        if(didResize){
+          didResize = false;
+          return methods.baselineAlign.apply(a, b); // I wish I knew why this works
+        }
+      }, 500);
+    }
+  };
+
+  $.fn.baselineAlign = function( method ) {
+    // Method calling logic
+    if ( methods[method] ) {
+      return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
+    } else if ( typeof method === 'object' || ! method ) {
+      return methods.init.apply( this, arguments );
+    } else {
+      $.error( 'Method ' +  method + ' does not exist on jQuery.baselineAlign' );
+    }  
+  };
+})( jQuery );

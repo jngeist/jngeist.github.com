@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300px" height="100px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <title></title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs>
+        <linearGradient id="gradient-1" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:100"></stop>
+            <stop offset="100%" style="stop-color:rgb(0,0,0); stop-opacity:100"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-2" x1="25%" y1="6%" x2="75%" y2="93%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:100"></stop>
+            <stop offset="100%" style="stop-color:rgb(0,0,0); stop-opacity:100"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-3" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:100"></stop>
+            <stop offset="100%" style="stop-color:rgb(0,0,0); stop-opacity:100"></stop>
+        </linearGradient>
+        <linearGradient id="gradient-4" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:100"></stop>
+            <stop offset="100%" style="stop-color:rgb(0,0,0); stop-opacity:100"></stop>
+        </linearGradient>
+    </defs>
+    <g fill="rgb(215,215,215)" id="Page 1">
+        <g style="fill:url(#gradient-2)" fill="none" id="Rectangle 25"></g>
+        <path id="Rectangle 25" d="M96,1 C96,2 96,3 95,4 L52,29 C52,29 52,29 52,30 C51,31 49,31 48,30 C48,30 47,30 46,29 L2,4 C1,3 1,2 1,1 C2,0 4,0 5,0 L49,25 L92,0 C94,0 95,0 96,1 Z M96,1" style="fill:url(#gradient-2)" fill="none"></path>
+        <path id="Rectangle 25 decoration" d="" style="fill:url(#gradient-2)" fill="none"></path>
+    </g>
+</svg>

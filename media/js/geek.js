@@ -1,1 +1,295 @@
-(function(a){function b(a){return a.replace(z,N).replace(A,function(a,b,f){for(var a=f.split(","),f=0,h=a.length;f<h;f++){var i=e(a[f].replace(H,N).replace(I,N))+M,j=[];a[f]=i.replace(B,function(a,b,e,f,h){if(b){if(j.length>0){var a=j,k,h=i.substring(0,h).replace(C,L);if(h==L||h.charAt(h.length-1)==M)h+="*";try{k=q(h)}catch(l){}if(k){h=0;for(e=k.length;h<e;h++){for(var f=k[h],m=f.className,n=0,o=a.length;n<o;n++){var p=a[n];!RegExp("(^|\\s)"+p.className+"(\\s|$)").test(f.className)&&p.b&&(p.b===!0||p.b(f)===!0)&&(m=g(m,p.className,!0))}f.className=m}}j=[]}return b}return(b=e?c(e):!G||G.test(f)?{className:d(f),b:!0}:null)?(j.push(b),"."+b.className):a})}return b+a.join(",")})}function c(b){var c=!0,e=d(b.slice(1)),g=b.substring(0,5)==":not(",i,j;g&&(b=b.slice(5,-1));var k=b.indexOf("(");k>-1&&(b=b.substring(0,k));if(b.charAt(0)==":")switch(b.slice(1)){case"root":c=function(a){return g?a!=m:a==m};break;case"target":if(o==8){c=function(b){function c(){var a=location.hash,c=a.slice(1);return g?a==L||b.id!=c:a!=L&&b.id==c}return h(a,"hashchange",function(){f(b,e,c())}),c()};break}return!1;case"checked":c=function(a){return F.test(a.type)&&h(a,"propertychange",function(){event.propertyName=="checked"&&f(a,e,a.checked!==g)}),a.checked!==g};break;case"disabled":g=!g;case"enabled":c=function(a){return E.test(a.tagName)?(h(a,"propertychange",function(){event.propertyName=="$disabled"&&f(a,e,a.a===g)}),r.push(a),a.a=a.disabled,a.disabled===g):b==":enabled"?g:!g};break;case"focus":i="focus",j="blur";case"hover":i||(i="mouseenter",j="mouseleave"),c=function(a){return h(a,g?j:i,function(){f(a,e,!0)}),h(a,g?i:j,function(){f(a,e,!1)}),g};break;default:if(!y.test(b))return!1}return{className:e,b:c}}function d(a){return u+"-"+(o==6&&t?s++:a.replace(D,function(a){return a.charCodeAt(0)}))}function e(a){return a.replace(K,N).replace(J,M)}function f(a,b,c){var d=a.className,b=g(d,b,c);b!=d&&(a.className=b,a.parentNode.className+=L)}function g(a,b,c){var d=RegExp("(^|\\s)"+b+"(\\s|$)"),e=d.test(a);return c?e?a:a+M+b:e?a.replace(d,N).replace(K,N):a}function h(a,b,c){a.attachEvent("on"+b,c)}function i(a,b){if(/^https?:\/\//i.test(a))return b.substring(0,b.indexOf("/",8))==a.substring(0,a.indexOf("/",8))?a:null;if(a.charAt(0)=="/")return b.substring(0,b.indexOf("/",8))+a;var c=b.split(/[?#]/)[0];return a.charAt(0)!="?"&&c.charAt(c.length-1)!="/"&&(c=c.substring(0,c.lastIndexOf("/")+1)),c+a}function j(a){return a?(n.open("GET",a,!1),n.send(),(n.status==200?n.responseText:L).replace(v,L).replace(w,function(b,c,d,e,f){return j(i(d||f,a))}).replace(x,function(b,c,d){return c=c||L," url("+c+i(d,a)+c+") "})):L}function k(){var a,c;a=l.getElementsByTagName("BASE");for(var d=a.length>0?a[0].href:l.location.href,e=0;e<l.styleSheets.length;e++)if(c=l.styleSheets[e],c.href!=L&&(a=i(c.href,d)))c.cssText=b(j(a));r.length>0&&setInterval(function(){for(var a=0,b=r.length;a<b;a++){var c=r[a];c.disabled!==c.a&&(c.disabled?(c.disabled=!1,c.a=!0,c.disabled=!0):c.a=c.disabled)}},250)}})(this),function(a){var b=a.event,c;b.special.smartresize={setup:function(){a(this).bind("resize",b.special.smartresize.handler)},teardown:function(){a(this).unbind("resize",b.special.smartresize.handler)},handler:function(a,b){var d=this,e=arguments;a.type="smartresize",c&&clearTimeout(c),c=setTimeout(function(){jQuery.event.handle.apply(d,e)},b==="execAsap"?0:100)}},a.fn.smartresize=function(a){return a?this.bind("smartresize",a):this.trigger("smartresize",["execAsap"])}}(jQuery),function(a,b){function h(a,b,c,d,e,f){var g;return a.css(c,d+f),g=a.width(),g>=b?(a.css(c,""),g==b?{match:"exact",size:parseFloat((parseFloat(d)-.1).toFixed(3))}:{match:"estimate",size:parseFloat((parseFloat(d)-e).toFixed(3))}):!1}function i(a,c,d,e,f){var i=a.clone(!0).addClass("bigtext-cloned").css({"min-width":parseInt(d,10),width:"auto",position:"absolute",left:-9999,top:-9999}).appendTo(document.body),j=[],k=[],l=[],m=[];return i.find(c).css({"float":"left",clear:"left"}).each(function(a){var c=b(this),i=[4,1,.4,.1],k;if(c.hasClass(g.EXEMPT_CLASS)){j.push(null),m.push(null),l.push(!1);return}var n=20,o=parseFloat(c.css("font-size")),p=c.width(),q=(p/o).toFixed(6),r=parseFloat(((d-n)/q).toFixed(3));a:for(var s=0,t=i.length;s<t;s++)b:for(var u=1,v=4;u<=v;u++){if(r+u*i[s]>e){r=e;break a}k=h(c,d,"font-size",r+u*i[s],i[s],"px");if(k!==!1){r=k.size;if(k.match=="exact")break a;break b}}m.push(d/r),r>e?(j.push(e),l.push(!1)):!!f&&r<f?(j.push(f),l.push(!0)):(j.push(r),l.push(!1))}).each(function(a){var c=b(this),e=0,f=1,i;if(c.hasClass(g.EXEMPT_CLASS)){k.push(null);return}c.css("font-size",j[a]+"px");for(var l=1,m=5;l<m;l+=f){i=h(c,d,"word-spacing",l,f,"px");if(i!==!1){e=i.size;break}}c.css("font-size",""),k.push(e)}).removeAttr("style"),i.remove(),{fontSizes:j,wordSpacings:k,ratios:m,minFontSizes:l}}var c=0,d=b("head"),e=a.BigText,f=b.fn.bigtext,g={DEFAULT_MIN_FONT_SIZE_PX:null,DEFAULT_MAX_FONT_SIZE_PX:528,GLOBAL_STYLE_ID:"bigtext-style",STYLE_ID:"bigtext-id",LINE_CLASS_PREFIX:"bigtext-line",EXEMPT_CLASS:"bigtext-exempt",DEFAULT_CHILD_SELECTOR:"> div",childSelectors:{div:"> div",ol:"> li",ul:"> li"},noConflict:function(c){return c&&(b.fn.bigtext=f,a.BigText=e),g},init:function(){b("#"+g.GLOBAL_STYLE_ID).length||d.append(g.generateStyleTag(g.GLOBAL_STYLE_ID,[".bigtext * { white-space: nowrap; }",".bigtext ."+g.EXEMPT_CLASS+", .bigtext ."+g.EXEMPT_CLASS+" * { white-space: normal; }"]))},bindResize:function(c,d){b.throttle?b(a).unbind(c).bind(c,b.throttle(100,d)):(b.fn.smartresize&&(c="smartresize."+c),b(a).unbind(c).bind(c,d))},getStyleId:function(a){return g.STYLE_ID+"-"+a},generateStyleTag:function(a,c){return b("<style>"+c.join("\n")+"</style>").attr("id",a)},clearCss:function(a){var c=g.getStyleId(a);b("#"+c).remove()},generateCss:function(a,b,c,d){var e=[];g.clearCss(a);for(var f=0,h=b.length;f<h;f++)e.push("#"+a+" ."+g.LINE_CLASS_PREFIX+f+" {"+(d[f]?" white-space: normal;":"")+(b[f]?" font-size: "+b[f]+"px;":"")+(c[f]?" word-spacing: "+c[f]+"px;":"")+"}");return g.generateStyleTag(g.getStyleId(a),e)},jQueryMethod:function(a){return g.init(),a=b.extend({minfontsize:g.DEFAULT_MIN_FONT_SIZE_PX,maxfontsize:g.DEFAULT_MAX_FONT_SIZE_PX,childSelector:"",resize:!0},a||{}),this.each(function(){var e=b(this).addClass("bigtext"),f=a.childSelector||g.childSelectors[this.tagName.toLowerCase()]||g.DEFAULT_CHILD_SELECTOR,h=e.width(),j=e.attr("id");j||(j="bigtext-id"+c++,e.attr("id",j)),a.resize&&g.bindResize("resize.bigtext-event-"+j,function(){g.jQueryMethod.call(b("#"+j),a)}),g.clearCss(j),e.find(f).addClass(function(a,b){return[b.replace(new RegExp("\\b"+g.LINE_CLASS_PREFIX+"\\d+\\b"),""),g.LINE_CLASS_PREFIX+a].join(" ")});var k=i(e,f,h,a.maxfontsize,a.minfontsize);d.append(g.generateCss(j,k.fontSizes,k.wordSpacings,k.minFontSizes))})}};b.fn.bigtext=g.jQueryMethod,a.BigText=g}(this,jQuery),function(a){var b={baselineAlign:function(b){var c=a.extend({container:!1},b);return this.each(function(){var b=a(this);if(b.css("display")==="inline")return;b.attr("style","");var d=Math.floor(b.height());b.css("height",d);var e=parseFloat(a("html").css("line-height").replace("px","")),f=parseFloat(a("html").css("font-size").replace("px","")),g=d;if(c.container!==!1&&b.parents(c.container).length>0){var h=b.parents(c.container);h.attr("style","");var i=Math.ceil(h.height());h.css("height",i),g=Math.floor(h.outerHeight(!1))}var j=parseFloat(g%e),k=parseFloat(e-j);k<e/4&&(k+=e);if(c.container===!1){b.css("margin-bottom",k+"px");return}if(b.parents(c.container).length>0){b.parents(c.container).css("margin-bottom",k+"px");return}b.css("margin-bottom",k+"px")})},init:function(){var c=!1,d=!1,e=this,f=arguments;a(window).resize(function(){c=!0}),a(window).load(b.baselineAlign.apply(e,f)),setInterval(function(){if(c)return c=!1,b.baselineAlign.apply(e,f)},500)}};a.fn.baselineAlign=function(c){if(b[c])return b[c].apply(this,Array.prototype.slice.call(arguments,1));if(typeof c=="object"||!c)return b.init.apply(this,arguments);a.error("Method "+c+" does not exist on jQuery.baselineAlign")}}(jQuery),function(){var a,b,c,d,e;b=function(a){var b,c,d,e;return e=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],b=["January","February","March","April","May","June","July","August","September","October","November","December"],c=new Date(a),c.getHours()>12?d=[c.getHours()-12,":",c.getMinutes()<10?"0":"",c.getMinutes(),' <span class="caps">pm</span>'].join(""):c.getHours()===12?d=[c.getHours(),":",c.getMinutes()<10?"0":"",c.getMinutes(),' <span class="caps">pm</span>'].join(""):d=[c.getHours(),":",c.getMinutes()<10?"0":"",c.getMinutes(),' <span class="caps">am</span>'].join(""),[e[c.getDay()],", ",b[c.getMonth()]," ",c.getDate(),", ",c.getFullYear(),'<span class="flavor"> at</span> ',d].join("")},c=function(){return $(this).parents("li").addClass("overlay")},d=function(){return $(this).parents("li").removeClass("overlay")},a=function(){var a,b,c,d,e,f,g;g=[];for(a=f=0;f<=4;a=++f)b=$(".posts.foot li").eq(a),e=$(".tweets.foot li").eq(a),d=$(".tumblr.foot li").eq(a),c=Math.max(b.height(),e.height(),d.height()),g.push($.each([b,e,d],function(){var a,b,d;b=c-$(this).height();if(b>0)return d=$(this).find("time"),a=+d.css("margin-top").replace("px",""),d.css({"margin-top":b-a})}));return g},e=function(){return $("header:not(article *), #siteheader>hgroup").each(function(){var a;return a=+$(this).find("h1").css("line-height").replace("px",""),$(this).bigtext({childSelector:"h1",maxfontsize:a})})},$(function(){return e(),$(window).on("smartresize",e),Modernizr.load({test:Modernizr.history,yep:"/media/js/jquery.pjax.js",complete:function(){return $("nav a:not([href*=':'])").pjax("#main")}}),$("a.nav").click(function(a){return a.preventDefault(),$("#sitenav").slideToggle()}),$("img").baselineAlign()})}.call(this);
+/*!
+ * selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
+ * selectivizr.com
+ */
+(function(j){function A(a){return a.replace(B,h).replace(C,function(a,d,b){for(var a=b.split(","),b=0,e=a.length;b<e;b++){var s=D(a[b].replace(E,h).replace(F,h))+o,l=[];a[b]=s.replace(G,function(a,b,c,d,e){if(b){if(l.length>0){var a=l,f,e=s.substring(0,e).replace(H,i);if(e==i||e.charAt(e.length-1)==o)e+="*";try{f=t(e)}catch(k){}if(f){e=0;for(c=f.length;e<c;e++){for(var d=f[e],h=d.className,j=0,m=a.length;j<m;j++){var g=a[j];if(!RegExp("(^|\\s)"+g.className+"(\\s|$)").test(d.className)&&g.b&&(g.b===!0||g.b(d)===!0))h=u(h,g.className,!0)}d.className=h}}l=[]}return b}else{if(b=c?I(c):!v||v.test(d)?{className:w(d),b:!0}:null)return l.push(b),"."+b.className;return a}})}return d+a.join(",")})}function I(a){var c=!0,d=w(a.slice(1)),b=a.substring(0,5)==":not(",e,f;b&&(a=a.slice(5,-1));var l=a.indexOf("(");l>-1&&(a=a.substring(0,l));if(a.charAt(0)==":")switch(a.slice(1)){case "root":c=function(a){return b?a!=p:a==p};break;case "target":if(m==8){c=function(a){function c(){var d=location.hash,e=d.slice(1);return b?d==i||a.id!=e:d!=i&&a.id==e}k(j,"hashchange",function(){g(a,d,c())});return c()};break}return!1;case "checked":c=function(a){J.test(a.type)&&k(a,"propertychange",function(){event.propertyName=="checked"&&g(a,d,a.checked!==b)});return a.checked!==b};break;case "disabled":b=!b;case "enabled":c=function(c){if(K.test(c.tagName))return k(c,"propertychange",function(){event.propertyName=="$disabled"&&g(c,d,c.a===b)}),q.push(c),c.a=c.disabled,c.disabled===b;return a==":enabled"?b:!b};break;case "focus":e="focus",f="blur";case "hover":e||(e="mouseenter",f="mouseleave");c=function(a){k(a,b?f:e,function(){g(a,d,!0)});k(a,b?e:f,function(){g(a,d,!1)});return b};break;default:if(!L.test(a))return!1}return{className:d,b:c}}function w(a){return M+"-"+(m==6&&N?O++:a.replace(P,function(a){return a.charCodeAt(0)}))}function D(a){return a.replace(x,h).replace(Q,o)}function g(a,c,d){var b=a.className,c=u(b,c,d);if(c!=b)a.className=c,a.parentNode.className+=i}function u(a,c,d){var b=RegExp("(^|\\s)"+c+"(\\s|$)"),e=b.test(a);return d?e?a:a+o+c:e?a.replace(b,h).replace(x,h):a}function k(a,c,d){a.attachEvent("on"+c,d)}function r(a,c){if(/^https?:\/\//i.test(a))return c.substring(0,c.indexOf("/",8))==a.substring(0,a.indexOf("/",8))?a:null;if(a.charAt(0)=="/")return c.substring(0,c.indexOf("/",8))+a;var d=c.split(/[?#]/)[0];a.charAt(0)!="?"&&d.charAt(d.length-1)!="/"&&(d=d.substring(0,d.lastIndexOf("/")+1));return d+a}function y(a){if(a)return n.open("GET",a,!1),n.send(),(n.status==200?n.responseText:i).replace(R,i).replace(S,function(c,d,b,e,f){return y(r(b||f,a))}).replace(T,function(c,d,b){d=d||i;return" url("+d+r(b,a)+d+") "});return i}function U(){var a,c;a=f.getElementsByTagName("BASE");for(var d=a.length>0?a[0].href:f.location.href,b=0;b<f.styleSheets.length;b++)if(c=f.styleSheets[b],c.href!=i&&(a=r(c.href,d)))c.cssText=A(y(a));q.length>0&&setInterval(function(){for(var a=0,c=q.length;a<c;a++){var b=q[a];if(b.disabled!==b.a)b.disabled?(b.disabled=!1,b.a=!0,b.disabled=!0):b.a=b.disabled}},250)}if(!/*@cc_on!@*/true){var f=document,p=f.documentElement,n=function(){if(j.XMLHttpRequest)return new XMLHttpRequest;try{return new ActiveXObject("Microsoft.XMLHTTP")}catch(a){return null}}(),m=/MSIE (\d+)/.exec(navigator.userAgent)[1];if(!(f.compatMode!="CSS1Compat"||m<6||m>8||!n)){var z={NW:"*.Dom.select",MooTools:"$$",DOMAssistant:"*.$",Prototype:"$$",YAHOO:"*.util.Selector.query",Sizzle:"*",jQuery:"*",dojo:"*.query"},t,q=[],O=0,N=!0,M="slvzr",R=/(\/\*[^*]*\*+([^\/][^*]*\*+)*\/)\s*/g,S=/@import\s*(?:(?:(?:url\(\s*(['"]?)(.*)\1)\s*\))|(?:(['"])(.*)\3))[^;]*;/g,T=/\burl\(\s*(["']?)(?!data:)([^"')]+)\1\s*\)/g,L=/^:(empty|(first|last|only|nth(-last)?)-(child|of-type))$/,B=/:(:first-(?:line|letter))/g,C=/(^|})\s*([^\{]*?[\[:][^{]+)/g,G=/([ +~>])|(:[a-z-]+(?:\(.*?\)+)?)|(\[.*?\])/g,H=/(:not\()?:(hover|enabled|disabled|focus|checked|target|active|visited|first-line|first-letter)\)?/g,P=/[^\w-]/g,K=/^(INPUT|SELECT|TEXTAREA|BUTTON)$/,J=/^(checkbox|radio)$/,v=m>6?/[\$\^*]=(['"])\1/:null,E=/([(\[+~])\s+/g,F=/\s+([)\]+~])/g,Q=/\s+/g,x=/^\s*((?:[\S\s]*\S)?)\s*$/,i="",o=" ",h="$1";(function(a,c){function d(){try{p.doScroll("left")}catch(a){setTimeout(d,50);return}b("poll")}function b(d){if(!(d.type=="readystatechange"&&f.readyState!="complete")&&((d.type=="load"?a:f).detachEvent("on"+d.type,b,!1),!e&&(e=!0)))c.call(a,d.type||d)}var e=!1,g=!0;if(f.readyState=="complete")c.call(a,i);else{if(f.createEventObject&&p.doScroll){try{g=!a.frameElement}catch(h){}g&&d()}k(f,"readystatechange",b);k(a,"load",b)}})(j,function(){for(var a in z){var c,d,b=j;if(j[a]){for(c=z[a].replace("*",a).split(".");(d=c.shift())&&(b=b[d]););if(typeof b=="function"){t=b;U();break}}}})}}})(this);// StyleFix 1.0.2 + PrefixFree 1.0.6 / Lea Verou / MIT license
+(function(){function h(a,b){return[].slice.call((b||document).querySelectorAll(a))}if(window.addEventListener){var e=window.StyleFix={link:function(a){try{if("stylesheet"!==a.rel||a.hasAttribute("data-noprefix"))return}catch(b){return}var c=a.href||a.getAttribute("data-href"),f=c.replace(/[^\/]+$/,""),i=a.parentNode,d=new XMLHttpRequest,g;d.onreadystatechange=function(){4===d.readyState&&g()};g=function(){var b=d.responseText;if(b&&a.parentNode&&(!d.status||400>d.status||600<d.status)){b=e.fix(b,
+!0,a);f&&(b=b.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi,function(a,b,c){return!/^([a-z]{3,10}:|\/|#)/i.test(c)?'url("'+f+c+'")':a}),b=b.replace(RegExp("\\b(behavior:\\s*?url\\('?\"?)"+f,"gi"),"$1"));var c=document.createElement("style");c.textContent=b;c.media=a.media;c.disabled=a.disabled;c.setAttribute("data-href",a.getAttribute("href"));i.insertBefore(c,a);i.removeChild(a);c.media=a.media}};try{d.open("GET",c),d.send(null)}catch(k){"undefined"!=typeof XDomainRequest&&(d=new XDomainRequest,d.onerror=
+d.onprogress=function(){},d.onload=g,d.open("GET",c),d.send(null))}a.setAttribute("data-inprogress","")},styleElement:function(a){if(!a.hasAttribute("data-noprefix")){var b=a.disabled;a.textContent=e.fix(a.textContent,!0,a);a.disabled=b}},styleAttribute:function(a){var b=a.getAttribute("style"),b=e.fix(b,!1,a);a.setAttribute("style",b)},process:function(){h('link[rel="stylesheet"]:not([data-inprogress])').forEach(StyleFix.link);h("style").forEach(StyleFix.styleElement);h("[style]").forEach(StyleFix.styleAttribute)},
+register:function(a,b){(e.fixers=e.fixers||[]).splice(void 0===b?e.fixers.length:b,0,a)},fix:function(a,b){for(var c=0;c<e.fixers.length;c++)a=e.fixers[c](a,b)||a;return a},camelCase:function(a){return a.replace(/-([a-z])/g,function(a,c){return c.toUpperCase()}).replace("-","")},deCamelCase:function(a){return a.replace(/[A-Z]/g,function(a){return"-"+a.toLowerCase()})}};(function(){setTimeout(function(){h('link[rel="stylesheet"]').forEach(StyleFix.link)},10);document.addEventListener("DOMContentLoaded",
+StyleFix.process,!1)})()}})();
+(function(h){function e(b,c,f,i,d){b=a[b];b.length&&(b=RegExp(c+"("+b.join("|")+")"+f,"gi"),d=d.replace(b,i));return d}if(window.StyleFix&&window.getComputedStyle){var a=window.PrefixFree={prefixCSS:function(b,c){var f=a.prefix,b=e("functions","(\\s|:|,)","\\s*\\(","$1"+f+"$2(",b),b=e("keywords","(\\s|:)","(\\s|;|\\}|$)","$1"+f+"$2$3",b),b=e("properties","(^|\\{|\\s|;)","\\s*:","$1"+f+"$2:",b);if(a.properties.length)var i=RegExp("\\b("+a.properties.join("|")+")(?!:)","gi"),b=e("valueProperties","\\b",
+":(.+?);",function(a){return a.replace(i,f+"$1")},b);c&&(b=e("selectors","","\\b",a.prefixSelector,b),b=e("atrules","@","\\b","@"+f+"$1",b));return b=b.replace(RegExp("-"+f,"g"),"-")},property:function(b){return(a.properties.indexOf(b)?a.prefix:"")+b},value:function(b){b=e("functions","(^|\\s|,)","\\s*\\(","$1"+a.prefix+"$2(",b);return b=e("keywords","(^|\\s)","(\\s|$)","$1"+a.prefix+"$2$3",b)},prefixSelector:function(b){return b.replace(/^:{1,2}/,function(b){return b+a.prefix})},prefixProperty:function(b,
+c){var f=a.prefix+b;return c?StyleFix.camelCase(f):f}};(function(){var b={},c=[],f=getComputedStyle(document.documentElement,null),i=document.createElement("div").style,d=function(a){if("-"===a.charAt(0)){c.push(a);var a=a.split("-"),d=a[1];for(b[d]=++b[d]||1;3<a.length;)a.pop(),d=a.join("-"),StyleFix.camelCase(d)in i&&-1===c.indexOf(d)&&c.push(d)}};if(0<f.length)for(var g=0;g<f.length;g++)d(f[g]);else for(var e in f)d(StyleFix.deCamelCase(e));var g=0,j,h;for(h in b)f=b[h],g<f&&(j=h,g=f);a.prefix=
+"-"+j+"-";a.Prefix=StyleFix.camelCase(a.prefix);a.properties=[];for(g=0;g<c.length;g++)e=c[g],0===e.indexOf(a.prefix)&&(j=e.slice(a.prefix.length),StyleFix.camelCase(j)in i||a.properties.push(j));"Ms"==a.Prefix&&(!("transform"in i)&&!("MsTransform"in i)&&"msTransform"in i)&&a.properties.push("transform","transform-origin");a.properties.sort()})();(function(){function b(a,b){e[b]="";e[b]=a;return!!e[b]}var c={"linear-gradient":{property:"backgroundImage",params:"red, teal"},calc:{property:"width",
+params:"1px + 5%"},element:{property:"backgroundImage",params:"#foo"},"cross-fade":{property:"backgroundImage",params:"url(a.png), url(b.png), 50%"}};c["repeating-linear-gradient"]=c["repeating-radial-gradient"]=c["radial-gradient"]=c["linear-gradient"];var f={initial:"color","zoom-in":"cursor","zoom-out":"cursor",box:"display",flexbox:"display","inline-flexbox":"display",flex:"display","inline-flex":"display"};a.functions=[];a.keywords=[];var e=document.createElement("div").style,d;for(d in c){var g=
+c[d],h=g.property,g=d+"("+g.params+")";!b(g,h)&&b(a.prefix+g,h)&&a.functions.push(d)}for(var j in f)h=f[j],!b(j,h)&&b(a.prefix+j,h)&&a.keywords.push(j)})();(function(){function b(a){e.textContent=a+"{}";return!!e.sheet.cssRules.length}var c={":read-only":null,":read-write":null,":any-link":null,"::selection":null},f={keyframes:"name",viewport:null,document:'regexp(".")'};a.selectors=[];a.atrules=[];var e=h.appendChild(document.createElement("style")),d;for(d in c){var g=d+(c[d]?"("+c[d]+")":"");!b(g)&&
+b(a.prefixSelector(g))&&a.selectors.push(d)}for(var k in f)g=k+" "+(f[k]||""),!b("@"+g)&&b("@"+a.prefix+g)&&a.atrules.push(k);h.removeChild(e)})();a.valueProperties=["transition","transition-property"];h.className+=" "+a.prefix;StyleFix.register(a.prefixCSS)}})(document.documentElement);/*
+ * smartresize: debounced resize event for jQuery
+ *
+ * latest version and complete README available on Github:
+ * https://github.com/louisremi/jquery.smartresize.js
+ *
+ * Copyright 2011 @louis_remi
+ * Licensed under the MIT license.
+ *
+ * This saved you an hour of work? 
+ * Send me music http://www.amazon.co.uk/wishlist/HNTU0468LQON
+ */
+(function($) {
+
+var event = $.event,
+    resizeTimeout;
+    
+event.special[ "smartresize" ] = {
+    setup: function() {
+        $( this ).bind( "resize", event.special.smartresize.handler );
+    },
+    teardown: function() {
+        $( this ).unbind( "resize", event.special.smartresize.handler );
+    },
+    handler: function( event, execAsap ) {
+        // Save the context
+        var context = this,
+            args = arguments;
+        
+        // set correct event type
+        event.type = "smartresize";
+        
+        if(resizeTimeout)
+            clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            jQuery.event.handle.apply( context, args );
+        }, execAsap === "execAsap"? 0 : 100);
+    }
+}
+
+$.fn.smartresize = function( fn ) {
+    return fn ? this.bind( "smartresize", fn ) : this.trigger( "smartresize", ["execAsap"] );
+};
+    
+})(jQuery);/*
+  JQUERY.BASELINEALIGN-1.0.JS
+  http://baselinealign.mattwilcox.net
+  https://github.com/MattWilcox/jQuery-Baseline-Align
+  
+  This plugin operates on a given set of images, it:
+    * detects the docuemnt baseline
+    * applies the margin needed to ensure the baseline is maintained
+  
+  --------------------------------------------------------------------------------------------------------------------------
+  FILE INFO
+  Last updated:     2012/02/11
+  Last updated by:  Matt Wilcox
+  ----------------------------------------------------------------------------------------------------------------------- */
+
+(function( $ ) {
+
+  var methods = {
+    baselineAlign : function(options) {
+
+      // Create some configuration options, and give sensible defaults
+      var settings = $.extend({
+        'container' : false // specify a container to apply the margin to rather than the image itself
+      }, options);
+  
+      return this.each(function() {
+        var this_img = $(this);
+
+        // abort now if the image is inline
+        if(this_img.css('display') === 'inline') { return; }
+
+        // reset JS applied margins on the image
+        this_img.attr('style','');
+
+        // shrink the image height to a whole pixel value to avoid rounding errors in the layout engine
+        // NOTE, this introduces a very slight difference in aspect ratio. You'll never see it.
+        var img_height = Math.floor(this_img.height());
+        this_img.css("height",img_height);
+
+        /* setup variables */
+        var baseline        = parseFloat($("html").css("line-height").replace("px",""));
+        var fontsize        = parseFloat($("html").css("font-size").replace("px",""));
+        var total_footprint = img_height;
+
+        // IF: the image is inside a container box
+        if(settings.container !== false &&
+           this_img.parents(settings.container).length > 0
+          ){
+            var container = this_img.parents(settings.container);
+
+            // reset JS applied margins on the container
+            container.attr('style','');
+
+            // shrink the image height to a whole pixel value to avoid rounding errors in the layout engine
+            // NOTE, this introduces a very very slight difference in aspect ratio. You'll never see it.
+            var container_height = Math.ceil(container.height());
+            container.css("height",container_height);
+
+            total_footprint = Math.floor(container.outerHeight(false));
+        }
+
+        var remainder = parseFloat(total_footprint%baseline);
+        var offset    = parseFloat(baseline-remainder);
+        
+        // avoid the text wrapping directly underneath, there needs to be at least 1/4 line-height gap
+        if(offset<(baseline/4)) { offset = offset+baseline; }
+
+        if(settings.container === false) { // apply directly to the image
+          this_img.css("margin-bottom",offset+"px");
+          return; // stop processing this loop
+        }
+        if(this_img.parents(settings.container).length > 0) { /* apply margin to specified container box, if it exists */
+          this_img.parents(settings.container).css("margin-bottom",offset+"px"); 
+          return;
+        }
+        /* apply margin to image itself */
+        this_img.css("margin-bottom",offset+"px");
+      });
+    },
+
+    init : function() {
+      var didResize = false;
+      var didLoad   = false;
+      var a = this; // I wish I knew why this works
+      var b = arguments; // I wish I knew why this works
+
+      $(window).resize(function(){
+        didResize = true;
+      });
+
+      $(window).load( methods.baselineAlign.apply(a,b)); // I wish I knew why this works
+      // and I wish I knew why this line also throws an error in jQuery 1.7.1
+      // Error: ((f.event.special[r.origType] || {}).handle || r.handler).apply is not a function
+      // it doesn't, however, actually seem to break anything.
+
+      setInterval(function(){
+        if(didResize){
+          didResize = false;
+          return methods.baselineAlign.apply(a, b); // I wish I knew why this works
+        }
+      }, 500);
+    }
+  };
+
+  $.fn.baselineAlign = function( method ) {
+    // Method calling logic
+    if ( methods[method] ) {
+      return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
+    } else if ( typeof method === 'object' || ! method ) {
+      return methods.init.apply( this, arguments );
+    } else {
+      $.error( 'Method ' +  method + ' does not exist on jQuery.baselineAlign' );
+    }  
+  };
+})( jQuery );;(function(window, $)
+{
+    var Embiggen = {
+        pluginMethod: function() {
+            return this.each(function() {
+                var width;
+                width = $(this).width();
+                return $(this).find('h1').each(function() {
+                    var innerwidth, lineheight, newsize, scale, size, wrapper;
+                    wrapper = $(this).find('.embiggened');
+                    if (!wrapper.length) {
+                        $(this).contents().wrap('<span class="embiggened" style="display: inline" />');
+                        wrapper = $(this).find('.embiggened');
+                    }
+                    size = parseInt(wrapper.css('font-size').replace('px', ''));
+                    lineheight = parseInt(wrapper.css('line-height').replace('px', ''));
+                    innerwidth = wrapper.width();
+                    scale = (width / innerwidth).toPrecision(2);
+                    newsize = Math.floor(size * scale);
+                    if (newsize > lineheight) {
+                        newsize = lineheight;
+                    }
+                    return wrapper.css('font-size', newsize);
+                });
+            });
+        }
+    };
+
+    $.fn.embiggen = Embiggen.pluginMethod;
+    window.embiggen = Embiggen;
+})(this, jQuery);(function($){$.fn.swipe=function(options){var defaults={threshold:{x:30,y:10},swipeLeft:function(){alert('swiped left')},swipeRight:function(){alert('swiped right')}};var options=$.extend(defaults,options);if(!this)return false;return this.each(function(){var me=$(this)
+var originalCoord={x:0,y:0}
+var finalCoord={x:0,y:0}
+function touchStart(event){originalCoord.x=event.targetTouches[0].pageX
+originalCoord.y=event.targetTouches[0].pageY}
+function touchMove(event){event.preventDefault();finalCoord.x=event.targetTouches[0].pageX
+finalCoord.y=event.targetTouches[0].pageY}
+function touchEnd(event){var changeY=originalCoord.y- finalCoord.y
+if(changeY<defaults.threshold.y&&changeY>(defaults.threshold.y*-1)){changeX=originalCoord.x- finalCoord.x
+if(changeX>defaults.threshold.x){defaults.swipeLeft()}
+if(changeX<(defaults.threshold.x*-1)){defaults.swipeRight()}}}
+function touchStart(event){originalCoord.x=event.targetTouches[0].pageX
+originalCoord.y=event.targetTouches[0].pageY
+finalCoord.x=originalCoord.x
+finalCoord.y=originalCoord.y}
+function touchCancel(event){}
+this.addEventListener("touchstart",touchStart,false);this.addEventListener("touchmove",touchMove,false);this.addEventListener("touchend",touchEnd,false);this.addEventListener("touchcancel",touchCancel,false);});};})(jQuery);// Generated by CoffeeScript 1.3.1
+(function() {
+  var makeoverlay, on_resize, removeoverlay, switch_left, switch_right;
+
+  makeoverlay = function() {
+    return $(this).parents('li').addClass('overlay');
+  };
+
+  removeoverlay = function() {
+    return $(this).parents('li').removeClass('overlay');
+  };
+
+  on_resize = function() {
+    var asideheight, logoheight;
+    $('header:not(article *), #siteheader>hgroup').embiggen();
+    if ($('body#index').length) {
+      if ($('.sidebar').css('display') === 'none') {
+        return $('aside#about').css({
+          'padding-top': 0
+        });
+      } else {
+        asideheight = $('aside#about').height();
+        logoheight = $('img.logo').height();
+        return $('aside#about').css({
+          'padding-top': (logoheight - asideheight) / 2
+        });
+      }
+    }
+  };
+
+  switch_right = function() {
+    if ($('#footer').hasClass('tumblr')) {
+      return $('#footer').removeClass('tumblr');
+    } else {
+      return $('#footer').addClass('twitter');
+    }
+  };
+
+  switch_left = function() {
+    if ($('#footer').hasClass('twitter')) {
+      return $('#footer').removeClass('twitter');
+    } else {
+      return $('#footer').addClass('tumblr');
+    }
+  };
+
+  $(function() {
+    $(window).on('smartresize', on_resize);
+    Modernizr.load({
+      test: Modernizr.history,
+      yep: '/media/js/jquery.pjax.js',
+      complete: function() {
+        return $("nav a:not([href*=':'])").pjax('#main');
+      }
+    });
+    $('a.shownav').click(function(event) {
+      event.preventDefault();
+      return $('#sitenav').toggleClass('vis');
+    });
+    $('.posts-pager').click(function() {
+      return $('#footer').removeClass('tumblr twitter');
+    });
+    $('.tumblr-pager').click(function() {
+      return $('#footer').removeClass('twitter').addClass('tumblr');
+    });
+    return $('.twitter-pager').click(function() {
+      return $('#footer').removeClass('tumblr').addClass('twitter');
+    });
+  });
+
+  $(document).load(function() {
+    return $('img').baselineAlign();
+  });
+
+}).call(this);
