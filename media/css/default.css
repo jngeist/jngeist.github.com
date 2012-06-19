@@ -485,7 +485,7 @@ span.category,
 .post_header h2,
 .sitenav,
 .me,
-#now_playing em {
+#now_playing li em {
   font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
 }
 .sans,
@@ -524,7 +524,7 @@ span.category {
 article section>p:first-child::first-letter,
 dt,
 .me,
-#now_playing em {
+#now_playing li em {
   color: #800000;
 }
 .shadowed,
