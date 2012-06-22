@@ -5,7 +5,7 @@
             return this.each(function() {
                 var width;
                 width = $(this).width();
-                return $(this).find('h1').each(function() {
+                return $(this).each(function() {
                     var innerwidth, lineheight, newsize, scale, size, wrapper;
                     wrapper = $(this).find('.embiggened');
                     if (!wrapper.length) {

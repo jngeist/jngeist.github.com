@@ -179,7 +179,7 @@ $.fn.smartresize = function( fn ) {
             return this.each(function() {
                 var width;
                 width = $(this).width();
-                return $(this).find('h1').each(function() {
+                return $(this).each(function() {
                     var innerwidth, lineheight, newsize, scale, size, wrapper;
                     wrapper = $(this).find('.embiggened');
                     if (!wrapper.length) {
@@ -232,7 +232,7 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
 
   on_resize = function() {
     var asideheight, logoheight;
-    $('header:not(article *), #siteheader>hgroup').embiggen();
+    $('header:not(article *) h1, #siteheader h1').embiggen();
     if ($('body#index').length) {
       if ($('.sidebar').css('display') === 'none') {
         return $('aside#about').css({
@@ -289,6 +289,7 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
   });
 
   $(document).load(function() {
+    $('header:not(article *) h1, #siteheader h1').embiggen();
     return $('img').baselineAlign();
   });
 

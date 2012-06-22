@@ -842,10 +842,6 @@ dl.category dt:after {
   word-wrap: no-wrap;
   font-size: 1.6rem;
 }
-#index #about p {
-  font-size: 1.2em;
-  line-height: 1.6rem;
-}
 .content> p:last-child:after,
 .content> p:last-of-type:after {
   content: '';
@@ -878,7 +874,7 @@ dl.category dt:after {
   float: left;
   width: 100%;
   clear: left;
-  padding: 1.6rem;
+  padding: 1.6rem 0.4rem;
 }
 .foot .media {
   display: block;
@@ -1106,6 +1102,9 @@ body.notfound #main {
     width: 100%;
     overflow: visible;
   }
+  #siteheader h1 {
+    font-size: 2rem;
+  }
   #siteheader h2 {
     display: none;
   }
@@ -1199,26 +1198,12 @@ body.notfound #main {
     margin-left: 0;
   }
 }
-/*        .tumblr
-            margin-right -200%
-            margin-left 0
-        .tweets
-            margin-left -100%
-        .posts
-            margin-left 0
-        &.tumblr
-            .tumblr
-                margin-right 0
-            .posts
-                margin-left -100%
-        &.twitter
-            .tweets
-                margin-left 0
-            .posts
-                margin-right -200%
-            .tumblr
-                margin-left 100%
-*/
+@media all and (min-width: 36em) {
+  #index #about p {
+    font-size: 1.2em;
+    line-height: 1.6rem;
+  }
+}
 @media all and (min-width: 55em) {
   body,
   #siteheader,
