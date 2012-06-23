@@ -633,6 +633,9 @@ a:visited {
 a:hover {
   color: #b90000;
 }
+a:focus {
+  outline: none;
+}
 hgroup {
   width: 100%;
 }
