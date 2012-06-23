@@ -65,16 +65,16 @@
     <article class='post'>
         <header class='post_header'>
         <hgroup>
-            <h2><a href="/blog/atom.xml"><p><span class="caps">BASIC</span> blog full text&nbsp;feed</p></a></h2>
+            <h2><a href="/blog/atom.xml">BASIC blog full text feed</a></h2>
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a rumination on 
+            Being a discourse in 
         </span>
     
-                
+        
                     <span class='flavor' data-key='Date'>
-             set forth on
+             submitted on
         </span>
     
         <time pubdate="pubdate" datetime=""> 

@@ -65,14 +65,14 @@
     <article class='post'>
         <header class='post_header'>
         <hgroup>
-            <h2><a href="/blog/excerpts.xml"><p><span class="caps">BASIC</span> blog excerpts&nbsp;feed</p></a></h2>
+            <h2><a href="/blog/excerpts.xml">BASIC blog excerpts feed</a></h2>
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a brief treatise on 
+            Being a rumination on 
         </span>
     
-                
+        
                     <span class='flavor' data-key='Date'>
              delivered on
         </span>
