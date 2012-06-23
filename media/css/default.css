@@ -877,7 +877,7 @@ dl.category dt:after {
   float: left;
   width: 100%;
   clear: left;
-  padding: 1.6rem 0.4rem;
+  padding-top: 1.6rem;
 }
 .foot .media {
   display: block;
@@ -1185,7 +1185,7 @@ body.notfound #main {
     width: 100%;
   }
   #footer .foot {
-    width: 33%;
+    width: 33.333333333%;
     float: left;
     clear: none;
   }
