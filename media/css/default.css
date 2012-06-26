@@ -470,67 +470,6 @@ table {
       font-weight: bold;
       font-style: italic;
   }
-.display,
-.dsc,
-.flourish,
-time,
-h1,
-h2,
-article section>p:first-child::first-letter,
-dt,
-a.category,
-span.category,
-a.category,
-span.category,
-.post_header h2,
-.sitenav,
-.me,
-#now_playing li em {
-  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
-}
-.sans,
-body {
-  font-family: "Colaborate", "Verdana", sans;
-}
-.serif,
-.flavor,
-.post_header h3,
-.post_header .or:after,
-.siteheader h2,
-.foot h2 {
-  font-family: "Alegreya", Georgia, "Times New Roman";
-}
-.mono,
-code,
-pre {
-  font-family: "Inconsolata", "Courier New";
-}
-.sc,
-.dsc,
-a.category,
-span.category,
-a.category,
-span.category,
-.me {
-  font-variant: small-caps;
-}
-.dsc,
-a.category,
-span.category {
-  font-size: 1.2em;
-  letter-spacing: 1px;
-}
-.flourish,
-article section>p:first-child::first-letter,
-dt,
-.me,
-#now_playing li em {
-  color: #800000;
-}
-.shadowed,
-article section>p:first-child::first-letter {
-  text-shadow: 3px 3px 1px #90a3b1;
-}
 .nomargins,
 h1,
 h2,
@@ -598,6 +537,7 @@ html {
 }
 body {
   color: #000;
+  font-family: "Colaborate", "Verdana", sans;
   background: url("../images/natural_paper.png") repeat;
   padding: 24px;
   margin: 0 auto;
@@ -605,6 +545,7 @@ body {
   box-shadow: 0 0 8px 2px rgba(0,0,0,0.6);
 }
 time {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
   display: inline-block;
   text-indent: 0px;
 }
@@ -641,11 +582,13 @@ hgroup {
 }
 h1,
 h2 {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
   font-weight: bold;
   text-transform: uppercase;
 }
 code,
 pre {
+  font-family: "Inconsolata", "Courier New";
   background: #fff;
   overflow: auto;
   whitespace: pre-line;
@@ -658,7 +601,7 @@ p {
 }
 p+p {
   margin: 0 auto;
-  text-indent: 2em;
+  text-indent: 1.5em;
 }
 p+p::first-letter,
 p+p::first-line {
@@ -712,6 +655,9 @@ article header:after {
   position: relative;
 }
 article section>p:first-child::first-letter {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
+  color: #800000;
+  text-shadow: 3px 3px 1px #90a3b1;
   display: block;
   float: left;
   text-transform: uppercase;
@@ -723,6 +669,8 @@ article section>p:first-child::first-line {
   font-variant: small-caps;
 }
 dt {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
+  color: #800000;
   color: #800000;
   font-weight: bold;
   font-size: 85%;
@@ -747,6 +695,13 @@ dd:after {
   width: 100%;
   position: relative;
 }
+a.category,
+span.category {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
 dl.category dt {
   font-size: 140%;
 }
@@ -755,6 +710,7 @@ dl.category dt:after {
 }
 .flavor,
 .post_header .or:after {
+  font-family: "Alegreya", Georgia, "Times New Roman";
   color: #00283e;
   font-size: 0.8rem;
   opacity: 0.8;
@@ -767,10 +723,12 @@ dl.category dt:after {
   text-indent: -2em;
 }
 .post_header h2 {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
   text-transform: none;
   margin-bottom: 0;
 }
 .post_header h3 {
+  font-family: "Alegreya", Georgia, "Times New Roman";
   font-style: italic;
   margin-top: 0;
   margin-bottom: 0;
@@ -780,6 +738,7 @@ dl.category dt:after {
   font-weight: normal;
 }
 .sitenav {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
   text-transform: uppercase;
   padding-left: 0;
   margin: 0 auto;
@@ -823,6 +782,7 @@ dl.category dt:after {
 }
 .siteheader h2 {
   text-transform: none;
+  font-family: "Alegreya", Georgia, "Times New Roman";
   font-weight: normal;
   font-style: italic;
 }
@@ -841,9 +801,16 @@ dl.category dt:after {
   display: none;
 }
 .me {
+  font-variant: small-caps;
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
+  color: #800000;
   display: inline-block;
   word-wrap: no-wrap;
   font-size: 1.6rem;
+}
+#now_playing li em {
+  font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
+  color: #800000;
 }
 .content> p:last-child:after,
 .content> p:last-of-type:after {
@@ -890,6 +857,7 @@ dl.category dt:after {
 .foot h2 {
   color: #00283e;
   margin-bottom: 1.6rem;
+  font-family: "Alegreya", Georgia, "Times New Roman";
   text-align: center;
   font-style: italic;
   text-transform: lowercase;
@@ -1041,6 +1009,28 @@ dl.category dt:after {
   background-position: center;
   background-image: url("/media/images/twitter-active.png");
 }
+.pulled_quote {
+  box-sizing: border-box;
+  color: #1e6197;
+  max-width: 18em;
+  margin: 0 auto;
+}
+.pulled_quote:before,
+.pulled_quote:after {
+  content: "";
+  border-top: 0.125rem solid #00283e;
+  height: 0px;
+  margin: 0.7375rem auto;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.pulled_quote p {
+  text-indent: 0;
+  font-family: "Alegreya", Georgia, "Times New Roman";
+  font-size: 1.2em;
+  line-height: 1.6rem;
+}
 .limit,
 #main,
 body>div,
@@ -1058,6 +1048,10 @@ body>aside {
 }
 #siteheader {
   position: relative;
+}
+#siteheader h1 {
+  line-height: 4.800000000000001rem;
+  font-size: 4.800000000000001rem;
 }
 #siteheader h2 {
   margin-top: -0.6400000000000001rem;
@@ -1092,10 +1086,22 @@ body>aside {
 body.notfound #main {
   text-align: center;
 }
+@media all and (max-width: 24em) {
+  #siteheader h1 {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+}
+@media all and (min-width: 24em) and (max-width: 36em) {
+  #siteheader h1 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}
 @media all and (max-width: 36em) {
   body {
     margin: 0 1rem;
-    padding-top: 1.6rem;
+    padding: 1.6rem 0.5rem;
     position: relative;
     min-height: 100%;
   }
@@ -1106,7 +1112,8 @@ body.notfound #main {
     overflow: visible;
   }
   #siteheader h1 {
-    font-size: 2rem;
+    font-size: 3.2rem;
+    line-height: 3.2rem;
   }
   #siteheader h2 {
     display: none;
@@ -1207,7 +1214,7 @@ body.notfound #main {
     line-height: 1.6rem;
   }
 }
-@media all and (min-width: 55em) {
+@media all and (min-width: 62em) {
   body,
   #siteheader,
   #sitenav {
@@ -1238,18 +1245,21 @@ body.notfound #main {
   body.post article {
     overflow: visible;
     float: right;
-    max-width: 32em;
+    max-width: 34em;
   }
-  body.post article header {
+  body.post article header,
+  body.post article .pulled_quote {
+    padding: 0;
+    float: left;
     width: 17em;
     margin-left: -18em;
     margin-right: 1em;
-    float: left;
   }
   .foot {
     clear: none;
     max-width: 33%;
     width: 17em;
+    padding: 12px;
   }
   .pager {
     display: none;
