@@ -1,3 +1,3 @@
 RewriteEngine On
 Options FollowSymLinks
-RewriteRule ^/\d+/\d+/(.*)/?$ /posts/$1/
+RewriteRule ^/\d+/\d+/(.*)/?$ /posts/$1 [R,L]

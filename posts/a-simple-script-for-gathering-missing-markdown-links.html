@@ -3,7 +3,7 @@
     <head>
                 <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="" />
-        <title>Two of my favorite things.</title>
+        <title>A simple script for gathering missing Markdown links</title>
         <meta name="description" content="" />
         <meta name="author" content="J. Nicholas Geist" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
             enables HTML5 elements & feature detects -->
             <script src="/media/js/libs/modernizr.custom.min.js"></script>
                     </head>
-    <body id="two-of-my-favorite-things" class="post ">
+    <body id="a-simple-script-for-gathering-missing-markdown-links" class="post ">
         
 <header id='siteheader' class='siteheader'>
     <hgroup>
@@ -65,29 +65,39 @@
     <article class='post'>
         <header class='post_header'>
         <hgroup>
-            <h2><a href="/posts/two-of-my-favorite-things">Two of my favorite things.</a></h2>
+            <h2><a href="/posts/a-simple-script-for-gathering-missing-markdown-links">A simple script for gathering missing Markdown links</a></h2>
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a brief treatise on 
+            Being a rumination on 
         </span>
     
-        <a href='/categories/gaming' class='category'>gaming</a> <span class='flavor vis'>and </span><a href='/categories/geek' class='category'>geekery</a>
+        <a href='/categories/code' class='category'>code</a>
                     <span class='flavor' data-key='Date'>
-             submitted on
+             set forth on
         </span>
     
-        <time pubdate="pubdate" datetime="2010-09-14"> 
-            September 14, 2010
+        <time pubdate="pubdate" datetime="2012-07-05"> 
+            July 5, 2012
         </time> 
     </span>
 
     </header>
 
     <section class='content'>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/NWa1eiHPhKw" frameborder="0" allowfullscreen></iframe>
+        <p>As I was writing something else<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>, I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&#8217;m pretty much the opposite of <a href="http://brettterpstra.com">Brett Terpstra</a> when I write; his awesome <a href="http://brettterpstra.com/project/markdown-service-tools/">Markdown Service Tools</a> has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&#8217;s a lot easier to write first and find links later, as a lot of the time I&#8217;m not linking to research I&#8217;m doing now but research I&#8217;ve done in the past. So usually what I&#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&#8217;ve just put <code>[Brett Terpstra][TERPstra]</code>), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&#8217;ve forgotten to fill&nbsp;in.</p>
+<p>So I just threw this&nbsp;together:</p>
+<script src="https://gist.github.com/3057158.js?file=gather_missing_md_links.py"></script>
 
-<p>Via <a href="http://twitter.com/killscreenmag">@killscreenmag</a> on Twitter.  (Have I told you lately how much I &lt;3 <a href="http://www.killscreenmagazine.com" target="_blank">Kill Screen</a>?)</p>    </section>
+<p>Essentially, it looks at a given file, identifies all the Markdown link references contained therein, and appends the reference marker at the end, waiting for the <span class="caps">URL</span>. So, running it on this file, I&#8217;ve got an eternally convenient <code>[TERPstra]:</code> reminding me to enter the <span class="caps">URL</span> at the bottom. I&#8217;m sure I&#8217;ll futz with this, and I&#8217;ll update this post when I do. (Immediate to-do: set it up to accept input from <span class="caps">STDIN</span>, so that I can use it as a filter in Sublime Text, and/or integrate it into my Markdown build&nbsp;system.)</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>I swear, it&#8217;s an upcoming post about how easily distracted I am.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>    </section>
         <footer>
                     </footer>
 

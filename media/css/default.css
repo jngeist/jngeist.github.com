@@ -589,12 +589,15 @@ h2 {
 code,
 pre {
   font-family: "Inconsolata", "Courier New";
+  font-size: 0.7em;
   background: #fff;
   overflow: auto;
   whitespace: pre-line;
   word-wrap: break-word;
   text-transform: none !important;
   font-variant: normal !important;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 p {
   margin-bottom: 0;
@@ -1030,6 +1033,12 @@ dl.category dt:after {
   font-family: "Alegreya", Georgia, "Times New Roman";
   font-size: 1.2em;
   line-height: 1.6rem;
+}
+.gist {
+  box-sizing: border-box;
+  border: 1px solid #00283e;
+  padding: 0.5em;
+  margin: 1.6rem 0;
 }
 .limit,
 #main,
