@@ -671,6 +671,11 @@ article section>p:first-child::first-line {
   line-height: 1.6rem;
   font-variant: small-caps;
 }
+article h2 {
+  margin-top: 1.6rem;
+  text-transform: none;
+  color: #00283e;
+}
 dt {
   font-family: "League Gothic", "Helvetica Neue", "Helvetica", sans;
   color: #800000;

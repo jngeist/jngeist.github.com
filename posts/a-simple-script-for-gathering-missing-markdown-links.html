@@ -69,12 +69,12 @@
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a rumination on 
+            Being a discourse in 
         </span>
     
         <a href='/categories/code' class='category'>code</a>
                     <span class='flavor' data-key='Date'>
-             set forth on
+             delivered on
         </span>
     
         <time pubdate="pubdate" datetime="2012-07-05"> 
@@ -90,6 +90,8 @@
 <script src="https://gist.github.com/3057158.js?file=gather_missing_md_links.py"></script>
 
 <p>Essentially, it looks at a given file, identifies all the Markdown link references contained therein, and appends the reference marker at the end, waiting for the <span class="caps">URL</span>. So, running it on this file, I&#8217;ve got an eternally convenient <code>[TERPstra]:</code> reminding me to enter the <span class="caps">URL</span> at the bottom. I&#8217;m sure I&#8217;ll futz with this, and I&#8217;ll update this post when I do. (Immediate to-do: set it up to accept input from <span class="caps">STDIN</span>, so that I can use it as a filter in Sublime Text, and/or integrate it into my Markdown build&nbsp;system.)</p>
+<h2>Update: July 8,&nbsp;2012</h2>
+<p>A simpler way to do this occurred to me almost immediately: make this a <a href="http://docs.sublimetext.info/en/latest/extensibility/commands.html">Sublime Text 2 Command</a>. Since I&#8217;m already using Terpstra&#8217;s budding <a href="https://github.com/ttscoff/MarkdownEditing">MarkdownEditing package</a>, I just <a href="https://github.com/jngeist/MarkdownEditing.git">forked</a> his and added the <a href="https://github.com/jngeist/MarkdownEditing/blob/master/gather_missing_links.py">relevant command</a>. Now, I can just hit &#8997;&#8984;G, and all my markers are collected for&nbsp;me.</p>
 <div class="footnote">
 <hr />
 <ol>
