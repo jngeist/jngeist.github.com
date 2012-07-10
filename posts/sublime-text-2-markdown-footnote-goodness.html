@@ -1,0 +1,130 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+                <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Sublime Text 2 Markdown Footnote Goodness</title>
+        <meta name="content-type" content="text/html" />
+        <meta name="description" content="" />
+        <meta name="author" content="J. Nicholas Geist" />
+        <meta name="viewport" content="width=device-width" />
+
+                    <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+                    <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
+        
+                    <!-- All JavaScript at the bottom, except for Modernizr which
+            enables HTML5 elements & feature detects -->
+            <script src="/media/js/libs/modernizr.custom.min.js"></script>
+                    </head>
+    <body id="sublime-text-2-markdown-footnote-goodness" class="post ">
+        
+<header id='siteheader' class='siteheader'>
+    <hgroup>
+        <h1><a href='http://geekabouttown.com/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
+        <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
+    </hgroup>
+</header>
+<nav id='sitenav'>
+    <ul class='sitenav'>
+                <li>
+            <a title="Home Page"
+                
+                href="/">
+                Home
+            </a>
+        </li>        <li>
+            <a title="Blog"
+                
+                href="/blog">
+                Blog
+            </a>
+        </li>        <li>
+            <a title="Post Categories"
+                
+                href="/categories">
+                Categories
+            </a>
+        </li>        <li>
+            <a title="About"
+                
+                href="/about">
+                About
+            </a>
+        </li>        <li>
+            <a title="Now Playing"
+                
+                href="/now_playing">
+                Now Playing
+            </a>
+        </li>    </ul>
+    <a class='shownav' href="#sitenav">Navigation</a>
+</nav>
+
+<div id='main'>
+    <article class='post'>
+        <header class='post_header'>
+        <hgroup>
+            <h2><a href="/posts/sublime-text-2-markdown-footnote-goodness">Sublime Text 2 Markdown Footnote Goodness</a></h2>
+                    </hgroup>
+         
+    <span class="postinfo">             <span class='flavor' data-key='Category'>
+            Being offered with due regard to 
+        </span>
+    
+        <a href='/categories/code' class='category'>code</a>
+                    <span class='flavor' data-key='Date'>
+             furnished on
+        </span>
+    
+        <time pubdate="pubdate" datetime="2012-07-09"> 
+            July 9, 2012
+        </time> 
+    </span>
+
+    </header>
+
+    <section class='content'>
+        <p>As I mentioned <a href="/posts/a-simple-script-for-gathering-missing-markdown-links">previously</a>, I&#8217;ve converted the little python link gathering doodad I did into a command for <a href="http://sublimetext.com">Sublime Text 2</a>. But, because I am an <a href="/posts/sometimes-comics-are-essays-too">aggressive</a> <a href="/posts/feminism-marriage-proposals-comics">footnoter</a>, I decided I wanted some convenience functions for footnotes.<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> And so I made some.&nbsp;Hooray.</p>
+<p>The results are up at <a href="https://github.com/jngeist/MarkdownEditing">my fork of the MarkdownEditing Package</a>. The furnished commands are pretty&nbsp;simple.</p>
+<ul>
+<li><em>Insert footnote.</em> Press <code>^6</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to insert a footnote after the current word.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></li>
+<li><em>Gather missing footnotes.</em> <code>&#8984;&#8997;&#8679;G</code> will look for footnote markers that aren&#8217;t currently defined and add markers at the bottom of your document. Not so useful by itself, I admit, but useful in conjunction with the&nbsp;next:</li>
+<li><em>Switch to/from footnote definition.</em> <code>&#8984;^6</code> will switch between the text of a footnote and its references. So: if my cursor is in a footnote, and I press <code>&#8984;^6</code>, <span class="caps">ST2</span> will select the references to the footnote in the body text. If my cursor is in a body paragraph, <code>&#8984;^6</code> will identify the next footnote reference and take me to its&nbsp;text.</li>
+</ul>
+<p>Between the three of these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, <code>^6</code> will insert a new footnote, thusly.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> Easy as can&nbsp;be.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>6 because <code>&#8679;6</code> is ^, the <a href="http://fletcherpenney.net/multimarkdown/">Multimarkdown</a> syntax for a footnote. &#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>This works by scanning the current file for Multimarkdown footnote markers, identifying those that are numeric, and providing the next integer&#8212;so you shouldn&#8217;t have any marker collisions.&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>And when I&#8217;m done writing the footnote text, <code>&#8984;^6</code> will take me back to the top. &#160;<a href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Obviously&#8212;well, I think obviously&#8212;<a href="http://daringfireball.net/projects/markdown/">core Markdown</a> doesn&#8217;t provide syntax for footnotes, and so this will only work with a flavor of Markdown that does.&#160;<a href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>    </section>
+        <footer>
+                    </footer>
+
+</article>
+</div>
+
+
+                    <!-- Javascript at the bottom for fast page loading -->
+                            <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script>window.jQuery || document.write('<script src="js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>
+                                                    <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
+    
+                        <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+            <![endif]-->
+            </body>
+</html>

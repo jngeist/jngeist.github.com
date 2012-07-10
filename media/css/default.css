@@ -589,7 +589,7 @@ h2 {
 code,
 pre {
   font-family: "Inconsolata", "Courier New";
-  font-size: 0.7em;
+  font-size: 0.85em;
   background: #fff;
   overflow: auto;
   whitespace: pre-line;
@@ -1044,6 +1044,9 @@ dl.category dt:after {
   border: 1px solid #00283e;
   padding: 0.5em;
   margin: 1.6rem 0;
+}
+.footnote p {
+  font-size: 0.75em;
 }
 .limit,
 #main,

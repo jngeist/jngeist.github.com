@@ -2,11 +2,12 @@
     <html lang="en">
     <head>
                 <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="" />
-        <title>BASIC blog excerpts feed</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Geek About Town - Excerpts</title>
+        <meta name="content-type" content="text/html" />
         <meta name="description" content="" />
         <meta name="author" content="J. Nicholas Geist" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width" />
 
                     <link rel="shortcut icon" href="/favicon.ico" />
             <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -65,16 +66,16 @@
     <article class='post'>
         <header class='post_header'>
         <hgroup>
-            <h2><a href="/blog/excerpts.xml">BASIC blog excerpts feed</a></h2>
+            <h2><a href="/blog/excerpts.xml">Geek About Town - Excerpts</a></h2>
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a consideration of 
+            Being a rumination on 
         </span>
     
         
                     <span class='flavor' data-key='Date'>
-             submitted on
+             offered on
         </span>
     
         <time pubdate="pubdate" datetime=""> 
