@@ -70,12 +70,12 @@
                     </hgroup>
          
     <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being offered with due regard to 
+            Being a consideration of 
         </span>
     
         <a href='/categories/code' class='category'>code</a>
                     <span class='flavor' data-key='Date'>
-             furnished on
+             offered on
         </span>
     
         <time pubdate="pubdate" datetime="2012-07-09"> 
@@ -86,28 +86,32 @@
     </header>
 
     <section class='content'>
-        <p>As I mentioned <a href="/posts/a-simple-script-for-gathering-missing-markdown-links">previously</a>, I&#8217;ve converted the little python link gathering doodad I did into a command for <a href="http://sublimetext.com">Sublime Text 2</a>. But, because I am an <a href="/posts/sometimes-comics-are-essays-too">aggressive</a> <a href="/posts/feminism-marriage-proposals-comics">footnoter</a>, I decided I wanted some convenience functions for footnotes.<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> And so I made some.&nbsp;Hooray.</p>
+        <p>As I mentioned <a href="/posts/a-simple-script-for-gathering-missing-markdown-links">previously</a>, I&#8217;ve converted the little python link gathering doodad I did into a command for <a href="http://sublimetext.com">Sublime Text 2</a>. But, because I am an <a href="/posts/sometimes-comics-are-essays-too">aggressive</a> <a href="/posts/feminism-marriage-proposals-comics">footnoter</a>, I decided I wanted some convenience functions for footnotes.<sup id="fnref:4"><a href="#fn:4" rel="footnote">1</a></sup> And so I made some.&nbsp;Hooray.</p>
 <p>The results are up at <a href="https://github.com/jngeist/MarkdownEditing">my fork of the MarkdownEditing Package</a>. The furnished commands are pretty&nbsp;simple.</p>
 <ul>
-<li><em>Insert footnote.</em> Press <code>^6</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup> to insert a footnote after the current word.<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></li>
+<li><em>Insert footnote.</em> Press <code>^6</code><sup id="fnref:1"><a href="#fn:1" rel="footnote">2</a></sup> to insert a footnote after the current word.<sup id="fnref:2"><a href="#fn:2" rel="footnote">3</a></sup></li>
 <li><em>Gather missing footnotes.</em> <code>&#8984;&#8997;&#8679;G</code> will look for footnote markers that aren&#8217;t currently defined and add markers at the bottom of your document. Not so useful by itself, I admit, but useful in conjunction with the&nbsp;next:</li>
 <li><em>Switch to/from footnote definition.</em> <code>&#8984;^6</code> will switch between the text of a footnote and its references. So: if my cursor is in a footnote, and I press <code>&#8984;^6</code>, <span class="caps">ST2</span> will select the references to the footnote in the body text. If my cursor is in a body paragraph, <code>&#8984;^6</code> will identify the next footnote reference and take me to its&nbsp;text.</li>
+<li><em>Sort footnotes.</em> If you saw this post yesterday, you saw that my footnotes were out of order. Using <code>^6</code> <em>before</em> an existing footnote will result in the notes being added out of order, and at least in the flavor of Markdown I&#8217;m using,<sup id="fnref:5"><a href="#fn:5" rel="footnote">4</a></sup> this results in sorting oddities. (So: in the previous version of the post, the reference to footnote 4 came before footnote 1, and but footnote 1 came first in the <code>ol</code> at the bottom of the page.) Now, <code>&#8984;^S</code> will sort the footnotes in the order in which they appear in the document. This affects the sorting of the <code>ol</code>, which in turn corrects the problem with marker&nbsp;ordering.</li>
 </ul>
-<p>Between the three of these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, <code>^6</code> will insert a new footnote, thusly.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup> Easy as can&nbsp;be.</p>
+<p>Between the three of these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, <code>^6</code> will insert a new footnote, thusly.<sup id="fnref:3"><a href="#fn:3" rel="footnote">5</a></sup> Easy as can&nbsp;be.</p>
 <div class="footnote">
 <hr />
 <ol>
+<li id="fn:4">
+<p>Obviously&#8212;well, I think obviously&#8212;<a href="http://daringfireball.net/projects/markdown/">core Markdown</a> doesn&#8217;t provide syntax for footnotes, and so this will only work with a flavor of Markdown that does.&#160;<a href="#fnref:4" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
 <li id="fn:1">
-<p>6 because <code>&#8679;6</code> is ^, the <a href="http://fletcherpenney.net/multimarkdown/">Multimarkdown</a> syntax for a footnote. &#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>6 because <code>&#8679;6</code> is <code>^</code>, the <a href="http://fletcherpenney.net/multimarkdown/">Multimarkdown</a> syntax for a footnote.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p>This works by scanning the current file for Multimarkdown footnote markers, identifying those that are numeric, and providing the next integer&#8212;so you shouldn&#8217;t have any marker collisions.&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>This works by scanning the current file for Multimarkdown footnote markers, identifying those that are numeric, and providing the next integer&#8212;so you shouldn&#8217;t have any marker collisions.&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p><a href="http://freewisdom.org/projects/python-markdown/">Python Markdown</a> via <a href="http://hyde.github.com/">Hyde</a>, which, let&#8217;s be frank&#8212;who knows what madness lies within.&#160;<a href="#fnref:5" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:3">
-<p>And when I&#8217;m done writing the footnote text, <code>&#8984;^6</code> will take me back to the top. &#160;<a href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
-</li>
-<li id="fn:4">
-<p>Obviously&#8212;well, I think obviously&#8212;<a href="http://daringfireball.net/projects/markdown/">core Markdown</a> doesn&#8217;t provide syntax for footnotes, and so this will only work with a flavor of Markdown that does.&#160;<a href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>And when I&#8217;m done writing the footnote text, <code>&#8984;^6</code> will take me back to the top.&#160;<a href="#fnref:3" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>    </section>
