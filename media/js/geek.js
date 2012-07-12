@@ -278,7 +278,7 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
       test: Modernizr.history,
       yep: '/media/js/jquery.pjax.js',
       complete: function() {
-        return $("nav a:not([href*=':'])").pjax('#main');
+        return $('a:not([href*=":"])').pjax('#main');
       }
     });
     $('a.shownav').click(function(event) {
