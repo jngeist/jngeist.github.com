@@ -175,26 +175,59 @@ $.fn.smartresize = function( fn ) {
 })( jQuery );;(function(window, $)
 {
     var Embiggen = {
+        cssToInt: function(val) {
+            return parseInt(val.replace('px', ''), 10);
+        },
+        cssToFloat: function(val) {
+            return parseFloat(val.replace('px', ''), 10);
+        },
+        getCharacterCount: function(elem) {
+            return $(elem).find('span.embiggened').text().length;
+        },
+        getWordCount: function(elem) {
+            return $(elem).find('span.embiggened').text().split(/\s/).length;
+        },
+        letterSpacingOffset: function(elem) {
+            var ls;
+            ls = elem.css('letter-spacing');
+            return Embiggen.cssToFloat(ls) * Embiggen.getCharacterCount(elem);
+        },
+        wordSpacingOffset: function(elem) {
+            var ws;
+            ws = elem.css('word-spacing');
+            return Embiggen.cssToFloat(ws) * Embiggen.getWordCount(elem);
+        },
+        spacingOffset: function(elem) {
+            var ls;
+            elem = $(elem);
+            ls = elem.css('letter-spacing');
+            if (ls !== 'normal') {
+                return Embiggen.letterSpacingOffset(elem);
+            } else {
+                return Embiggen.wordSpacingOffset(elem);
+            }
+        },
         pluginMethod: function() {
             return this.each(function() {
                 var width;
                 width = $(this).width();
                 return $(this).each(function() {
-                    var innerwidth, lineheight, newsize, scale, size, wrapper;
+                    var innerwidth, lineheight, newsize, scale, size, wrapper, offset;
                     wrapper = $(this).find('.embiggened');
                     if (!wrapper.length) {
                         $(this).contents().wrap('<span class="embiggened" style="display: inline" />');
                         wrapper = $(this).find('.embiggened');
                     }
-                    size = parseInt(wrapper.css('font-size').replace('px', ''));
-                    lineheight = parseInt(wrapper.css('line-height').replace('px', ''));
-                    innerwidth = wrapper.width();
+                    size = Embiggen.cssToInt(wrapper.css('font-size'));
+                    lineheight = Embiggen.cssToInt(wrapper.css('line-height'));
+                    innerwidth = wrapper.width() - offset;
+
                     scale = (width / innerwidth).toPrecision(2);
                     newsize = Math.floor(size * scale);
                     if (newsize > lineheight) {
                         newsize = lineheight;
                     }
-                    return wrapper.css('font-size', newsize);
+                    wrapper.css('font-size', newsize);
                 });
             });
         }
@@ -223,11 +256,19 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
   var makeoverlay, on_resize, pull_quotes, removeoverlay, switch_left, switch_right;
 
   makeoverlay = function() {
-    return $(this).parents('li').addClass('overlay');
+    $(this).parents('li').addClass('overlay');
+    return $(this).css({
+      'margin-left': $(this).width() / -2,
+      'margin-top': $(this).height() / -2
+    }).unbind('click').click(removeoverlay);
   };
 
   removeoverlay = function() {
-    return $(this).parents('li').removeClass('overlay');
+    $(this).parents('li').removeClass('overlay');
+    return $(this).css({
+      'margin-left': '5%',
+      'margin-top': 0
+    }).unbind('click').click(makeoverlay);
   };
 
   on_resize = function() {
@@ -285,6 +326,9 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
       event.preventDefault();
       return $('#sitenav').toggleClass('vis');
     });
+    $('#sitenav a:not(.shownav)').click(function() {
+      return $('#sitenav').removeClass('vis');
+    });
     $('.posts-pager').click(function() {
       return $('#footer').removeClass('tumblr twitter');
     });
@@ -295,11 +339,13 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
       return $('#footer').removeClass('tumblr').addClass('twitter');
     });
     $('header:not(article *) h1, #siteheader h1').embiggen();
+    $('.foot img').click(makeoverlay);
     return pull_quotes();
   });
 
   $(document).load(function() {
-    return $('img').baselineAlign();
+    $('img').baselineAlign();
+    return on_resize();
   });
 
 }).call(this);

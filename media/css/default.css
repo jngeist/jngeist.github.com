@@ -956,13 +956,21 @@ dl.category dt:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,40,62,0.95);
+  z-index: 9999;
+}
+.overlay * {
+  display: none;
 }
 .overlay img {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: auto;
   height: auto;
-  margin: 25% auto;
+  max-height: 90%;
+  max-width: 90%;
 }
 .overlay:after {
   display: none !important;
@@ -1070,12 +1078,17 @@ dl.category dt:after {
 .footnote p {
   font-size: 0.75em;
 }
-#main {
-  transition: opacity 0.5s ease;
-  opacity: 1;
+.older {
+  float: left;
 }
-#main.loading {
-  opacity: 0;
+.older:before {
+  content: '\00ab\00a0';
+}
+.newer {
+  float: right;
+}
+.newer:after {
+  content: '\00a0\00bb';
 }
 .limit,
 #main,
