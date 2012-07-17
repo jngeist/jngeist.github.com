@@ -1,3 +1,5 @@
 RewriteEngine On
 Options FollowSymLinks
-RewriteRule ^/\d+/\d+/(.*)/?$ /posts/$1 [R,L]
+RewriteRule ^/\d+/\d+/(.*)/?$ /posts/$1/ [L,R=301]
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]

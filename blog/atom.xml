@@ -1,118 +1,584 @@
-<!doctype html>
-    <html lang="en">
-    <head>
-                <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Geek About Town - Full Posts</title>
-        <meta name="content-type" content="text/html" />
-        <meta name="description" content="" />
-        <meta name="author" content="J. Nicholas Geist" />
-        <meta name="viewport" content="width=device-width" />
-
-                    <link rel="shortcut icon" href="/favicon.ico" />
-            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
-                    <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
-        
-                    <!-- All JavaScript at the bottom, except for Modernizr which
-            enables HTML5 elements & feature detects -->
-            <script src="/media/js/libs/modernizr.custom.min.js"></script>
-                    </head>
-    <body id="atom" class="post ">
-        
-<header id='siteheader' class='siteheader'>
-    <hgroup>
-        <h1><a href='/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
-        <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
-    </hgroup>
-</header>
-<nav id='sitenav'>
-    <ul class='sitenav'>
-                <li>
-            <a title="Home Page"
-                
-                href="/">
-                Home
-            </a>
-        </li>        <li>
-            <a title="Blog"
-                class="active"
-                href="/blog">
-                Blog
-            </a>
-        </li>        <li>
-            <a title="Post Categories"
-                
-                href="/categories">
-                Categories
-            </a>
-        </li>        <li>
-            <a title="About"
-                
-                href="/about">
-                About
-            </a>
-        </li>        <li>
-            <a title="Now Playing"
-                
-                href="/now_playing">
-                Now Playing
-            </a>
-        </li>    </ul>
-    <a class='shownav' href="#sitenav">Navigation</a>
-</nav>
-
-<div id='main'>
-    <article class='post'>
-        <header class='post_header'>
-        <hgroup>
-            <h2><a href="/blog/atom.xml">Geek About Town - Full Posts</a></h2>
-                    </hgroup>
-         
-    <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being offered with due regard to 
-        </span>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Geek About Town - Full Posts    </title>
+        <link href="/blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
     
         
-                    <span class='flavor' data-key='Date'>
-             delivered on
-        </span>
-    
-        <time pubdate="pubdate" datetime=""> 
+    <updated>2012-07-17T11:28:17Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">Things I Suck At</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/things-i-suck-at"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/things-i-suck-at</id>
             
-        </time> 
-    </span>
+            <content type="html">
+                                &lt;p&gt;I &lt;a href=&#34;/categories/geek&#34;&gt;fiddle around with a lot of things.&lt;/a&gt;  It&amp;#8217;s in my nature. I began listing my recent forays into configuring email as an example, and I realized quite quickly that the odyssey ought to be its own post. The reason I do this sort of fiddling, though, almost always composed of two intertwining&amp;nbsp;mental&amp;nbsp;phenomena:&lt;/p&gt;
 
-    </header>
+&lt;ol&gt;
+&lt;li&gt;I know what I&amp;nbsp;need,&amp;nbsp;and&lt;/li&gt;
+&lt;li&gt;I know the limitations of the thing I&amp;#8217;m&amp;nbsp;fiddling&amp;nbsp;with.&lt;/li&gt;
+&lt;/ol&gt;
 
-    <section class='content'>
-            </section>
-        <footer>
-                    </footer>
+&lt;p&gt;Sometimes, when we&amp;#8217;re talking about software or something similar, I know up front what the limitations are; often, though, I only find out by playing around with it. Likewise, I often know what I need up front; other times, though, I only find out what I need by finding out where my needs rub up against the limitations of whatever it is I&amp;#8217;m trying to&amp;nbsp;work&amp;nbsp;with.&lt;/p&gt;
 
-</article>
-</div>
+&lt;p&gt;As I was listening to &lt;a href=&#34;http://5by5.tv/b2w/71&#34;&gt;Back to Work 71&lt;/a&gt;, I started thinking about the problems that exist in organizations&amp;#8212;things like the &lt;a href=&#34;http://passiveaggressivenotes.com/&#34;&gt;passive aggression&lt;/a&gt; that Merlin and Dan were discussing&amp;#8212;as functions of that same pair of forces. More specifically, it made me think about the problems I have as a teacher with my students, the problems my students have with me as a teacher, and perhaps most importantly, the problems I have with myself as a teacher.  &lt;span class=&#34;pull&#34;&gt;All these problems&amp;#8212;and perhaps all problems&amp;#8212;come down to a conflict between one party&amp;#8217;s expectations and another&amp;nbsp;party&amp;#8217;s&amp;nbsp;limitations.&lt;/span&gt;&lt;/p&gt;
 
+&lt;p&gt;At that point&amp;#8212;and at that absurdly high level of abstraction&amp;#8212;there are two ways to go about resolving&amp;nbsp;the&amp;nbsp;problem:&lt;/p&gt;
 
-                    <!-- Javascript at the bottom for fast page loading -->
-                            <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
-                                                    <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
-    
-                <script type="text/javascript">
-                    var clicky_site_ids = clicky_site_ids || [];
-                    clicky_site_ids.push(66617351);
-                    (function() {
-                        var s = document.createElement('script');
-                        s.type = 'text/javascript';
-                        s.async = true;
-                        s.src = '//static.getclicky.com/js';
-                        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-                    })();
-                </script>
-                <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66617351ns.gif" /></p></noscript>
-                          <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-            <![endif]-->
-            </body>
-</html>
+&lt;ol&gt;
+&lt;li&gt;Revise the&amp;nbsp;expectation,&amp;nbsp;or&lt;/li&gt;
+&lt;li&gt;Resolve&amp;nbsp;the&amp;nbsp;limitation.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;What occurred to me as I was listening is that in the same way that what David Allen calls the &lt;a href=&#34;http://www.wikisummaries.org/Getting_Things_Done:_The_Art_of_Stress-Free_Productivity#Chapter_9_--_Doing:_Making_the_Best_Action_Choices&#34;&gt;10,000 foot perspective&lt;/a&gt; is important to understanding the everyday projects and actions we undertake, &lt;span class=&#34;pull&#34;&gt;understanding my own limitations on a broad scale can, I think, help me avoid the problems I tend to face in the classroom (and, I&amp;nbsp;suspect,&amp;nbsp;beyond).&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Thus: &lt;a href=&#34;/things-i-suck-at&#34;&gt;Things I Suck At&lt;/a&gt;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Remembering.&lt;/em&gt; Really: I don&amp;#8217;t remember &lt;em&gt;anything.&lt;/em&gt; If you talked to me about it half an hour ago, there&amp;#8217;s a decent chance I&amp;#8217;ve already forgotten it. I don&amp;#8217;t mean to; it&amp;#8217;s just the truth of me. If you need me to remember something, or to do something for you, &lt;em&gt;email me.&lt;/em&gt; Just talking to me will do pretty much&amp;nbsp;no&amp;nbsp;good.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Planning ahead.&lt;/em&gt; I am writing this on July 11, 2012, and by my standards, that&amp;#8217;s an &lt;em&gt;absurd&lt;/em&gt; amount of foresight for a Fall semester. Whether with my classes or with my life, I am generally no good at planning ahead. Sometimes this is because I&amp;#8217;ve let time get away from me (see below), but a lot of the time&amp;#8212;at least in the context of my classes&amp;#8212;it&amp;#8217;s because what I&amp;#8217;m doing on any given day is determined by what&amp;#8217;s happened in class in the&amp;nbsp;days&amp;nbsp;before.&lt;/p&gt;
+&lt;p&gt;The upshot for anyone more future-oriented than myself, though, is that if you ask me a question like &amp;#8220;What are we doing in class next Friday,&amp;#8221; I probably can&amp;#8217;t answer, because it likely depends rather a lot on what happens in class&amp;nbsp;next&amp;nbsp;Wednesday. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Estimating time.&lt;/em&gt; &lt;strong&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;OH&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MAN&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt; do I suck at this. I suck at this &lt;em&gt;so&lt;/em&gt;&amp;nbsp;much.&lt;/p&gt;
+&lt;p&gt;This morning my wife and I were talking about &lt;a href=&#34;http://www.ravelry.com/jobs&#34;&gt;a job posting&lt;/a&gt; that the reliably awesome folks at &lt;a href=&#34;http://www.ravelry.com/&#34;&gt;Ravelry&lt;/a&gt; have posted, and I said, &amp;#8220;I kinda want to apply&amp;nbsp;for&amp;nbsp;that.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;/span&gt;You can&amp;#8217;t,&amp;#8221; she said. &amp;#8220;It&amp;#8217;s a full time job.&amp;#8221; (I already have a full time job,&amp;nbsp;of&amp;nbsp;course.)&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;/span&gt;I can&amp;#8217;t do it full time, sure, but maybe I could do it full time during the Summer, and half time during the&amp;nbsp;school&amp;nbsp;year.&amp;#8221;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;/span&gt;Do you think you have twenty extra hours a week during&amp;nbsp;the&amp;nbsp;semester?&amp;#8221;&lt;/p&gt;
+&lt;p&gt;And, until she said it like that, I did. I&amp;#8217;m just &lt;em&gt;awful&lt;/em&gt; both at judging how long things will take and at judging how much time I have to&amp;nbsp;do&amp;nbsp;the.&lt;/p&gt;
+&lt;p&gt;For this reason, in class, I try never to say things like &amp;#8220;I will have X ready by Y,&amp;#8221; because one or both of those problems will likely make me wrong. I will usually say &amp;#8220;I &lt;em&gt;should&lt;/em&gt; have X by Y,&amp;#8221; which leaves me a little room to&amp;nbsp;be&amp;nbsp;wrong.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Tackling things piecemeal.&lt;/em&gt; Let&amp;#8217;s say today is Monday, and I have 50 student papers that were just turned in, and I want them to be back in student hands by Friday. What a normal person would do is try to tackle 10 papers a day, so that by the end of the day Friday, they&amp;#8217;re done.&amp;nbsp;Yay!&amp;nbsp;Reasonable.&lt;/p&gt;
+&lt;p&gt;I will probably not do this. Instead, I will try to orchestrate things so that I have an enormous block of time so that I can do them all at once. This may or may not work, and because it&amp;#8217;s harder to get ten hours or so at a block than it is to get two hours together five times, it&amp;#8217;ll likely end up meaning that I don&amp;#8217;t accomplish things according to my&amp;nbsp;own&amp;nbsp;deadline.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Prioritizing.&lt;/em&gt; Broadly speaking, I have no idea what is important and what is not. If I have five tasks I need to complete, I have a lot of trouble deciding which I should approach first, even if one of them is &amp;#8220;exit the burning building.&amp;#8221;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Being mean.&lt;/em&gt; This is a tough one. As a teacher, sometimes it&amp;#8217;s my job to be mean. I&amp;#8217;m good at that when it matters. If you need to fail my class, you need to fail my class&amp;#8212;and while that sucks for everybody, you&amp;#8217;re not going to be able to sweet-talk me out&amp;nbsp;of&amp;nbsp;it. &lt;/p&gt;
+&lt;p&gt;The times when I suck at being mean, though, are the little times. I set out my policies pretty clearly on my Syllabi, and I hold to those policies pretty clearly. So when someone comes to me and says, for example, &amp;#8220;I need to leave 45 minutes early today,&amp;#8221; I&amp;#8217;ll likely say &amp;#8220;Okay,&amp;#8221; and&amp;nbsp;mean&amp;nbsp;it.&lt;/p&gt;
+&lt;p&gt;The problem, though, is that what the student hears is something like, &amp;#8220;Oh, of course visiting your out-of-state stylist for an elaborate purple up-do is more important than my class; by all means, come and go as you please and expect no consequences whatsoever.!&amp;#8221; When what I mean is &amp;#8220;Okay, that&amp;#8217;s your choice; as per the Syllabus, I&amp;#8217;ll be marking you&amp;nbsp;absent.&amp;nbsp;Ta!&amp;#8221;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;My intention is to both include this on my Syllabi next semester&amp;#8212;or at least, include a link to the relevant page&amp;#8212;and to use this list to help me design my courses, such that I can build my practices and policies &lt;em&gt;around&lt;/em&gt; my limitations, with the hope that I can thereby&amp;nbsp;avoid&amp;nbsp;problems.&lt;/p&gt;
+
+&lt;p&gt;We&amp;#8217;ll see how&amp;nbsp;it&amp;nbsp;goes.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Both in terms of its role on my Syllabus and its role in my life, I recognize that this should probably be paired with a corresponding list of Things I&amp;#8217;m Pretty Good At, but at the moment, I&amp;#8217;m wanting to work on some of those limitations, so this is coming first.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Sublime Text 2 Markdown Footnote Goodness</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/sublime-text-2-markdown-footnote-goodness"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/sublime-text-2-markdown-footnote-goodness</id>
+            
+            <content type="html">
+                                &lt;p&gt;As I mentioned &lt;a href=&#34;/posts/a-simple-script-for-gathering-missing-markdown-links&#34;&gt;previously&lt;/a&gt;, I&amp;#8217;ve converted the little python link gathering doodad I did into a command for &lt;a href=&#34;http://sublimetext.com&#34;&gt;Sublime Text 2&lt;/a&gt;. But, because I am an &lt;a href=&#34;/posts/sometimes-comics-are-essays-too&#34;&gt;aggressive&lt;/a&gt; &lt;a href=&#34;/posts/feminism-marriage-proposals-comics&#34;&gt;footnoter&lt;/a&gt;, I decided I wanted some convenience functions for footnotes.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; And so I made&amp;nbsp;some.&amp;nbsp;Hooray.&lt;/p&gt;
+
+&lt;p&gt;The results are up at &lt;a href=&#34;https://github.com/jngeist/MarkdownEditing&#34;&gt;my fork of the MarkdownEditing Package&lt;/a&gt;. The furnished commands are&amp;nbsp;pretty&amp;nbsp;simple.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Insert footnote.&lt;/em&gt; Press &lt;code&gt;^6&lt;/code&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; to insert a footnote after the current word.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Gather missing footnotes.&lt;/em&gt; &lt;code&gt;&amp;#8984;&amp;#8997;&amp;#8679;G&lt;/code&gt; will look for footnote markers that aren&amp;#8217;t currently defined and add markers at the bottom of your document. Not so useful by itself, I admit, but useful in conjunction with&amp;nbsp;the&amp;nbsp;next:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Switch to/from footnote definition.&lt;/em&gt; &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will switch between the text of a footnote and its references. So: if my cursor is in a footnote, and I press &lt;code&gt;&amp;#8984;^6&lt;/code&gt;, &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ST2&lt;/span&gt;&lt;/span&gt; will select the references to the footnote in the body text. If my cursor is in a body paragraph, &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will identify the next footnote reference and take me to&amp;nbsp;its&amp;nbsp;text.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sort footnotes.&lt;/em&gt; If you saw this post yesterday, you saw that my footnotes were out of order. Using &lt;code&gt;^6&lt;/code&gt; &lt;em&gt;before&lt;/em&gt; an existing footnote will result in the notes being added out of order, and at least in the flavor of Markdown I&amp;#8217;m using,&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; rel=&#34;footnote&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; this results in sorting oddities. (So: in the previous version of the post, the reference to footnote 4 came before footnote 1, and but footnote 1 came first in the &lt;code&gt;ol&lt;/code&gt; at the bottom of the page.) Now, &lt;code&gt;&amp;#8984;^S&lt;/code&gt; will sort the footnotes in the order in which they appear in the document. This affects the sorting of the &lt;code&gt;ol&lt;/code&gt;, which in turn corrects the problem with&amp;nbsp;marker&amp;nbsp;ordering.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Between the three of these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, &lt;code&gt;^6&lt;/code&gt; will insert a new footnote, thusly.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; Easy as&amp;nbsp;can&amp;nbsp;be.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;Obviously&amp;#8212;well, I think obviously&amp;#8212;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;core Markdown&lt;/a&gt; doesn&amp;#8217;t provide syntax for footnotes, and so this will only work with a flavor of Markdown that does.&amp;#160;&lt;a href=&#34;#fnref:4&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;6 because &lt;code&gt;&amp;#8679;6&lt;/code&gt; is &lt;code&gt;^&lt;/code&gt;, the &lt;a href=&#34;http://fletcherpenney.net/multimarkdown/&#34;&gt;Multimarkdown&lt;/a&gt; syntax for a footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;This works by scanning the current file for Multimarkdown footnote markers, identifying those that are numeric, and providing the next integer&amp;#8212;so you shouldn&amp;#8217;t have any marker collisions.&amp;#160;&lt;a href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;http://freewisdom.org/projects/python-markdown/&#34;&gt;Python Markdown&lt;/a&gt; via &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt;, which, let&amp;#8217;s be frank&amp;#8212;who knows what madness lies within.&amp;#160;&lt;a href=&#34;#fnref:5&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 4 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;And when I&amp;#8217;m done writing the footnote text, &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will take me back to the top.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 5 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">A simple script for gathering missing Markdown links</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-simple-script-for-gathering-missing-markdown-links"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-simple-script-for-gathering-missing-markdown-links</id>
+            
+            <content type="html">
+                                &lt;p&gt;As I was writing something else&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&amp;#8217;m pretty much the opposite of &lt;a href=&#34;http://brettterpstra.com&#34;&gt;Brett Terpstra&lt;/a&gt; when I write; his awesome &lt;a href=&#34;http://brettterpstra.com/project/markdown-service-tools/&#34;&gt;Markdown Service Tools&lt;/a&gt; has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&amp;#8217;s a lot easier to write first and find links later, as a lot of the time I&amp;#8217;m not linking to research I&amp;#8217;m doing now but research I&amp;#8217;ve done in the past. So usually what I&amp;#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&amp;#8217;ve just put &lt;code&gt;[Brett Terpstra][TERPstra]&lt;/code&gt;), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&amp;#8217;ve forgotten to&amp;nbsp;fill&amp;nbsp;in.&lt;/p&gt;
+
+&lt;p&gt;So I just threw&amp;nbsp;this&amp;nbsp;together:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/3057158.js?file=gather_missing_md_links.py&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Essentially, it looks at a given file, identifies all the Markdown link references contained therein, and appends the reference marker at the end, waiting for the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt;&lt;/span&gt;. So, running it on this file, I&amp;#8217;ve got an eternally convenient &lt;code&gt;[TERPstra]:&lt;/code&gt; reminding me to enter the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;URL&lt;/span&gt;&lt;/span&gt; at the bottom. I&amp;#8217;m sure I&amp;#8217;ll futz with this, and I&amp;#8217;ll update this post when I do. (Immediate to-do: set it up to accept input from &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;STDIN&lt;/span&gt;&lt;/span&gt;, so that I can use it as a filter in Sublime Text, and/or integrate it into my Markdown&amp;nbsp;build&amp;nbsp;system.)&lt;/p&gt;
+
+&lt;h2&gt;Update: July&amp;nbsp;8,&amp;nbsp;2012&lt;/h2&gt;
+
+&lt;p&gt;A simpler way to do this occurred to me almost immediately: make this a &lt;a href=&#34;http://docs.sublimetext.info/en/latest/extensibility/commands.html&#34;&gt;Sublime Text 2 Command&lt;/a&gt;. Since I&amp;#8217;m already using Terpstra&amp;#8217;s budding &lt;a href=&#34;https://github.com/ttscoff/MarkdownEditing&#34;&gt;MarkdownEditing package&lt;/a&gt;, I just &lt;a href=&#34;https://github.com/jngeist/MarkdownEditing.git&#34;&gt;forked&lt;/a&gt; his and added the &lt;a href=&#34;https://github.com/jngeist/MarkdownEditing/blob/master/gather_missing_links.py&#34;&gt;relevant command&lt;/a&gt;. Now, I can just hit &amp;#8997;&amp;#8984;G, and all my markers are collected&amp;nbsp;for&amp;nbsp;me.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I swear, it&amp;#8217;s an upcoming post about how easily distracted I am.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">On Endings</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/on-endings"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/on-endings</id>
+            
+            <content type="html">
+                                &lt;p&gt;Today, the &lt;a href=&#34;http://masseffect.wikia.com/wiki/Mass_Effect_3:_Extended_Cut&#34;&gt;Extended Cut&lt;/a&gt; for &lt;em&gt;Mass Effect 3&lt;/em&gt; has dropped. I haven&amp;#8217;t started it yet, but I&amp;#8217;m sure I will as soon as I post this. Before I get to the revision of the ending, though, I wanted to voice my thoughts about my experience of the&amp;nbsp;original&amp;nbsp;ending.&lt;/p&gt;
+
+&lt;p&gt;I think I have, if obliquely, &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;expressed my feelings regarding the reductiveness of the ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, and at this point I feel like things are still &lt;em&gt;unfinished&lt;/em&gt; in that realm. While I don&amp;#8217;t yet feel ready to write much about &lt;em&gt;the&lt;/em&gt; ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;, I do want to write about &lt;em&gt;an&lt;/em&gt;&amp;nbsp;ending. &lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;Mass Effect&lt;/em&gt; series is full of fantastic writing, and particularly of moments wherein Shepard is (and therefore we are) forced to face decisions that are realistic in their complexity, if not their content. Even the game&amp;#8217;s paragon/renegade dichotomy speaks to this&amp;#8212;for one thing, there&amp;#8217;s nothing preventing a character from expressing both tendencies; for another, the tendencies align more with the &amp;#8220;lawful/chaotic&amp;#8221; spectrum&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; than the more traditional &amp;#8220;good/evil&amp;#8221; one. In particular, the tactical decision at the end of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME1&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; always stands out to me: sacrifice the council to minimize fleet losses, or let the fleet be culled to an unspecified amount at the expense of galactic leadership. There is no &amp;#8220;good&amp;#8221; answer (let alone a &amp;#8220;right&amp;#8221; one); instead, you have assess the risk to the fleet, assess the comparative value of this particular group of (kind of douchey) leaders, and decide which devastating loss is less devastating. It&amp;#8217;s that kind of tactical and moral sacrifice that is absent from the boxed ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/span&gt;.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;pull&#34;&gt;There is an ending to &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;, I think, that is beautiful and poignant and expertly written and that captures the moral and tactical quagmire that is the &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; universe: the sequence after the mission on &lt;a href=&#34;http://www.youtube.com/watch?v=9zMGTb0K-PI&amp;amp;t=8m0s&#34;&gt;Thessia&lt;/a&gt;.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Thessia itself, by and large, is a beautiful mission; throughout the mission, we are compelled again and again to confront the cost of Shepard&amp;#8217;s adventures. For the most part, Shepard gallivants about the galaxy at her own pace, solving problems, making peace, with the horrors on Earth transpiring invisibly at a fixed rate. We know of the losses, but we don&amp;#8217;t see them. On Thessia, we have to convince people to die for us, to hold the line in favor of a mission they don&amp;#8217;t even begin to understand. It is as if Earth is burning, and we ask, &amp;#8220;Will you sacrifice your friends&amp;#8217; lives so I can visit Westminster Abbey?&amp;#8221; And we ask again and again, and again and again these baffled asari give their lives because we are all there is left to&amp;nbsp;hope&amp;nbsp;for.&lt;/p&gt;
+
+&lt;p&gt;And then&amp;#8212;really, for the first time&amp;#8212;we fail. Shepard gets shamefully beat down by robo-&lt;a href=&#34;http://www.youtube.com/watch?v=Um8mMa5w41A&#34;&gt;Rufio&lt;/a&gt;, who takes her data and her certainty, leaving her utterly clueless about what she ought to be doing next. She fires, hopeless, at&amp;nbsp;the&amp;nbsp;sky.&lt;/p&gt;
+
+&lt;p&gt;This is, in my mind, the true end of the &lt;em&gt;Mass Effect&lt;/em&gt;&amp;nbsp;trilogy. &lt;/p&gt;
+
+&lt;p&gt;The following moments pepper Shepard&amp;#8217;s blank face like hail. The asari voice on the radio, calling for help and finding none, and then asking for that last, incomprehensible hope: &amp;#8220;Did anyone see what happened to Shepard? Did she get through?&amp;#8221; And the small, mortifying gratitude we feel that we cannot&amp;nbsp;answer&amp;nbsp;her. &lt;/p&gt;
+
+&lt;p&gt;The blinking light of the vidcomm, which Shepard has answered so many times without hesitation, and which now, for the first time, she fears. The way she leans against the doorframe. The way her forehead rests on&amp;nbsp;her&amp;nbsp;arm. &lt;/p&gt;
+
+&lt;p&gt;The unconsidered assumption of the asari councilor. Her uncomprehending look when we tell her there&amp;#8217;s&amp;nbsp;a&amp;nbsp;problem. &lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;/span&gt;We were…&amp;#8221; The hesitation as the unfamiliar word rolls up Shepard&amp;#8217;s throat from her gut, where it has festered, lingers a moment behind her eyes, and crawls retched from her&amp;nbsp;mouth:&amp;nbsp;&amp;#8220;defeated.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;The moment of blind incomprehension on the councilor&amp;#8217;s face. The falling shock of reality. Her fumbling attempt to excuse herself to oversee the end of her civilization. There is nothing left to say. Shepard apologizes to an&amp;nbsp;empty&amp;nbsp;room.&lt;/p&gt;
+
+&lt;p&gt;And finally, the turn: Shepard&amp;#8217;s eternally recurrent decision to fight on, to look forward, to find the impossible&amp;nbsp;way&amp;nbsp;through. &lt;/p&gt;
+
+&lt;p&gt;I would have been happy, I think, if this was the end of gameplay. Our cycle fails, as did the cycles&amp;nbsp;before&amp;nbsp;us. &lt;/p&gt;
+
+&lt;p&gt;Perhaps, after the credits, Buzz Aldrin still gets an inexplicable cameo as a species we&amp;#8217;ve never seen&amp;#8212;maybe one that looks just a little like a sapient pyjack, or varren&amp;#8212;finds a strange black box, and from it, we see Liara tell the story of Shepard. And perhaps we see just enough of this new cycle to believe that maybe this time, it is not&amp;nbsp;too&amp;nbsp;late. &lt;/p&gt;
+
+&lt;p&gt;Instead, Traynor pipes cheerfully up with her &lt;em&gt;deus ex lesbos&lt;/em&gt; solution: &amp;#8220;by the way, I happen to know exactly where he went. It&amp;#8217;s a long shot except that it is &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;OBVIOUSLY&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;THE&lt;/span&gt;&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ANSWER&lt;/span&gt;&lt;/span&gt;.&amp;#8221; And so the game begins its&amp;nbsp;slow&amp;nbsp;descent.&lt;/p&gt;
+
+&lt;p&gt;It has been said in these last weeks that the community&amp;#8217;s frustration about the ending arises from dissatisfaction at the lack of a &amp;#8220;happy&amp;#8221; ending, but I think that&amp;#8217;s a strawman. I certainly would&amp;#8217;ve preferred the possibility if an outcome in which something&amp;#8212;&lt;em&gt;anything&lt;/em&gt;&amp;#8212;survived&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, but the ending I describe isn&amp;#8217;t triumphant. It isn&amp;#8217;t &amp;#8220;victorious and uplifting.&amp;#8221; &lt;span class=&#34;pull&#34;&gt;But it is an ending earned, one which treats the characters, the world, the Reapers, and above all the players&amp;nbsp;with&amp;nbsp;respect.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;As soon as I post this, I&amp;#8217;m going to start playing the Extended Cut, and I may or may not be satisfied. If I&amp;#8217;m not, I&amp;#8217;ll just call Thessia the end, and be satisfied.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Assuming you think about the world in terms of D&amp;amp;D. &amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;In the &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME2&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;DLC&lt;/span&gt;&lt;/span&gt; &amp;#8220;The Arrival,&amp;#8221; it was revealed that destroying a Mass Relay would &lt;a href=&#34;http://masseffect.wikia.com/wiki/Arrival_(assignment)#Onboard_the_Shuttle&#34;&gt;destroy the system containing it&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;More specifically, I&amp;#8217;ll make a Shepard that looks like Casey Hudson, such that the &amp;#8220;true&amp;#8221; ending to the &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; series will be his apology to an empty room.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">"A Murderer's Work" out in *Creative Nonfiction*</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-murderers-work-out-in-creative-nonfiction"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-murderers-work-out-in-creative-nonfiction</id>
+            
+            <content type="html">
+                                &lt;p&gt;Exciting news! My essay &amp;#8220;A Murderer&amp;#8217;s Work&amp;#8221; has just been published in &lt;a href=&#34;https://www.creativenonfiction.org/cnfshop/product_info.php?cPath=24_26&amp;amp;products_id=323&#34;&gt;Issue 44&lt;/a&gt; of &lt;a href=&#34;http://www.creativenonfiction.org/&#34;&gt;Creative Nonfiction&lt;/a&gt;. It&amp;#8217;s an honor to be published alongside the like of &lt;a href=&#34;http://www.bjhollars.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;B. J.&lt;/span&gt;&lt;/span&gt; Hollars&lt;/a&gt; and &lt;a href=&#34;http://essays.quotidiana.org/&#34;&gt;Patrick Madden&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And, if I do say so myself, the &lt;a href=&#34;http://t.co/Ar53M8kt&#34;&gt;typography&lt;/a&gt;&amp;nbsp;is&amp;nbsp;gorgeous.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Events! Excitement! Exclamation Points!</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/events-excitement-exclamation-points"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/events-excitement-exclamation-points</id>
+            
+            <content type="html">
+                                &lt;p&gt;As you can see, I&amp;#8217;ve shifted things around&amp;nbsp;a&amp;nbsp;bit. &lt;/p&gt;
+
+&lt;p&gt;I&amp;#8217;ve been wanting to do this for some time, inasmuch as my old site&amp;#8212;lovely as it was, to be sure&amp;#8212;had a few key&amp;nbsp;limitations,&amp;nbsp;namely:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;being&amp;nbsp;Wordpress&lt;/li&gt;
+&lt;li&gt;being&amp;nbsp;exclusively&amp;nbsp;gamery&lt;/li&gt;
+&lt;li&gt;being&amp;nbsp;dated&lt;/li&gt;
+&lt;li&gt;being&amp;nbsp;boring&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And so. Because I am a &lt;a href=&#34;http://geekabouttown.com/categories/geek/&#34;&gt;geek&lt;/a&gt;, I have made things as complicated as I possibly can without having my wife kill me.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;I fully expect to spend a goodly bit of time tweaking this in the next few months/weeks/years/until the Internet ends, and I suspect I&amp;#8217;ll have more to say about the technologies I&amp;#8217;m using&amp;nbsp;as&amp;nbsp;well. &lt;/p&gt;
+
+&lt;p&gt;In short, the site is built on &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt;, which is (as its name implies) &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&amp;#8216;s serially misunderstood, less-well-behaved alter-ego. There&amp;#8217;s plenty to love, and plenty to grumble about, but if you&amp;#8217;re choosing a static site generator, know this: the documentation for Hyde is a horsewreck.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;In any case,&amp;nbsp;hooray!&amp;nbsp;Website.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Although, if I don&amp;#8217;t get this deployed tonight, I may have missed my window.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Like a trainwreck, but more out-of-date.&amp;#160;&lt;a href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Contrary to appearances&hellip;</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/contrary-to-appearances"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/contrary-to-appearances</id>
+            
+            <content type="html">
+                                &lt;p&gt;So.&lt;/p&gt;
+
+&lt;p&gt;I’m&amp;nbsp;still&amp;nbsp;here.&lt;/p&gt;
+
+&lt;p&gt;I’ve been working on a redesign of this site for some long while now, and so I’ve been caught in the admittedly absurd mental trap wherein I don’t want to &lt;em&gt;write&lt;/em&gt; for my blog because I need to be working on the design. At this point, things are nearly (I hope) done, and so I’ll be resuming a more regular (or at least a more occasional)&amp;nbsp;publishing&amp;nbsp;calendar. &lt;/p&gt;
+
+&lt;p&gt;Unrelatedly, &lt;em&gt;Kill Screen&lt;/em&gt; is hosting some more of my &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;oddjob handiwork&lt;/a&gt;. I thought it a fitting tribute to the end of the Mass Effect series. (For a minor easter egg, check out the id I gave the script element.&amp;nbsp;I’m&amp;nbsp;hilarious.)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting Started with jQuery, HTML, and CSS</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to</id>
+            
+            <content type="html">
+                                &lt;p&gt;A while ago, someone asked me how to get started making something like my
+&lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;Infinity Blade Review&lt;/a&gt; over at &lt;a href=&#34;http://www.killscreendaily.com&#34;&gt;Kill Screen&lt;/a&gt;. I started writing her an
+email, and it became huge, so I decided I’d post it here in case it might be of
+use to somebody else, as well. Here&amp;nbsp;it&amp;nbsp;is.&lt;/p&gt;
+
+&lt;p&gt;The short answer to your question is that while I think the stuff I
+used–&lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt;, mostly–will do exactly what you need it to do, it’s probably
+kind of a long road from just starting out to being able to do something like
+that. I’ve been programming for most of my life (wow, I just realized that’s
+true. I’m old), and still, the programming part of that review took
+longer–significantly longer, I think–than the&amp;nbsp;writing&amp;nbsp;part.&lt;/p&gt;
+
+&lt;p&gt;But I am absolutely no good at short answers, so here’s a much&amp;nbsp;longer&amp;nbsp;one.&lt;/p&gt;
+
+&lt;p&gt;I don’t know what your level of experience with web technologies is, or what
+exactly you mean when you say “programming novice,” so forgive me if I assume
+you don’t know stuff you already do. I’m going to assume that you’ve never made
+a web page or written a program before. That said, here are some things you’ll
+need to understand and, after that, some things to look at to help you&amp;nbsp;get&amp;nbsp;there.&lt;/p&gt;
+
+&lt;p&gt;First and most fundamental is &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt;, the language that web pages are made of. You
+don’t have to know all the fancy stuff, but in order to get what you want going,
+you need to be able to use &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt; at least on a basic level. (&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt; is the tool
+you’ll use to establish the structure of&amp;nbsp;your&amp;nbsp;document.)&lt;/p&gt;
+
+&lt;p&gt;Second, and most important, is &lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt;. &lt;a href=&#34;http://jquery.com/&#34;&gt;jQuery&lt;/a&gt; is what’s called an &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;API&lt;/span&gt;&lt;/span&gt;
+for Javascript,&lt;sup id=&#34;fnref:a1&#34;&gt;&lt;a href=&#34;#fn:a1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; and this is what’ll move stuff around, hide stuff,
+show stuff, etc. In my Infinity Blade review, jQuery is what fades stuff in and
+out, and basically makes the whole&amp;nbsp;thing&amp;nbsp;go.&lt;/p&gt;
+
+&lt;p&gt;Third, and probably least important (but still significant) is &lt;a href=&#34;http://en.wikipedia.org/wiki/Css&#34;&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;. &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt; is
+what will allow you to decide how things look. (jQuery hides and shows things in
+my review by changing the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt; properties, which tells your browser what things
+should&amp;nbsp;look&amp;nbsp;like.)&lt;/p&gt;
+
+&lt;p&gt;And, to make things even more complicated, each of these tools requires a
+completely different way of thinking. jQuery is closest to normal programming,
+but &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt; and &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt; are their&amp;nbsp;own&amp;nbsp;beasts.&lt;/p&gt;
+
+&lt;p&gt;I don’t say any of this to discourage you; quite frankly, anybody who can beat
+&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;SMB&lt;/span&gt;&lt;/span&gt;, no warps, one life is probably capable of handling any challenge, and
+should probably be an astronaut or a surgeon or president or something. I’m sure
+you can handle this, and what you’re wanting is actually pretty simple–it’s just
+a simple combination of what might be three&amp;nbsp;unfamiliar&amp;nbsp;technologies.&lt;/p&gt;
+
+&lt;p&gt;Here’s basically what your process will&amp;nbsp;look&amp;nbsp;like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;lay out your document in&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt;. &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;use jQuery to do stuff with the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt;, probably either moving stuff around or adding/removing &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt; properties&amp;nbsp;or&amp;nbsp;classes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;use &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt; to make everything look the way&amp;nbsp;you&amp;nbsp;want.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That’s a big process, I know, so here are some resources to help you&amp;nbsp;get&amp;nbsp;started:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://code.google.com/edu/submissions/html-css-javascript/&#34;&gt;Google’s “From the Ground Up” series&lt;/a&gt;. I haven’t watched these myself,
+    but they’re supposed to be a good resource on web design for beginners, and they
+    should at least help you get the basics of &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HTML&lt;/span&gt;&lt;/span&gt; and&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;CSS&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://htmldog.com/&#34;&gt;HTMLDog&lt;/a&gt; also has some good tutorials and whatnot to get&amp;nbsp;you&amp;nbsp;started.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Forgive me if you are disdainful of Reddit, but &lt;a href=&#34;http://www.reddit.com/r/learnprogramming/&#34;&gt;Reddit’s
+    /r/learnprogramming subreddit&lt;/a&gt; is a good place to ask questions, and their
+    &lt;a href=&#34;http://www.reddit.com/r/learnprogramming/top/?sort=top&amp;amp;t=all&#34;&gt;top links of all time&lt;/a&gt; also has some good resources&amp;nbsp;in&amp;nbsp;it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;http://docs.jquery.com/Main_Page&#34;&gt;jQuery’s documentaton&lt;/a&gt; and &lt;a href=&#34;http://docs.jquery.com/Tutorials&#34;&gt;tutorials&lt;/a&gt; are&amp;nbsp;really&amp;nbsp;good.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Once you get your bearings, &lt;a href=&#34;http://reference.sitepoint.com/html&#34;&gt;Sitepoint’s Reference Section&lt;/a&gt; has a lot of
+    good information, but it’s designed as a reference, not&amp;nbsp;a&amp;nbsp;how-to.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Last thing I’ll say is this: jQuery is really powerful, and pretty simple. It
+can do all kinds of things, so try to keep in mind that what you saw in my
+review is really just an example of things that you can do, and there are
+probably much cooler things that you can do in&amp;nbsp;your&amp;nbsp;situation.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:a1&#34;&gt;
+&lt;p&gt;You don’t need to know what this means, except to understand that jQuery
+  is an extension of Javascript. For your purposes, you don’t need to worry about
+  plain Javascript; jQuery will make that way easier for you.&amp;#160;&lt;a href=&#34;#fnref:a1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">So, this is happening.</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/so-this-is-happening"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/so-this-is-happening</id>
+            
+            <content type="html">
+                                &lt;p&gt;It&amp;#8217;s been a busy morning over at &lt;a href=&#34;http://www.killscreendaily.com/&#34;&gt;&lt;i&gt;Kill Screen&lt;/i&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In the unlikely event that you read this blog but not that magazine, &lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;my review of &lt;i&gt;Infinity Blade&lt;/i&gt;&lt;/a&gt; ran today.  It has gotten a &lt;a href=&#34;https://twitter.com/#search?q=http%3A%2F%2Fkillscreendaily.com%2Farticles%2Freviews%2Finfinity-blade&#34;&gt;not inconsiderable&lt;/a&gt; amount of &lt;a&gt;attention.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Three cheers for &lt;i&gt;Kill Screen&lt;/i&gt; for being awesome and making&amp;nbsp;this&amp;nbsp;possible.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Heavy Rain, art, and craft</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/heavy-rain-art-and-craft"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/heavy-rain-art-and-craft</id>
+            
+            <content type="html">
+                                &lt;p&gt;Recently, I was fascinated by &lt;a href=&#34;http://www.brainygamer.com/&#34;&gt;Brainy Gamer Michael Abbot&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;http://www.brainygamer.com/the_brainy_gamer/2011/03/rollercoaster-bias.html&#34;&gt;response&lt;/a&gt; to
+&lt;em&gt;Heavy Rain&lt;/em&gt; designer David Cage&amp;#8217;s talk at this year&amp;#8217;s &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;GDC&lt;/span&gt;&lt;/span&gt;.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Unlike Abbott, I
+did like &lt;em&gt;Heavy Rain&lt;/em&gt;, although at times I found its interface maddening, and I
+felt like there were a lot of untapped possibilities in the story. The game was
+rich, though, in what I value about gaming, which I have talked about at length
+elsewhere in other games: empathy, shared subjectivity, difficult non-binary
+choices, moral and ethical ambiguity, and origami.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;As I reflected on Abbott&amp;#8217;s commentary on the session, I realized that part of
+the reason I liked &lt;em&gt;Heavy Rain&lt;/em&gt; is that it walks a difficult line, navigating a
+very hard-to-find path through two different conceptual dichotomies, both of
+which I explored in &lt;a href=&#34;http://jnicholasgeist.com/2010/07/08/art-and-attempt/&#34;&gt;the first post on this blog:&lt;/a&gt; the tension between &amp;#8220;art&amp;#8221;
+and &amp;#8220;craft,&amp;#8221; and the tension between ludic and&amp;nbsp;fixed&amp;nbsp;narratives.&lt;/p&gt;
+
+&lt;p&gt;In &lt;a href=&#34;http://killscreenmagazine.com/articles/say-how-you-play&#34;&gt;a recent article at &lt;em&gt;Kill Screen&lt;/em&gt;&lt;/a&gt;, Jamin&amp;nbsp;Warren&amp;nbsp;proposes,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Instead of thinking about videogames as art, first let&amp;#8217;s think about them as
+objects. Specifically, let&amp;#8217;s think about them as design objects. More
+specifically, as things that we interact with both physically and digitally.
+This seems immensely valuable to me. Consider the difference between a sculpture
+(&amp;#8220;art&amp;#8221;) and a quilt (&amp;#8220;craft&amp;#8221;). A sculpture exists in a gallery, to be looked at,
+and meaning is made by interpretation&amp;#8212;that is, I look at it, and I attempt to
+understand what the artist is trying to communicate. A quilt is no less a made
+thing, and can be a thing of great beauty, but we recognize it as an object that
+is made to a purpose, and we accept that its value comes from its interactivity:
+we can do something with it.&lt;sup id=&#34;fnref:7&#34;&gt;&lt;a href=&#34;#fn:7&#34; rel=&#34;footnote&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Abbot has &lt;a href=&#34;http://www.brainygamer.com/the_brainy_gamer/2011/03/pulling-their-weight.html&#34;&gt;another piece&lt;/a&gt; concerning the same session, and the interplay
+between Cage&amp;#8217;s ideas and those of Clint Hocking, who &lt;a href=&#34;http://clicknothing.typepad.com/click_nothing/2007/10/ludonarrative-d.html&#34;&gt;seems to be interested in
+the same things I am,&lt;/a&gt; generally speaking. In it, Abbott uses the phrase
+&amp;#8220;interactive storytelling&amp;#8221; to describe the kind of games that Hocking and Cage
+are striving toward (in very different ways). For me, though, &amp;#8220;interactive
+storytelling&amp;#8221; seems self-contradictory. &amp;#8220;Telling&amp;#8221; is a transmissive mode of
+communication, and as such it is unidirectional. Contrast with &amp;#8220;discuss,&amp;#8221;
+&amp;#8220;converse,&amp;#8221; &amp;#8220;dialog,&amp;#8221; etc. What Hocking and Cage are describing, and what Cage
+is working toward, is something more like collaborative story&lt;em&gt;making&lt;/em&gt;, though
+that sounds to my ears a&amp;nbsp;little&amp;nbsp;goofy.&lt;/p&gt;
+
+&lt;p&gt;This is what I feel is missing in Brian Moriaty&amp;#8217;s &lt;a href=&#34;http://www.ludix.com/moriarty/apology.html&#34;&gt;explication&lt;/a&gt; of the
+tension between games and what he calls &amp;#8220;sublime art.&amp;#8221; I don’t know if I care
+whether games are &amp;#8220;sublime art,&amp;#8221; or even whether I believe that such a thing
+exists. Moriarty asserts that the market pressures exerted on videogames mean
+that nearly all games will be &amp;#8220;kitsch&amp;#8221; (according to his clearly articulated
+definition), in the same way that nearly all films are &amp;#8220;kitsch&amp;#8221; by that same
+definition. In order to qualify as sublime art, a text must innovate, must
+interact with emotion in a way that is timeless, and must reward repeated
+interaction with new experience and discovery. (I think.) Commercial art is
+discouraged from doing&amp;nbsp;these&amp;nbsp;things.&lt;/p&gt;
+
+&lt;p&gt;However, Moriarty (and Ebert) acknowledge that some films can be art, despite
+these same pressures. To me, it stands to reason that some games can be art
+(even if we concede Moriartebert&amp;#8217;s contention that none currently are). A game
+like &lt;em&gt;Heavy Rain&lt;/em&gt; can (and should) lead to discovery, in the way that Moriarty
+is describing. Abbot mentions that Cage described a player of &lt;em&gt;Heavy Rain&lt;/em&gt; who,
+confronted with the decision of whether the player character should kill
+another, turned the game off for two weeks. This is discovery: the player was
+essaying, deciding who he wanted to be under these circumstances with&amp;nbsp;these&amp;nbsp;limitations.&lt;/p&gt;
+
+&lt;p&gt;Put in the language Moriarty borrows from Schopenhauer, the gamer was
+contemplating the absence of Will&amp;#8212;of agency. True, he was making a choice, but
+I object to Moriarty&amp;#8217;s assertion that &amp;#8220;choice is the most fundamental expression
+of Will.&amp;#8221; If sublime art is rooted in our responses to and reflections on
+experiences we can&amp;#8217;t control, then &lt;em&gt;Heavy Rain&lt;/em&gt; effects this beautifully: we can
+only make the choices, perform the actions, allowed by the game (and thus by
+Cage). This is what happens when the fixed narrative of a game and its
+ludonarrative are intertwined&amp;#8212;our Will is removed by that of the designer, and
+we are forced to understand and accept that loss. With each interaction, agency
+and intention overlap; it&amp;#8217;s like playing a tightly braided cord. There are
+certain branches, certainly, that one can take, but each of those branches leads
+immediately or nearly immediately back to the same&amp;nbsp;fixed&amp;nbsp;point.&lt;/p&gt;
+
+&lt;p&gt;Ultimately, we&amp;#8217;re left a feeling of free will, but wondering to what extent
+we&amp;#8217;ve been controlled. Could I have saved Jason? Could it have been someone
+else? Could I have stopped him from killing? But you don&amp;#8217;t know. Without
+repeated playthroughs,&lt;sup id=&#34;fnref:11&#34;&gt;&lt;a href=&#34;#fn:11&#34; rel=&#34;footnote&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;In fantastic writer&lt;sup id=&#34;fnref:12&#34;&gt;&lt;a href=&#34;#fn:12&#34; rel=&#34;footnote&#34;&gt;6&lt;/a&gt;&lt;/sup&gt; &lt;a href=&#34;http://www.patrickrothfuss.com/content/index.asp&#34;&gt;Patrick Rothfuss&amp;#8217;s&lt;/a&gt; utterly
+engrossing&lt;sup id=&#34;fnref:14&#34;&gt;&lt;a href=&#34;#fn:14&#34; rel=&#34;footnote&#34;&gt;7&lt;/a&gt;&lt;/sup&gt; &lt;a href=&#34;http://www.amazon.com/Wise-Mans-Fear-Kingkiller-Chronicles/dp/0756404738/ref=sr_1_1?ie=UTF8&amp;amp;qid=1299955820&amp;amp;sr=8-1&#34;&gt;&lt;em&gt;The Wise Man&amp;#8217;s Fear&lt;/em&gt;&lt;/a&gt;, Rothfuss describes
+Tak,&lt;sup id=&#34;fnref:16&#34;&gt;&lt;a href=&#34;#fn:16&#34; rel=&#34;footnote&#34;&gt;8&lt;/a&gt;&lt;/sup&gt; a game of strategy wherein the goal of a skilled player
+is not to win, but to play a beautiful game. Victory can be achieved with brutal
+quickness,&lt;sup id=&#34;fnref:17&#34;&gt;&lt;a href=&#34;#fn:17&#34; rel=&#34;footnote&#34;&gt;10&lt;/a&gt;&lt;/sup&gt; but this misses the purpose of the game. What seems
+to matter in Tak is the relationship between the players, the art of the game,
+the way in which two sides that seem opposed make a beautiful&amp;nbsp;thing&amp;nbsp;together.&lt;/p&gt;
+
+&lt;p&gt;This seems a valuable way to think about narrativity in videogames, too. Instead of seeing the ludonarrative and the fixed narrative as oppositional, &lt;em&gt;Heavy Rain&lt;/em&gt; allows the two to work together, one shaping the other, toward the goal of a&amp;nbsp;well-crafted&amp;nbsp;thing.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Which conference&amp;#8212;from the tweets I saw&amp;#8212;I would have liked to attend, but I couldn&amp;#8217;t&amp;#8217;ve gotten drunk enough to keep up with.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;One of my fondest memories of the game is folding the little paper whatever-it-was that came with the game while my &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PS3&lt;/span&gt;&lt;/span&gt; took its sweet damn time installing the game to my &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;HDD&lt;/span&gt;&lt;/span&gt;.&lt;sup id=&#34;fnref:18&#34;&gt;&lt;a href=&#34;#fn:18&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:18&#34;&gt;
+&lt;p&gt;Isn&amp;#8217;t the whole point of consoles that we don&amp;#8217;t have to install things?&amp;#160;&lt;a href=&#34;#fnref:18&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:7&#34;&gt;
+&lt;p&gt;This doesn&amp;#8217;t mean craft can&amp;#8217;t be art.  &lt;a href=&#34;http://crochetcoralreef.org/&#34;&gt;Cf.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:7&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 4 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:11&#34;&gt;
+&lt;p&gt;And I wonder if perhaps this is the only way to experience a game as sublime art  you don&amp;#8217;t know the limits of the designer&amp;#8217;s intention.&amp;#160;&lt;a href=&#34;#fnref:11&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 5 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:12&#34;&gt;
+&lt;p&gt;And &lt;a href=&#34;http://www.patrickrothfuss.com/content/author.asp&#34;&gt;beardwrangler.&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:12&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 6 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:14&#34;&gt;
+&lt;p&gt;Seriously.  Read this.  After reading both this book and its precursor,
+   &lt;a href=&#34;http://www.amazon.com/Name-Wind-Kingkiller-Chronicles-Day/dp/0756405890/ref=tmm_pap_title_0&#34;&gt;&lt;em&gt;The Name of the Wind&lt;/em&gt;&lt;/a&gt;, I have felt an odd ambivalence toward reading,
+   like there is nothing else worth reading after this.  I don&amp;#8217;t ever remember
+   feeling this way about another book.&amp;#160;&lt;a href=&#34;#fnref:14&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 7 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:16&#34;&gt;
+&lt;p&gt;The name of which is almost certainly not a semiobscure Steven King
+   reference.&lt;sup id=&#34;fnref:22&#34;&gt;&lt;a href=&#34;#fn:22&#34; rel=&#34;footnote&#34;&gt;9&lt;/a&gt;&lt;/sup&gt;&amp;#160;&lt;a href=&#34;#fnref:16&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 8 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:22&#34;&gt;
+&lt;p&gt;&lt;em&gt;Tak ah lah; mi him en tow.&lt;/em&gt;&amp;#160;&lt;a href=&#34;#fnref:22&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 9 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:17&#34;&gt;
+&lt;p&gt;Cf., for instance, &lt;em&gt;Star Wars: The Force Unleashed &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;II&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&amp;#160;&lt;a href=&#34;#fnref:17&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 10 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
+    </feed>

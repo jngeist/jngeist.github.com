@@ -1,118 +1,185 @@
-<!doctype html>
-    <html lang="en">
-    <head>
-                <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Geek About Town - Excerpts</title>
-        <meta name="content-type" content="text/html" />
-        <meta name="description" content="" />
-        <meta name="author" content="J. Nicholas Geist" />
-        <meta name="viewport" content="width=device-width" />
-
-                    <link rel="shortcut icon" href="/favicon.ico" />
-            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
-                    <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
-        
-                    <!-- All JavaScript at the bottom, except for Modernizr which
-            enables HTML5 elements & feature detects -->
-            <script src="/media/js/libs/modernizr.custom.min.js"></script>
-                    </head>
-    <body id="excerpts" class="post ">
-        
-<header id='siteheader' class='siteheader'>
-    <hgroup>
-        <h1><a href='/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
-        <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
-    </hgroup>
-</header>
-<nav id='sitenav'>
-    <ul class='sitenav'>
-                <li>
-            <a title="Home Page"
-                
-                href="/">
-                Home
-            </a>
-        </li>        <li>
-            <a title="Blog"
-                class="active"
-                href="/blog">
-                Blog
-            </a>
-        </li>        <li>
-            <a title="Post Categories"
-                
-                href="/categories">
-                Categories
-            </a>
-        </li>        <li>
-            <a title="About"
-                
-                href="/about">
-                About
-            </a>
-        </li>        <li>
-            <a title="Now Playing"
-                
-                href="/now_playing">
-                Now Playing
-            </a>
-        </li>    </ul>
-    <a class='shownav' href="#sitenav">Navigation</a>
-</nav>
-
-<div id='main'>
-    <article class='post'>
-        <header class='post_header'>
-        <hgroup>
-            <h2><a href="/blog/excerpts.xml">Geek About Town - Excerpts</a></h2>
-                    </hgroup>
-         
-    <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a brief treatise on 
-        </span>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        Geek About Town - Excerpts    </title>
+        <link href="/blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
     
         
-                    <span class='flavor' data-key='Date'>
-             furnished on
-        </span>
-    
-        <time pubdate="pubdate" datetime=""> 
+    <updated>2012-07-17T11:28:18Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Things I Suck At</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/things-i-suck-at"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/things-i-suck-at</id>
             
-        </time> 
-    </span>
-
-    </header>
-
-    <section class='content'>
-            </section>
-        <footer>
-                    </footer>
-
-</article>
-</div>
-
-
-                    <!-- Javascript at the bottom for fast page loading -->
-                            <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
-                                                    <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
-    
-                <script type="text/javascript">
-                    var clicky_site_ids = clicky_site_ids || [];
-                    clicky_site_ids.push(66617351);
-                    (function() {
-                        var s = document.createElement('script');
-                        s.type = 'text/javascript';
-                        s.async = true;
-                        s.src = '//static.getclicky.com/js';
-                        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
-                    })();
-                </script>
-                <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66617351ns.gif" /></p></noscript>
-                          <!--[if lt IE 7 ]> <script src="js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-            <![endif]-->
-            </body>
-</html>
+            <content type="html">
+                
+                &lt;p&gt;I &lt;a href=&#34;/categories/geek&#34;&gt;fiddle around with a lot of things.&lt;/a&gt;  It&amp;#8217;s in my nature. I began listing my recent forays into configuring email as an example, and I realized quite quickly that the odyssey ought to be its own post. The reason I do this sort of fiddling, though, almost always composed of two intertwining mental&amp;nbsp;phenomena:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I know what I need,&amp;nbsp;and&lt;/li&gt;
+&lt;li&gt;I know the limitations of the thing I&amp;#8217;m fiddling&amp;nbsp;with.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sometimes, when we&amp;#8217;re talking about software or something similar, I know up front what the limitations are; often, though, I only find out by playing around with it. Likewise, I often know what I need up front; other times, though, I only find out what I need by finding out where my needs rub up against the limitations of whatever it is I&amp;#8217;m trying to work&amp;nbsp;with.&lt;/p&gt;
+&lt;p&gt;As I was listening to &lt;a href=&#34;http://5by5.tv/b2w/71&#34;&gt;Back to Work 71&lt;/a&gt;, I started thinking about the problems that exist in organizations&amp;#8212;things like the &lt;a href=&#34;http://passiveaggressivenotes.com/&#34;&gt;passive aggression&lt;/a&gt; that Merlin and Dan were discussing&amp;#8212;as functions of that same pair of forces. More specifically, it made me think about the problems I have as a teacher with my students, the problems my students have with me as a teacher, and perhaps most importantly, the problems I have with myself as a teacher.  ((All these problems&amp;#8212;and perhaps all problems&amp;#8212;come down to a conflict between one party&amp;#8217;s expectations and another party&amp;#8217;s&amp;nbsp;limitations.))&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Sublime Text 2 Markdown Footnote Goodness</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/sublime-text-2-markdown-footnote-goodness"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/sublime-text-2-markdown-footnote-goodness</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;As I mentioned &lt;a href=&#34;/posts/a-simple-script-for-gathering-missing-markdown-links&#34;&gt;previously&lt;/a&gt;, I&amp;#8217;ve converted the little python link gathering doodad I did into a command for &lt;a href=&#34;http://sublimetext.com&#34;&gt;Sublime Text 2&lt;/a&gt;. But, because I am an &lt;a href=&#34;/posts/sometimes-comics-are-essays-too&#34;&gt;aggressive&lt;/a&gt; &lt;a href=&#34;/posts/feminism-marriage-proposals-comics&#34;&gt;footnoter&lt;/a&gt;, I decided I wanted some convenience functions for footnotes.[^4] And so I made some.&amp;nbsp;Hooray.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">A simple script for gathering missing Markdown links</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-simple-script-for-gathering-missing-markdown-links"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-simple-script-for-gathering-missing-markdown-links</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;As I was writing something else[^1], I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&amp;#8217;m pretty much the opposite of &lt;a href=&#34;http://brettterpstra.com&#34;&gt;Brett Terpstra&lt;/a&gt; when I write; his awesome &lt;a href=&#34;http://brettterpstra.com/project/markdown-service-tools/&#34;&gt;Markdown Service Tools&lt;/a&gt; has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&amp;#8217;s a lot easier to write first and find links later, as a lot of the time I&amp;#8217;m not linking to research I&amp;#8217;m doing now but research I&amp;#8217;ve done in the past. So usually what I&amp;#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&amp;#8217;ve just put &lt;code&gt;[Brett Terpstra][TERPstra]&lt;/code&gt;), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&amp;#8217;ve forgotten to fill&amp;nbsp;in.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">On Endings</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/on-endings"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/on-endings</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;I think I have, if obliquely, &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;expressed my feelings regarding the reductiveness of the ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, and at this point I feel like things are still &lt;em&gt;unfinished&lt;/em&gt; in that realm. While I don&amp;#8217;t yet feel ready to write much about &lt;em&gt;the&lt;/em&gt; ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;, I do want to write about &lt;em&gt;an&lt;/em&gt;&amp;nbsp;ending. &lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;Mass Effect&lt;/em&gt; series is full of fantastic writing, and particularly of moments wherein Shepard is (and therefore we are) forced to face decisions that are realistic in their complexity, if not their content. Even the game&amp;#8217;s paragon/renegade dichotomy speaks to this&amp;#8212;for one thing, there&amp;#8217;s nothing preventing a character from expressing both tendencies; for another, the tendencies align more with the &amp;#8220;lawful/chaotic&amp;#8221; spectrum[^1] than the more traditional &amp;#8220;good/evil&amp;#8221; one. In particular, the tactical decision at the end of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME1&lt;/span&gt;&lt;/em&gt; always stands out to me: sacrifice the council to minimize fleet losses, or let the fleet be culled to an unspecified amount at the expense of galactic leadership. There is no &amp;#8220;good&amp;#8221; answer (let alone a &amp;#8220;right&amp;#8221; one); instead, you have assess the risk to the fleet, assess the comparative value of this particular group of (kind of douchey) leaders, and decide which devastating loss is less devastating. It&amp;#8217;s that kind of tactical and moral sacrifice that is absent from the boxed ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;.&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;((There is an ending to &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;, I think, that is beautiful and poignant and expertly written and that captures the moral and tactical quagmire that is the &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;&lt;/em&gt; universe: the sequence after the mission on &lt;a href=&#34;http://www.youtube.com/watch?v=9zMGTb0K-PI&amp;amp;t=8m0s&#34;&gt;Thessia&lt;/a&gt;.))&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">"A Murderer's Work" out in *Creative Nonfiction*</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-murderers-work-out-in-creative-nonfiction"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-murderers-work-out-in-creative-nonfiction</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;Exciting news! My essay &amp;#8220;A Murderer&amp;#8217;s Work&amp;#8221; has just been published in &lt;a href=&#34;https://www.creativenonfiction.org/cnfshop/product_info.php?cPath=24_26&amp;amp;products_id=323&#34;&gt;Issue 44&lt;/a&gt; of &lt;a href=&#34;http://www.creativenonfiction.org/&#34;&gt;Creative Nonfiction&lt;/a&gt;. It&amp;#8217;s an honor to be published alongside the like of &lt;a href=&#34;http://www.bjhollars.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;B. J.&lt;/span&gt; Hollars&lt;/a&gt; and &lt;a href=&#34;http://essays.quotidiana.org/&#34;&gt;Patrick Madden&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;And, if I do say so myself, the &lt;a href=&#34;http://t.co/Ar53M8kt&#34;&gt;typography&lt;/a&gt; is&amp;nbsp;gorgeous.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Events! Excitement! Exclamation Points!</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/events-excitement-exclamation-points"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/events-excitement-exclamation-points</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;As you can see, I&amp;#8217;ve shifted things around a&amp;nbsp;bit. &lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve been wanting to do this for some time, inasmuch as my old site&amp;#8212;lovely as it was, to be sure&amp;#8212;had a few key limitations,&amp;nbsp;namely:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;being&amp;nbsp;Wordpress&lt;/li&gt;
+&lt;li&gt;being exclusively&amp;nbsp;gamery&lt;/li&gt;
+&lt;li&gt;being&amp;nbsp;dated&lt;/li&gt;
+&lt;li&gt;being&amp;nbsp;boring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And so. Because I am a &lt;a href=&#34;http://geekabouttown.com/categories/geek/&#34;&gt;geek&lt;/a&gt;, I have made things as complicated as I possibly can without having my wife kill me.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Although, if I don&amp;#8217;t get this deployed tonight, I may have missed my window.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Contrary to appearances&hellip;</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/contrary-to-appearances"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/contrary-to-appearances</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;&lt;em&gt;Kill Screen&lt;/em&gt; is hosting some more of my &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;oddjob handiwork&lt;/a&gt;. I thought it a fitting tribute to the end of the Mass Effect series. (For a minor easter egg, check out the id I gave the script element. I’m&amp;nbsp;hilarious.)&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Getting Started with jQuery, HTML, and CSS</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/getting-started-with-jquery-html-and-css-or-an-infinity-blade-review-how-to</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;A while ago, someone asked me how to get started making something like my
+&lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;Infinity Blade Review&lt;/a&gt; over at &lt;a href=&#34;http://www.killscreendaily.com&#34;&gt;Kill Screen&lt;/a&gt;. I started writing her an
+email, and it became huge, so I decided I’d post it here in case it might be of
+use to somebody else, as well. Here it&amp;nbsp;is.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">So, this is happening.</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/so-this-is-happening"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/so-this-is-happening</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;It&amp;#8217;s been a busy morning over at &lt;a href=&#34;http://www.killscreendaily.com/&#34;&gt;&lt;i&gt;Kill Screen&lt;/i&gt;&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;In the unlikely event that you read this blog but not that magazine, &lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;my review of &lt;i&gt;Infinity Blade&lt;/i&gt;&lt;/a&gt; ran today.  It has gotten a &lt;a href=&#34;https://twitter.com/#search?q=http%3A%2F%2Fkillscreendaily.com%2Farticles%2Freviews%2Finfinity-blade&#34;&gt;not inconsiderable&lt;/a&gt; amount of &lt;a&gt;attention.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Three cheers for &lt;i&gt;Kill Screen&lt;/i&gt; for being awesome and making this&amp;nbsp;possible.&lt;/p&gt;            </content>
+        </entry>
+            <entry>
+            <title type="html">Heavy Rain, art, and craft</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/heavy-rain-art-and-craft"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/heavy-rain-art-and-craft</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;Recently, I was fascinated by &lt;a href=&#34;http://www.brainygamer.com/&#34;&gt;Brainy Gamer Michael Abbot&amp;#8217;s&lt;/a&gt; &lt;a href=&#34;http://www.brainygamer.com/the_brainy_gamer/2011/03/rollercoaster-bias.html&#34;&gt;response&lt;/a&gt; to
+&lt;em&gt;Heavy Rain&lt;/em&gt; designer David Cage&amp;#8217;s talk at this year&amp;#8217;s &lt;span class=&#34;caps&#34;&gt;GDC&lt;/span&gt;.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Unlike Abbott, I
+did like &lt;em&gt;Heavy Rain&lt;/em&gt;, although at times I found its interface maddening, and I
+felt like there were a lot of untapped possibilities in the story. The game was
+rich, though, in what I value about gaming, which I have talked about at length
+elsewhere in other games: empathy, shared subjectivity, difficult non-binary
+choices, moral and ethical ambiguity, and origami.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;Which conference&amp;#8212;from the tweets I saw&amp;#8212;I would have liked to attend, but I couldn&amp;#8217;t&amp;#8217;ve gotten drunk enough to keep up with.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;One of my fondest memories of the game is folding the little paper whatever-it-was that came with the game while my &lt;span class=&#34;caps&#34;&gt;PS3&lt;/span&gt; took its sweet damn time installing the game to my &lt;span class=&#34;caps&#34;&gt;HDD&lt;/span&gt;.&lt;sup id=&#34;fnref:18&#34;&gt;&lt;a href=&#34;#fn:18&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&amp;#160;&lt;a href=&#34;#fnref:4&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:18&#34;&gt;
+&lt;p&gt;Isn&amp;#8217;t the whole point of consoles that we don&amp;#8217;t have to install things?&amp;#160;&lt;a href=&#34;#fnref:18&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;            </content>
+        </entry>
+    </feed>
