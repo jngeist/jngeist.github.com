@@ -45,7 +45,6 @@
             }
         },
         pluginMethod: function() {
-            console.log("Embiggen.pluginMethod firing.");
             return this.each(function() {
                 var width, innerwidth, lineheight, newsize, scale, size, wrapper, offset;
                 width = $(this).width();
@@ -61,7 +60,6 @@
                 innerwidth = wrapper.width();
 
                 scale = (width / innerwidth).toPrecision(2);
-                console.log({scale: scale, size: size, width: width, innerwidth: innerwidth, offset: offset, modifiedsize: modifiedsize});
                 newsize = Math.floor(modifiedsize * scale);
                 if (newsize > lineheight) {
                     newsize = lineheight;

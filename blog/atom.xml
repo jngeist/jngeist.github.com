@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-07-17T11:28:17Z</updated>
+    <updated>2012-07-31T09:28:07Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -103,13 +103,21 @@
 &lt;p&gt;The results are up at &lt;a href=&#34;https://github.com/jngeist/MarkdownEditing&#34;&gt;my fork of the MarkdownEditing Package&lt;/a&gt;. The furnished commands are&amp;nbsp;pretty&amp;nbsp;simple.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Insert footnote.&lt;/em&gt; Press &lt;code&gt;^6&lt;/code&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; to insert a footnote after the current word.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Gather missing footnotes.&lt;/em&gt; &lt;code&gt;&amp;#8984;&amp;#8997;&amp;#8679;G&lt;/code&gt; will look for footnote markers that aren&amp;#8217;t currently defined and add markers at the bottom of your document. Not so useful by itself, I admit, but useful in conjunction with&amp;nbsp;the&amp;nbsp;next:&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Switch to/from footnote definition.&lt;/em&gt; &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will switch between the text of a footnote and its references. So: if my cursor is in a footnote, and I press &lt;code&gt;&amp;#8984;^6&lt;/code&gt;, &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ST2&lt;/span&gt;&lt;/span&gt; will select the references to the footnote in the body text. If my cursor is in a body paragraph, &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will identify the next footnote reference and take me to&amp;nbsp;its&amp;nbsp;text.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sort footnotes.&lt;/em&gt; If you saw this post yesterday, you saw that my footnotes were out of order. Using &lt;code&gt;^6&lt;/code&gt; &lt;em&gt;before&lt;/em&gt; an existing footnote will result in the notes being added out of order, and at least in the flavor of Markdown I&amp;#8217;m using,&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; rel=&#34;footnote&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; this results in sorting oddities. (So: in the previous version of the post, the reference to footnote 4 came before footnote 1, and but footnote 1 came first in the &lt;code&gt;ol&lt;/code&gt; at the bottom of the page.) Now, &lt;code&gt;&amp;#8984;^S&lt;/code&gt; will sort the footnotes in the order in which they appear in the document. This affects the sorting of the &lt;code&gt;ol&lt;/code&gt;, which in turn corrects the problem with&amp;nbsp;marker&amp;nbsp;ordering.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Insert footnote.&lt;/em&gt; Press &lt;code&gt;^⌘6&lt;/code&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; to insert a footnote after the current word.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Gather missing footnotes.&lt;/em&gt; &lt;code&gt;⌘⌥⇧g&lt;/code&gt; will look for footnote markers that aren&amp;#8217;t currently defined and add markers at the bottom of your document. Not so useful by itself, I admit, but useful in conjunction with&amp;nbsp;the&amp;nbsp;next:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Switch to/from footnote definition.&lt;/em&gt; &lt;code&gt;^⌥6&lt;/code&gt; will switch between the text of a footnote and its references. So: if my cursor is in a footnote, and I press &lt;code&gt;^⌥6&lt;/code&gt;, &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;ST2&lt;/span&gt;&lt;/span&gt; will select the references to the footnote in the body text. If my cursor is in a body paragraph, &lt;code&gt;^⌥6&lt;/code&gt;will identify the next footnote reference and take me to&amp;nbsp;its&amp;nbsp;text. &lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sort footnotes.&lt;/em&gt; If you saw this post initially, you saw that my footnotes were out of order. Inserting a new footnote &lt;em&gt;before&lt;/em&gt; an existing footnote will result in the notes being added out of order, and at least in the flavor of Markdown I&amp;#8217;m using,&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; rel=&#34;footnote&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; this results in sorting oddities. (So: in the previous version of the post, the reference to footnote 4 came before footnote 1, and but footnote 1 came first in the &lt;code&gt;ol&lt;/code&gt; at the bottom of the page.) Now, &lt;code&gt;⌘^s&lt;/code&gt; will sort the footnotes in the order in which they appear in the document. This affects the sorting of the &lt;code&gt;ol&lt;/code&gt;, which in turn corrects the problem with&amp;nbsp;marker&amp;nbsp;ordering.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Magic footnotes.&lt;/em&gt; &lt;code&gt;^6&lt;/code&gt; is a magic command that combines most of these commands. It does&amp;nbsp;the&amp;nbsp;following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the current selection is in the text of a footnote, it moves the cursor to the&amp;nbsp;corresponding&amp;nbsp;reference(s).&lt;/li&gt;
+&lt;li&gt;If the current selection is in a footnote reference, it moves the cursor to the corresponding&amp;nbsp;footnote&amp;nbsp;text.&lt;/li&gt;
+&lt;li&gt;If the current selection is neither (i.e., in the main text), it creates a&amp;nbsp;new&amp;nbsp;footnote.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Between the three of these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, &lt;code&gt;^6&lt;/code&gt; will insert a new footnote, thusly.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; Easy as&amp;nbsp;can&amp;nbsp;be.&lt;/p&gt;
+&lt;p&gt;Between these, this makes it really easy to go back and forth from footnotes to text. When I need to write a footnote, &lt;code&gt;^6&lt;/code&gt; will insert a new footnote, thusly.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;5&lt;/a&gt;&lt;/sup&gt; Easy as&amp;nbsp;can&amp;nbsp;be.&lt;/p&gt;
 
 &lt;div class=&#34;footnote&#34;&gt;
 &lt;hr /&gt;
@@ -118,7 +126,7 @@
 &lt;p&gt;Obviously&amp;#8212;well, I think obviously&amp;#8212;&lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;core Markdown&lt;/a&gt; doesn&amp;#8217;t provide syntax for footnotes, and so this will only work with a flavor of Markdown that does.&amp;#160;&lt;a href=&#34;#fnref:4&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;6 because &lt;code&gt;&amp;#8679;6&lt;/code&gt; is &lt;code&gt;^&lt;/code&gt;, the &lt;a href=&#34;http://fletcherpenney.net/multimarkdown/&#34;&gt;Multimarkdown&lt;/a&gt; syntax for a footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;6 because &lt;code&gt;shift+6&lt;/code&gt; is &lt;code&gt;^&lt;/code&gt;, the &lt;a href=&#34;http://fletcherpenney.net/multimarkdown/&#34;&gt;Multimarkdown&lt;/a&gt; syntax for a footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;This works by scanning the current file for Multimarkdown footnote markers, identifying those that are numeric, and providing the next integer&amp;#8212;so you shouldn&amp;#8217;t have any marker collisions.&amp;#160;&lt;a href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
@@ -127,7 +135,7 @@
 &lt;p&gt;&lt;a href=&#34;http://freewisdom.org/projects/python-markdown/&#34;&gt;Python Markdown&lt;/a&gt; via &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt;, which, let&amp;#8217;s be frank&amp;#8212;who knows what madness lies within.&amp;#160;&lt;a href=&#34;#fnref:5&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 4 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34;&gt;
-&lt;p&gt;And when I&amp;#8217;m done writing the footnote text, &lt;code&gt;&amp;#8984;^6&lt;/code&gt; will take me back to the top.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 5 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;And when I&amp;#8217;m done writing the footnote text, &lt;code&gt;^6&lt;/code&gt; will take me back to the top.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 5 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;

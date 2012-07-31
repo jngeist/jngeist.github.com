@@ -1,3 +1,14 @@
+if (!(window.console && console.log)) {
+    (function() {
+        var noop = function() {};
+        var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
+        var length = methods.length;
+        var console = window.console = {};
+        while (length--) {
+            console[methods[length]] = noop;
+        }
+    }());
+}
 /*!
  * selectivizr v1.0.2 - (c) Keith Clark, freely distributable under the terms of the MIT license.
  * selectivizr.com
@@ -219,7 +230,6 @@ $.fn.smartresize = function( fn ) {
             }
         },
         pluginMethod: function() {
-            console.log("Embiggen.pluginMethod firing.");
             return this.each(function() {
                 var width, innerwidth, lineheight, newsize, scale, size, wrapper, offset;
                 width = $(this).width();
@@ -235,7 +245,6 @@ $.fn.smartresize = function( fn ) {
                 innerwidth = wrapper.width();
 
                 scale = (width / innerwidth).toPrecision(2);
-                console.log({scale: scale, size: size, width: width, innerwidth: innerwidth, offset: offset, modifiedsize: modifiedsize});
                 newsize = Math.floor(modifiedsize * scale);
                 if (newsize > lineheight) {
                     newsize = lineheight;
@@ -284,7 +293,6 @@ this.addEventListener("touchstart",touchStart,false);this.addEventListener("touc
   };
 
   on_resize = function() {
-    console.log("Resizing.");
     return $('header:not(article *) h1, #siteheader h1').embiggen();
   };
 
