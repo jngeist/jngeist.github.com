@@ -1109,6 +1109,30 @@ dl.category dt:after {
 .newer:after {
   content: '\00a0\00bb';
 }
+.spoiler {
+  margin-bottom: 1.6rem;
+}
+.spoiler::before,
+.spoiler::after {
+  content: "";
+  border-top: 0.125rem solid #00283e;
+  height: 0px;
+  margin: 0.7375rem auto;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.spoiler h1 {
+  color: #800000;
+  text-align: center;
+  font-family: "Alegreya", Georgia, "Times New Roman";
+  font-style: italic;
+  text-transform: none;
+}
+.spoiler p {
+  font-family: "Alegreya", Georgia, "Times New Roman";
+  color: #1e6197;
+}
 .limit,
 #main,
 body>div,
