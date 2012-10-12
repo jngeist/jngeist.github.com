@@ -7,10 +7,23 @@
         <link href="/"/>
     
         
-    <updated>2012-08-27T09:15:58Z</updated>
+    <updated>2012-10-12T13:10:03Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Better sorting with Keyboard Maestro Macro Palettes</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/better-sorting-with-keyboard-maestro-macro-palettes"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/better-sorting-with-keyboard-maestro-macro-palettes</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;As a teacher, I &lt;a href=&#34;http://inthecourseofmyduties.tumblr.com&#34;&gt;comment&lt;/a&gt; on a &lt;em&gt;lot&lt;/em&gt; of student writing. I usually do this digitally, as my handwriting is so awful as to make doctors weep. And, because students in the same classes tend to be learning the same things at the same time, I often find myself needing to say the same thing over and over, to lots of students in lots of different&amp;nbsp;classes. &lt;/p&gt;
+&lt;p&gt;Since I need to be able to inject these comments quickly, easily, and repeatedly, I&amp;#8217;ve been trying to find a good way to automate them for some time now. In my last attempt, I&amp;#8217;ve figured out a pretty good way to do this—solving a long-standing problem I&amp;#8217;ve had with Keyboard Maestro in the&amp;nbsp;process.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">*Assassin's Creed's* Identity Crisis</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -147,20 +160,5 @@
 &lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;Infinity Blade Review&lt;/a&gt; over at &lt;a href=&#34;http://www.killscreendaily.com&#34;&gt;Kill Screen&lt;/a&gt;. I started writing her an
 email, and it became huge, so I decided I’d post it here in case it might be of
 use to somebody else, as well. Here it&amp;nbsp;is.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">So, this is happening.</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/so-this-is-happening"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/so-this-is-happening</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;It&amp;#8217;s been a busy morning over at &lt;a href=&#34;http://www.killscreendaily.com/&#34;&gt;&lt;i&gt;Kill Screen&lt;/i&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/p&gt;
-&lt;p&gt;In the unlikely event that you read this blog but not that magazine, &lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;my review of &lt;i&gt;Infinity Blade&lt;/i&gt;&lt;/a&gt; ran today.  It has gotten a &lt;a href=&#34;https://twitter.com/#search?q=http%3A%2F%2Fkillscreendaily.com%2Farticles%2Freviews%2Finfinity-blade&#34;&gt;not inconsiderable&lt;/a&gt; amount of &lt;a&gt;attention.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Three cheers for &lt;i&gt;Kill Screen&lt;/i&gt; for being awesome and making this&amp;nbsp;possible.&lt;/p&gt;            </content>
         </entry>
     </feed>

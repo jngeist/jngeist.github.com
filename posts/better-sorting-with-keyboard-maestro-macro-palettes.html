@@ -1,0 +1,206 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!-- Consider specifying the language of your content by adding the `lang` attribute to <html> -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+                <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title>Better sorting with Keyboard Maestro Macro Palettes</title>
+        <meta name="content-type" content="text/html" />
+        <meta name="description" content="" />
+        <meta name="author" content="J. Nicholas Geist" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="canonical" href="/posts/better-sorting-with-keyboard-maestro-macro-palettes" />
+                    <link rel="shortcut icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        
+                    <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
+        
+                    <!-- All JavaScript at the bottom, except for Modernizr which
+            enables HTML5 elements & feature detects -->
+            <script src="/media/js/libs/modernizr.custom.min.js"></script>
+                    </head>
+    <body id="2012-10-11-keyboard-maestro" class="post ">
+    <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+        
+<header id='siteheader' class='siteheader'>
+    <hgroup>
+        <h1><a href='/'>Geek&nbsp;<em>About</em>&nbsp;Town</a></h1>
+        <h2>Hi. I'm <em>Josh</em>. This is my wheelhouse.</h2>
+    </hgroup>
+</header>
+<nav id='sitenav'>
+    <ul class='sitenav'>
+                <li>
+            <a title="Home Page"
+                
+                href="/">
+                Home
+            </a>
+        </li>        <li>
+            <a title="Blog"
+                
+                href="/blog">
+                Blog
+            </a>
+        </li>        <li>
+            <a title="Post Categories"
+                
+                href="/categories">
+                Categories
+            </a>
+        </li>        <li>
+            <a title="About"
+                
+                href="/about">
+                About
+            </a>
+        </li>        <li>
+            <a title="Now Playing"
+                
+                href="/now_playing">
+                Now Playing
+            </a>
+        </li>    </ul>
+    <a class='shownav' href="#sitenav">Navigation</a>
+</nav>
+
+<div id='main'>
+    <article class='post'>
+        <header class='post_header'>
+        <hgroup>
+            <h2><a href="/posts/better-sorting-with-keyboard-maestro-macro-palettes">Better sorting with Keyboard Maestro Macro Palettes</a></h2>
+                    </hgroup>
+         
+    <span class="postinfo">             <span class='flavor' data-key='Category'>
+            Being a rumination on 
+        </span>
+    
+        <a href='/categories/geek' class='category'>geekery</a> <span class='flavor vis'>and </span><a href='/categories/teaching' class='category'>teaching</a>
+                    <span class='flavor' data-key='Date'>
+             submitted on
+        </span>
+    
+        <time pubdate="pubdate" datetime="2012-10-11"> 
+            October 11, 2012
+        </time> 
+    </span>
+
+    </header>
+
+    <section class='content'>
+        <p>As a teacher, I <a href="http://inthecourseofmyduties.tumblr.com">comment</a> on a <em>lot</em> of student writing. I usually do this digitally, as my handwriting is so awful as to make doctors weep. And, because students in the same classes tend to be learning the same things at the same time, I often find myself needing to say the same thing over and over, to lots of students in lots of different&nbsp;classes. </p>
+<p>Since I need to be able to inject these comments quickly, easily, and repeatedly, I&#8217;ve been trying to find a good way to automate them for some time now. In my last attempt, I&#8217;ve figured out a pretty good way to do this—solving a long-standing problem I&#8217;ve had with Keyboard Maestro in the&nbsp;process.</p>
+<p>A couple of quick examples. Some of these are usually marginal comments about small&nbsp;issues:</p>
+<blockquote>
+<p>In college writing, it’s polite to refer to people we don’t know by their last name, rather than their first (so “Tan” rather than&nbsp;“Amy”).</p>
+</blockquote>
+<p>Others are usually longer notes about more significant, essay-level&nbsp;issues:</p>
+<blockquote>
+<p id="linked-comment"><em>Sentence Boundaries.</em> We’ll talk about this in class a bit later, but for the moment, here’s <a href="http://owl.english.purdue.edu/owl/resource/598/1/">a resource online</a> for how to look at this issue. I’d definitely recommend you come work with me in my office on this&#8212;it’s a tough thing to figure out, and it’s one that’s really important for academic&nbsp;readers. </p>
+</blockquote>
+<h2>Attempt 1:&nbsp;Textexpander</h2>
+<p>Since I need to drop these in at different times in different places and different formats, I&#8217;ve been trying to find a way to integrate them into my workflow that is both unobtrusive and pervasively accessible. At first, these were a series of <a href="http://smilesoftware.com/TextExpander/index.html">Textexpander</a> snippets, but the problem with that—at least for me—is that I ended up with a slurry of arcane abbreviations that I could never remember, and so I ultimately forgot I&#8217;d set them up. As a result, Textexpander flopped for this purpose pretty&nbsp;quickly.</p>
+<h2>Attempt 2: Keyboard Maestro Macro&nbsp;Group</h2>
+<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> seemed a logical next step, especially when I realized that a <a href="http://www.keyboardmaestro.com/documentation/5/macrogroups.html">Macro Group</a> could be set to show a palette in response to a keystroke. So I set up a macro group to show a palette<sup id="fnref:3"><a href="#fn:3" rel="footnote">1</a></sup> in response to <code>⌘⌥T</code>, and I ended up with something like<sup id="fnref:1"><a href="#fn:1" rel="footnote">2</a></sup> this:</p>
+<p><img alt="Attempt 2: One Big Keyboard Maestro Macro Group" src="/media/images/posts/2012-10-12-attempt-2.png" /> </p>
+<p>I sorted and grouped comments in a way that made sense to me at the time, but as things were, I ended up with a couple of commonplaces that didn&#8217;t quite fit well into an established category. It was also kind of difficult to sort through—I had a big long list of things, and no easy way to get to them. So the workflow for inserting a commonplace comment&nbsp;was:</p>
+<ol>
+<li><code>⌘⌥T</code></li>
+<li>Focus on&nbsp;palette</li>
+<li>Find desired comment among enormous&nbsp;list</li>
+<li>Hand to mouse<sup id="fnref:2"><a href="#fn:2" rel="footnote">3</a></sup></li>
+<li>Click desired&nbsp;comment</li>
+<li>Hand back to&nbsp;keyboard</li>
+</ol>
+<p>This is still faster than typing, for sure, but the two big irritations come in steps 3 and 4—first, finding the comment I want among this sorted, but still quite long, list, and second, having to take my hand away from the keyboard for a task that is, essentially,&nbsp;typing.</p>
+<p>This worked for a long time, but when I saw <a href="http://www.macdrifter.com/2012/10/so-you-need-an-app-launcher.html">Gabe Weatherhead&#8217;s post</a> about using a macro group for dedicated application launchers, I started thinking about this&nbsp;again.</p>
+<h2>Attempt 3: Dedicated Macro&nbsp;Groups</h2>
+<p>What I like about Weatherhead&#8217;s method is that the revealed palette has hotkeys <em>for each entry,</em> which my method didn&#8217;t really allow. (I certainly <em>could</em> have set up individual hotkeys for each entry, but I had way too many for that to be&nbsp;practical.) </p>
+<p>What I really needed, though, was a <em>hierarchy</em> of macros—a group of groups, in essence. Since Keyboard Maestro doesn&#8217;t allow nesting macro groups in this way, I had to improvise. And because I&#8217;m demanding and fiddly, I had to improvise a&nbsp;lot.</p>
+<h3>3.1: Group&nbsp;Hotkeys</h3>
+<p>This is the easy way to do things, the way that Keyboard Maestro is most comfortable with. I broke my commonplaces into categorized Macro Groups and gave each macro group a hotkey. (This is identical to Weatherhead&#8217;s&nbsp;setup.)</p>
+<p><img alt="Attempt 3.1: Look at them macro groups." src="/media/images/posts/2012-10-12-attempt-3.1-mgroups.png" /></p>
+<p>For <span class="caps">MLA</span> Style comments, I can simply hit <code>⌘^⌥F2</code> and get a comment palette.&nbsp;Easy. </p>
+<p><img alt="Attempt 3.1: My MLA Style Comment Palette" src="/media/images/posts/2012-10-12-attempt-3.1-mlapalette.png" /></p>
+<p>Of course, this leaves me with six different non-semantic keyboard shortcuts, with the possibility of expanding more or less infinitely as I add new categories and groupings. (In fact, even as I was typing the keyboard shortcut above, I got it wrong. I could try to sort out more meaningful shortcuts, but that&#8217;d still require me getting all that stuff sorted out in my memory, which is unreliable at&nbsp;best.)</p>
+<p>What would really be ideal is if I could get a macro palette that would allow me to choose from a number of <em>other</em> palettes. This seems&nbsp;trivial.</p>
+<h3>Attempt 3.2: A&nbsp;meta-group.</h3>
+<p>The obvious way to approach this is to set up another macro group intended to launch the palettes for each individual comment&nbsp;group. </p>
+<p><img alt="My meta-group" src="/media/images/posts/2012-10-12-attempt-3.2-metagroup.png" /></p>
+<p>The obvious way to set up the macros is like&nbsp;this:</p>
+<p><img alt="Send a keystroke! What could be easier!" src="/media/images/posts/2012-10-12-attempt-3.2-bad-macro.png" /></p>
+<p>The problem is that this doesn&#8217;t work. It seems that <span class="caps">KM</span> simulates the desired keystroke, but that the <span class="caps">KM</span> engine does <em>not</em> receive that simulated keystroke. 
+In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to have a Keyboard Maestro macro show a palette for another macro group for one action—which is exactly what I want, and <em>only</em> what I want. <span class="caps">KM</span> can <em>do</em> that, but the only ways it knows how is by a hotkey, the dropdown menu, or the intrusive (to me) global macro&nbsp;palette.</p>
+<h2>Current solution: Abuse&nbsp;Applescript!</h2>
+<p>It turns out I was only one step removed from a solution. What I needed was for <span class="caps">KM</span> to tell <em>something else</em> to send the keystroke in question to the <span class="caps">KM</span> engine. Applescript is the easiest way to do&nbsp;that.</p>
+<p>So my current&nbsp;setup:</p>
+<p>Macros grouped as above, with arbitrary hotkeys.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<p><img alt="Macros grouped as I desire" src="/media/images/posts/2012-10-12-solution-macro-groups.png" /></p>
+<p>Meta-palette keyed to <code>^;</code></p>
+<p><img alt="Meta-palette" src="/media/images/posts/2012-10-12-solution-meta-palette.png" /></p>
+<p>Palette launcher macros set up to run an Applescript like the following:<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+<pre><code>tell application "System Events" to tell process "Keyboard Maestro Engine"
+    key code 120 using [command down, control down, option down]
+end tell
+</code></pre>
+<p>This ensures that the keystroke actually gets to the <span class="caps">KM</span> engine, and so this <em>does</em> work to launch a palette for one action via another palette launched for one&nbsp;action. </p>
+<h2>The next&nbsp;step</h2>
+<p>When next I come back to fiddle with this setup, I think I&#8217;ll be going back to Textexpander. <span class="caps">TE</span> is much better at dealing with text than <span class="caps">KM</span>, and so when it comes to something like <a href="#linked-comment">the above</a>, I could use a rich text snippet rather than a Markdown one when inserting a comment in Pages or&nbsp;Preview.</p>
+<p>In that case, I&#8217;d still use the <span class="caps">KM</span> palette system I&#8217;ve set up here to trigger the Textexpander snippets. I&#8217;ll leave how to do that as an exercise to the&nbsp;reader.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:3">
+<p>This actually isn&#8217;t true. What I did initially is use a macro group wherein all of the macros had the same hotkey trigger (<code>⌘⌥T</code>), so that hitting that key combo brought up a disambiguation palette. Different implementation, same effect.&#160;<a href="#fnref:3" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:1">
+<p>I don&#8217;t have a screenshot of my actual setup when things were like this; this is a quick replication of what I had initially.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p><em>vampiric hissing noises</em>&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Although of course that doesn&#8217;t mean there isn&#8217;t one; if there&#8217;s a better way, please let me know.&#160;<a href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>Since I won&#8217;t be using these hotkeys directly, I picked things that wouldn&#8217;t compete with anything else on my system—in this case, <code>⌘⌥^F[1–6]</code>&#160;<a href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>The <code>key code 120</code> part is the integer version of the key code for, in this case, the F6 key. I got these using the Event Viewer included with <a href="http://pqrs.org/macosx/keyremap4macbook/">KeyRemap4MacBook</a>, but this is necessary because the F keys seem to be a special case. Depending on the key, there may be a simpler way to do it: the System Events dictionary also includes the simpler &#8220;keystroke&#8221; command that allows the use of simple strings, so an Applescript to trigger my meta-palette could simply use <code>keystroke ";" using control down</code>.&#160;<a href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>            </section>
+        <footer>
+                    </footer>
+
+</article>
+</div>
+
+
+                    <!-- Javascript at the bottom for fast page loading -->
+                            <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+                <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+                                                    <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
+    
+                <script type="text/javascript">
+                    var clicky_site_ids = clicky_site_ids || [];
+                    clicky_site_ids.push(66617351);
+                    (function() {
+                        var s = document.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = '//static.getclicky.com/js';
+                        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+                    })();
+                </script>
+                <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66617351ns.gif" /></p></noscript>
+                          <!--[if lt IE 7 ]> <script src="/media/js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+            <![endif]-->
+            </body>
+</html>

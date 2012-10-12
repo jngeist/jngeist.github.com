@@ -7,10 +7,149 @@
         <link href="/"/>
     
         
-    <updated>2012-08-27T09:15:57Z</updated>
+    <updated>2012-10-12T13:10:02Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">Better sorting with Keyboard Maestro Macro Palettes</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/better-sorting-with-keyboard-maestro-macro-palettes"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/better-sorting-with-keyboard-maestro-macro-palettes</id>
+            
+            <content type="html">
+                                &lt;p&gt;As a teacher, I &lt;a href=&#34;http://inthecourseofmyduties.tumblr.com&#34;&gt;comment&lt;/a&gt; on a &lt;em&gt;lot&lt;/em&gt; of student writing. I usually do this digitally, as my handwriting is so awful as to make doctors weep. And, because students in the same classes tend to be learning the same things at the same time, I often find myself needing to say the same thing over and over, to lots of students in lots of&amp;nbsp;different&amp;nbsp;classes. &lt;/p&gt;
+
+&lt;p&gt;Since I need to be able to inject these comments quickly, easily, and repeatedly, I&amp;#8217;ve been trying to find a good way to automate them for some time now. In my last attempt, I&amp;#8217;ve figured out a pretty good way to do this—solving a long-standing problem I&amp;#8217;ve had with Keyboard Maestro in&amp;nbsp;the&amp;nbsp;process.&lt;/p&gt;
+
+&lt;p&gt;A couple of quick examples. Some of these are usually marginal comments about&amp;nbsp;small&amp;nbsp;issues:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;In college writing, it’s polite to refer to people we don’t know by their last name, rather than their first (so “Tan” rather&amp;nbsp;than&amp;nbsp;“Amy”).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Others are usually longer notes about more significant,&amp;nbsp;essay-level&amp;nbsp;issues:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p id=&#34;linked-comment&#34;&gt;&lt;em&gt;Sentence Boundaries.&lt;/em&gt; We’ll talk about this in class a bit later, but for the moment, here’s &lt;a href=&#34;http://owl.english.purdue.edu/owl/resource/598/1/&#34;&gt;a resource online&lt;/a&gt; for how to look at this issue. I’d definitely recommend you come work with me in my office on this&amp;#8212;it’s a tough thing to figure out, and it’s one that’s really important for&amp;nbsp;academic&amp;nbsp;readers. &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;Attempt&amp;nbsp;1:&amp;nbsp;Textexpander&lt;/h2&gt;
+
+&lt;p&gt;Since I need to drop these in at different times in different places and different formats, I&amp;#8217;ve been trying to find a way to integrate them into my workflow that is both unobtrusive and pervasively accessible. At first, these were a series of &lt;a href=&#34;http://smilesoftware.com/TextExpander/index.html&#34;&gt;Textexpander&lt;/a&gt; snippets, but the problem with that—at least for me—is that I ended up with a slurry of arcane abbreviations that I could never remember, and so I ultimately forgot I&amp;#8217;d set them up. As a result, Textexpander flopped for this purpose&amp;nbsp;pretty&amp;nbsp;quickly.&lt;/p&gt;
+
+&lt;h2&gt;Attempt 2: Keyboard Maestro&amp;nbsp;Macro&amp;nbsp;Group&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.keyboardmaestro.com/main/&#34;&gt;Keyboard Maestro&lt;/a&gt; seemed a logical next step, especially when I realized that a &lt;a href=&#34;http://www.keyboardmaestro.com/documentation/5/macrogroups.html&#34;&gt;Macro Group&lt;/a&gt; could be set to show a palette in response to a keystroke. So I set up a macro group to show a palette&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; in response to &lt;code&gt;⌘⌥T&lt;/code&gt;, and I ended up with something like&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Attempt 2: One Big Keyboard Maestro Macro Group&#34; src=&#34;/media/images/posts/2012-10-12-attempt-2.png&#34; /&gt; &lt;/p&gt;
+
+&lt;p&gt;I sorted and grouped comments in a way that made sense to me at the time, but as things were, I ended up with a couple of commonplaces that didn&amp;#8217;t quite fit well into an established category. It was also kind of difficult to sort through—I had a big long list of things, and no easy way to get to them. So the workflow for inserting a commonplace&amp;nbsp;comment&amp;nbsp;was:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;⌘⌥T&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Focus&amp;nbsp;on&amp;nbsp;palette&lt;/li&gt;
+&lt;li&gt;Find desired comment among&amp;nbsp;enormous&amp;nbsp;list&lt;/li&gt;
+&lt;li&gt;Hand to mouse&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Click&amp;nbsp;desired&amp;nbsp;comment&lt;/li&gt;
+&lt;li&gt;Hand back&amp;nbsp;to&amp;nbsp;keyboard&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This is still faster than typing, for sure, but the two big irritations come in steps 3 and 4—first, finding the comment I want among this sorted, but still quite long, list, and second, having to take my hand away from the keyboard for a task that is,&amp;nbsp;essentially,&amp;nbsp;typing.&lt;/p&gt;
+
+&lt;p&gt;This worked for a long time, but when I saw &lt;a href=&#34;http://www.macdrifter.com/2012/10/so-you-need-an-app-launcher.html&#34;&gt;Gabe Weatherhead&amp;#8217;s post&lt;/a&gt; about using a macro group for dedicated application launchers, I started thinking about&amp;nbsp;this&amp;nbsp;again.&lt;/p&gt;
+
+&lt;h2&gt;Attempt 3: Dedicated&amp;nbsp;Macro&amp;nbsp;Groups&lt;/h2&gt;
+
+&lt;p&gt;What I like about Weatherhead&amp;#8217;s method is that the revealed palette has hotkeys &lt;em&gt;for each entry,&lt;/em&gt; which my method didn&amp;#8217;t really allow. (I certainly &lt;em&gt;could&lt;/em&gt; have set up individual hotkeys for each entry, but I had way too many for that to&amp;nbsp;be&amp;nbsp;practical.) &lt;/p&gt;
+
+&lt;p&gt;What I really needed, though, was a &lt;em&gt;hierarchy&lt;/em&gt; of macros—a group of groups, in essence. Since Keyboard Maestro doesn&amp;#8217;t allow nesting macro groups in this way, I had to improvise. And because I&amp;#8217;m demanding and fiddly, I had to improvise&amp;nbsp;a&amp;nbsp;lot.&lt;/p&gt;
+
+&lt;h3&gt;3.1:&amp;nbsp;Group&amp;nbsp;Hotkeys&lt;/h3&gt;
+
+&lt;p&gt;This is the easy way to do things, the way that Keyboard Maestro is most comfortable with. I broke my commonplaces into categorized Macro Groups and gave each macro group a hotkey. (This is identical to&amp;nbsp;Weatherhead&amp;#8217;s&amp;nbsp;setup.)&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Attempt 3.1: Look at them macro groups.&#34; src=&#34;/media/images/posts/2012-10-12-attempt-3.1-mgroups.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; Style comments, I can simply hit &lt;code&gt;⌘^⌥F2&lt;/code&gt; and get a comment&amp;nbsp;palette.&amp;nbsp;Easy. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Attempt 3.1: My MLA Style Comment Palette&#34; src=&#34;/media/images/posts/2012-10-12-attempt-3.1-mlapalette.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Of course, this leaves me with six different non-semantic keyboard shortcuts, with the possibility of expanding more or less infinitely as I add new categories and groupings. (In fact, even as I was typing the keyboard shortcut above, I got it wrong. I could try to sort out more meaningful shortcuts, but that&amp;#8217;d still require me getting all that stuff sorted out in my memory, which is unreliable&amp;nbsp;at&amp;nbsp;best.)&lt;/p&gt;
+
+&lt;p&gt;What would really be ideal is if I could get a macro palette that would allow me to choose from a number of &lt;em&gt;other&lt;/em&gt; palettes. This&amp;nbsp;seems&amp;nbsp;trivial.&lt;/p&gt;
+
+&lt;h3&gt;Attempt 3.2:&amp;nbsp;A&amp;nbsp;meta-group.&lt;/h3&gt;
+
+&lt;p&gt;The obvious way to approach this is to set up another macro group intended to launch the palettes for each individual&amp;nbsp;comment&amp;nbsp;group. &lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;My meta-group&#34; src=&#34;/media/images/posts/2012-10-12-attempt-3.2-metagroup.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The obvious way to set up the macros is&amp;nbsp;like&amp;nbsp;this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Send a keystroke! What could be easier!&#34; src=&#34;/media/images/posts/2012-10-12-attempt-3.2-bad-macro.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The problem is that this doesn&amp;#8217;t work. It seems that &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; simulates the desired keystroke, but that the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; engine does &lt;em&gt;not&lt;/em&gt; receive that simulated keystroke. 
+In fact, there is &lt;em&gt;no&lt;/em&gt; straightforward way I&amp;#8217;ve found&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; rel=&#34;footnote&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; to have a Keyboard Maestro macro show a palette for another macro group for one action—which is exactly what I want, and &lt;em&gt;only&lt;/em&gt; what I want. &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; can &lt;em&gt;do&lt;/em&gt; that, but the only ways it knows how is by a hotkey, the dropdown menu, or the intrusive (to me) global&amp;nbsp;macro&amp;nbsp;palette.&lt;/p&gt;
+
+&lt;h2&gt;Current solution:&amp;nbsp;Abuse&amp;nbsp;Applescript!&lt;/h2&gt;
+
+&lt;p&gt;It turns out I was only one step removed from a solution. What I needed was for &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; to tell &lt;em&gt;something else&lt;/em&gt; to send the keystroke in question to the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; engine. Applescript is the easiest way to&amp;nbsp;do&amp;nbsp;that.&lt;/p&gt;
+
+&lt;p&gt;So my&amp;nbsp;current&amp;nbsp;setup:&lt;/p&gt;
+
+&lt;p&gt;Macros grouped as above, with arbitrary hotkeys.&lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; rel=&#34;footnote&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Macros grouped as I desire&#34; src=&#34;/media/images/posts/2012-10-12-solution-macro-groups.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Meta-palette keyed to &lt;code&gt;^;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#34;Meta-palette&#34; src=&#34;/media/images/posts/2012-10-12-solution-meta-palette.png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Palette launcher macros set up to run an Applescript like the following:&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; rel=&#34;footnote&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tell application &#34;System Events&#34; to tell process &#34;Keyboard Maestro Engine&#34;
+    key code 120 using [command down, control down, option down]
+end tell
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This ensures that the keystroke actually gets to the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; engine, and so this &lt;em&gt;does&lt;/em&gt; work to launch a palette for one action via another palette launched for&amp;nbsp;one&amp;nbsp;action. &lt;/p&gt;
+
+&lt;h2&gt;The&amp;nbsp;next&amp;nbsp;step&lt;/h2&gt;
+
+&lt;p&gt;When next I come back to fiddle with this setup, I think I&amp;#8217;ll be going back to Textexpander. &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;TE&lt;/span&gt;&lt;/span&gt; is much better at dealing with text than &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt;, and so when it comes to something like &lt;a href=&#34;#linked-comment&#34;&gt;the above&lt;/a&gt;, I could use a rich text snippet rather than a Markdown one when inserting a comment in Pages&amp;nbsp;or&amp;nbsp;Preview.&lt;/p&gt;
+
+&lt;p&gt;In that case, I&amp;#8217;d still use the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; palette system I&amp;#8217;ve set up here to trigger the Textexpander snippets. I&amp;#8217;ll leave how to do that as an exercise to&amp;nbsp;the&amp;nbsp;reader.&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;This actually isn&amp;#8217;t true. What I did initially is use a macro group wherein all of the macros had the same hotkey trigger (&lt;code&gt;⌘⌥T&lt;/code&gt;), so that hitting that key combo brought up a disambiguation palette. Different implementation, same effect.&amp;#160;&lt;a href=&#34;#fnref:3&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;I don&amp;#8217;t have a screenshot of my actual setup when things were like this; this is a quick replication of what I had initially.&amp;#160;&lt;a href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;em&gt;vampiric hissing noises&lt;/em&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 3 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34;&gt;
+&lt;p&gt;Although of course that doesn&amp;#8217;t mean there isn&amp;#8217;t one; if there&amp;#8217;s a better way, please let me know.&amp;#160;&lt;a href=&#34;#fnref:4&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 4 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34;&gt;
+&lt;p&gt;Since I won&amp;#8217;t be using these hotkeys directly, I picked things that wouldn&amp;#8217;t compete with anything else on my system—in this case, &lt;code&gt;⌘⌥^F[1–6]&lt;/code&gt;&amp;#160;&lt;a href=&#34;#fnref:5&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 5 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:6&#34;&gt;
+&lt;p&gt;The &lt;code&gt;key code 120&lt;/code&gt; part is the integer version of the key code for, in this case, the F6 key. I got these using the Event Viewer included with &lt;a href=&#34;http://pqrs.org/macosx/keyremap4macbook/&#34;&gt;KeyRemap4MacBook&lt;/a&gt;, but this is necessary because the F keys seem to be a special case. Depending on the key, there may be a simpler way to do it: the System Events dictionary also includes the simpler &amp;#8220;keystroke&amp;#8221; command that allows the use of simple strings, so an Applescript to trigger my meta-palette could simply use &lt;code&gt;keystroke &#34;;&#34; using control down&lt;/code&gt;.&amp;#160;&lt;a href=&#34;#fnref:6&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 6 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
             <entry>
             <title type="html">*Assassin's Creed's* Identity Crisis</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -503,25 +642,6 @@ probably much cooler things that you can do in&amp;nbsp;your&amp;nbsp;situation.
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">So, this is happening.</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/so-this-is-happening"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/so-this-is-happening</id>
-            
-            <content type="html">
-                                &lt;p&gt;It&amp;#8217;s been a busy morning over at &lt;a href=&#34;http://www.killscreendaily.com/&#34;&gt;&lt;i&gt;Kill Screen&lt;/i&gt;&lt;/a&gt;.&lt;br /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;In the unlikely event that you read this blog but not that magazine, &lt;a href=&#34;http://killscreendaily.com/articles/reviews/infinity-blade&#34;&gt;my review of &lt;i&gt;Infinity Blade&lt;/i&gt;&lt;/a&gt; ran today.  It has gotten a &lt;a href=&#34;https://twitter.com/#search?q=http%3A%2F%2Fkillscreendaily.com%2Farticles%2Freviews%2Finfinity-blade&#34;&gt;not inconsiderable&lt;/a&gt; amount of &lt;a&gt;attention.&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Three cheers for &lt;i&gt;Kill Screen&lt;/i&gt; for being awesome and making&amp;nbsp;this&amp;nbsp;possible.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;            </content>
