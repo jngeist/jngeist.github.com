@@ -603,8 +603,7 @@ p {
   margin-bottom: 0;
 }
 p+p {
-  margin: 0 auto;
-  text-indent: 1.5em;
+  margin-top: 1.6rem;
 }
 p+p::first-letter,
 p+p::first-line {
@@ -676,6 +675,10 @@ article h2 {
   text-transform: none;
   color: #00283e;
 }
+article h3 {
+  margin-top: 1.6rem;
+  text-decoration: underline;
+}
 article .content>p:last-of-type:after {
   text-indent: 100%;
   white-space: nowrap;
@@ -718,6 +721,9 @@ dd:after {
   display: block;
   width: 100%;
   position: relative;
+}
+img {
+  margin: 0 auto;
 }
 a.category,
 span.category {
@@ -1132,6 +1138,32 @@ dl.category dt:after {
 .spoiler p {
   font-family: "Alegreya", Georgia, "Times New Roman";
   color: #1e6197;
+}
+.codebox {
+  margin-bottom: 1.6rem;
+  margin-top: 1.6rem;
+  background: #fff;
+}
+.codebox figure>br {
+  display: none;
+}
+.codebox figcaption {
+  font-family: "Inconsolata", "Courier New";
+  font-size: 0.8em;
+  line-height: 1.5375rem;
+  border-top: 0.0625rem solid #800000;
+  text-align: right;
+  color: #800000;
+}
+.codebox code {
+  background: inherit;
+}
+.codebox pre {
+  color: inherit;
+  background: inherit;
+  border-left: none;
+  padding: 0;
+  margin: 0;
 }
 .limit,
 #main,

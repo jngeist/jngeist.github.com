@@ -7,7 +7,7 @@
         <link href="/"/>
     
         
-    <updated>2012-10-12T13:10:02Z</updated>
+    <updated>2012-10-12T14:07:07Z</updated>
 
     <id>/blog/atom.xml/</id>
 
@@ -110,10 +110,7 @@ In fact, there is &lt;em&gt;no&lt;/em&gt; straightforward way I&amp;#8217;ve fou
 
 &lt;p&gt;Palette launcher macros set up to run an Applescript like the following:&lt;sup id=&#34;fnref:6&#34;&gt;&lt;a href=&#34;#fn:6&#34; rel=&#34;footnote&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;tell application &#34;System Events&#34; to tell process &#34;Keyboard Maestro Engine&#34;
-    key code 120 using [command down, control down, option down]
-end tell
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&#34;codebox&#34;&gt;&lt;figure class=&#34;code&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;k&#34;&gt;tell&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;application&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;System Events&amp;quot;&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;tell&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;process&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;Keyboard Maestro Engine&amp;quot;&lt;/span&gt;&lt;br /&gt;    &lt;span class=&#34;na&#34;&gt;key code&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;120&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;command&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;down&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;control&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;down&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;option&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;down&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;tell&lt;/span&gt;&lt;br /&gt;&lt;/pre&gt;&lt;/div&gt;&lt;br /&gt;&lt;figcaption&gt;AppleScript&lt;/figcaption&gt;&lt;/figure&gt;&lt;/div&gt;
 
 &lt;p&gt;This ensures that the keystroke actually gets to the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KM&lt;/span&gt;&lt;/span&gt; engine, and so this &lt;em&gt;does&lt;/em&gt; work to launch a palette for one action via another palette launched for&amp;nbsp;one&amp;nbsp;action. &lt;/p&gt;
 
