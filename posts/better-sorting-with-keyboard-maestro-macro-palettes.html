@@ -15,8 +15,8 @@
         <meta name="viewport" content="width=device-width" />
 
         <link rel="canonical" href="/posts/better-sorting-with-keyboard-maestro-macro-palettes" />
-                    <link rel="shortcut icon" href="/favicon.ico" />
-            <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+                    <link rel="shortcut icon" href="/media/favicon.ico" />
+            <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
         
                     <link rel="stylesheet" type="text/css" href="/media/css/default.css" />
             <link rel="stylesheet" type="text/css" href="/media/css/pygments.css" />
@@ -76,8 +76,7 @@
         <hgroup>
             <h2><a href="/posts/better-sorting-with-keyboard-maestro-macro-palettes">Better sorting with Keyboard Maestro Macro Palettes</a></h2>
                     </hgroup>
-         
-    <span class="postinfo">             <span class='flavor' data-key='Category'>
+            <span class="postinfo">             <span class='flavor' data-key='Category'>
             Being offered with due regard to 
         </span>
     
@@ -86,9 +85,9 @@
              set forth on
         </span>
     
-        <time pubdate="pubdate" datetime="2012-10-11"> 
+        <time pubdate="pubdate" datetime="2012-10-11">
             October 11, 2012
-        </time> 
+        </time>
     </span>
 
     </header>
@@ -107,14 +106,14 @@
 <h2>Attempt 1:&nbsp;Textexpander</h2>
 <p>Since I need to drop these in at different times in different places and different formats, I&#8217;ve been trying to find a way to integrate them into my workflow that is both unobtrusive and pervasively accessible. At first, these were a series of <a href="http://smilesoftware.com/TextExpander/index.html">Textexpander</a> snippets, but the problem with that—at least for me—is that I ended up with a slurry of arcane abbreviations that I could never remember, and so I ultimately forgot I&#8217;d set them up. As a result, Textexpander flopped for this purpose pretty&nbsp;quickly.</p>
 <h2>Attempt 2: Keyboard Maestro Macro&nbsp;Group</h2>
-<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> seemed a logical next step, especially when I realized that a <a href="http://www.keyboardmaestro.com/documentation/5/macrogroups.html">Macro Group</a> could be set to show a palette in response to a keystroke. So I set up a macro group to show a palette<sup id="fnref:3"><a href="#fn:3" rel="footnote">1</a></sup> in response to <code>⌘⌥T</code>, and I ended up with something like<sup id="fnref:1"><a href="#fn:1" rel="footnote">2</a></sup> this:</p>
+<p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> seemed a logical next step, especially when I realized that a <a href="http://www.keyboardmaestro.com/documentation/5/macrogroups.html">Macro Group</a> could be set to show a palette in response to a keystroke. So I set up a macro group to show a palette<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">1</a></sup> in response to <code>⌘⌥T</code>, and I ended up with something like<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">2</a></sup> this:</p>
 <p><img alt="Attempt 2: One Big Keyboard Maestro Macro Group" src="/media/images/posts/2012-10-12-attempt-2.png" /> </p>
 <p>I sorted and grouped comments in a way that made sense to me at the time, but as things were, I ended up with a couple of commonplaces that didn&#8217;t quite fit well into an established category. It was also kind of difficult to sort through—I had a big long list of things, and no easy way to get to them. So the workflow for inserting a commonplace comment&nbsp;was:</p>
 <ol>
 <li><code>⌘⌥T</code></li>
 <li>Focus on&nbsp;palette</li>
 <li>Find desired comment among enormous&nbsp;list</li>
-<li>Hand to mouse<sup id="fnref:2"><a href="#fn:2" rel="footnote">3</a></sup></li>
+<li>Hand to mouse<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">3</a></sup></li>
 <li>Click desired&nbsp;comment</li>
 <li>Hand back to&nbsp;keyboard</li>
 </ol>
@@ -136,15 +135,15 @@
 <p>The obvious way to set up the macros is like&nbsp;this:</p>
 <p><img alt="Send a keystroke! What could be easier!" src="/media/images/posts/2012-10-12-attempt-3.2-bad-macro.png" /></p>
 <p>The problem is that this doesn&#8217;t work. It seems that <span class="caps">KM</span> simulates the desired keystroke, but that the <span class="caps">KM</span> engine does <em>not</em> receive that simulated keystroke. 
-In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup> to have a Keyboard Maestro macro show a palette for another macro group for one action—which is exactly what I want, and <em>only</em> what I want. <span class="caps">KM</span> can <em>do</em> that, but the only ways it knows how is by a hotkey, the dropdown menu, or the intrusive (to me) global macro&nbsp;palette.</p>
+In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> to have a Keyboard Maestro macro show a palette for another macro group for one action—which is exactly what I want, and <em>only</em> what I want. <span class="caps">KM</span> can <em>do</em> that, but the only ways it knows how is by a hotkey, the dropdown menu, or the intrusive (to me) global macro&nbsp;palette.</p>
 <h2>Current solution: Abuse&nbsp;Applescript!</h2>
 <p>It turns out I was only one step removed from a solution. What I needed was for <span class="caps">KM</span> to tell <em>something else</em> to send the keystroke in question to the <span class="caps">KM</span> engine. Applescript is the easiest way to do&nbsp;that.</p>
 <p>So my current&nbsp;setup:</p>
-<p>Macros grouped as above, with arbitrary hotkeys.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></p>
+<p>Macros grouped as above, with arbitrary hotkeys.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup></p>
 <p><img alt="Macros grouped as I desire" src="/media/images/posts/2012-10-12-solution-macro-groups.png" /></p>
 <p>Meta-palette keyed to <code>^;</code></p>
 <p><img alt="Meta-palette" src="/media/images/posts/2012-10-12-solution-meta-palette.png" /></p>
-<p>Palette launcher macros set up to run an Applescript like the following:<sup id="fnref:6"><a href="#fn:6" rel="footnote">6</a></sup></p>
+<p>Palette launcher macros set up to run an Applescript like the following:<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup></p>
 <div class="codebox"><figure class="code"><div class="highlight"><pre><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;System Events&quot;</span> <span class="k">to</span> <span class="k">tell</span> <span class="nv">process</span> <span class="s2">&quot;Keyboard Maestro Engine&quot;</span><br />    <span class="na">key code</span> <span class="mi">120</span> <span class="nv">using</span> <span class="p">{</span><span class="nv">command</span> <span class="nv">down</span><span class="p">,</span> <span class="nb">control</span> <span class="nv">down</span><span class="p">,</span> <span class="nv">option</span> <span class="nv">down</span><span class="p">}</span><br /><span class="k">end</span> <span class="k">tell</span><br /></pre></div><br /><figcaption>AppleScript</figcaption></figure></div>
 
 <p>This ensures that the keystroke actually gets to the <span class="caps">KM</span> engine, and so this <em>does</em> work to launch a palette for one action via another palette launched for one&nbsp;action. </p>
@@ -155,22 +154,22 @@ In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref
 <hr />
 <ol>
 <li id="fn:3">
-<p>This actually isn&#8217;t true. What I did initially is use a macro group wherein all of the macros had the same hotkey trigger (<code>⌘⌥T</code>), so that hitting that key combo brought up a disambiguation palette. Different implementation, same effect.&#160;<a href="#fnref:3" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+<p>This actually isn&#8217;t true. What I did initially is use a macro group wherein all of the macros had the same hotkey trigger (<code>⌘⌥T</code>), so that hitting that key combo brought up a disambiguation palette. Different implementation, same effect.&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
 </li>
 <li id="fn:1">
-<p>I don&#8217;t have a screenshot of my actual setup when things were like this; this is a quick replication of what I had initially.&#160;<a href="#fnref:1" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+<p>I don&#8217;t have a screenshot of my actual setup when things were like this; this is a quick replication of what I had initially.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
 </li>
 <li id="fn:2">
-<p><em>vampiric hissing noises</em>&#160;<a href="#fnref:2" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+<p><em>vampiric hissing noises</em>&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
 </li>
 <li id="fn:4">
-<p>Although of course that doesn&#8217;t mean there isn&#8217;t one; if there&#8217;s a better way, please let me know.&#160;<a href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+<p>Although of course that doesn&#8217;t mean there isn&#8217;t one; if there&#8217;s a better way, please let me know.&#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
 </li>
 <li id="fn:5">
-<p>Since I won&#8217;t be using these hotkeys directly, I picked things that wouldn&#8217;t compete with anything else on my system—in this case, <code>⌘⌥^F[1–6]</code>&#160;<a href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+<p>Since I won&#8217;t be using these hotkeys directly, I picked things that wouldn&#8217;t compete with anything else on my system—in this case, <code>⌘⌥^F[1–6]</code>&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
 </li>
 <li id="fn:6">
-<p>The <code>key code 120</code> part is the integer version of the key code for, in this case, the F6 key. I got these using the Event Viewer included with <a href="http://pqrs.org/macosx/keyremap4macbook/">KeyRemap4MacBook</a>, but this is necessary because the F keys seem to be a special case. Depending on the key, there may be a simpler way to do it: the System Events dictionary also includes the simpler &#8220;keystroke&#8221; command that allows the use of simple strings, so an Applescript to trigger my meta-palette could simply use <code>keystroke ";" using control down</code>.&#160;<a href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+<p>The <code>key code 120</code> part is the integer version of the key code for, in this case, the F6 key. I got these using the Event Viewer included with <a href="http://pqrs.org/macosx/keyremap4macbook/">KeyRemap4MacBook</a>, but this is necessary because the F keys seem to be a special case. Depending on the key, there may be a simpler way to do it: the System Events dictionary also includes the simpler &#8220;keystroke&#8221; command that allows the use of simple strings, so an Applescript to trigger my meta-palette could simply use <code>keystroke ";" using control down</code>.&#160;<a class="footnote-backref" href="#fnref:6" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
 </li>
 </ol>
 </div>            </section>
