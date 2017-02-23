@@ -7,10 +7,25 @@
         <link href="/"/>
     
         
-    <updated>2017-02-23T10:12:35Z</updated>
+    <updated>2017-02-23T11:45:16Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">A Collection of Oddities</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-collection-of-oddities"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-collection-of-oddities</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;
+
+&lt;p&gt;From time to time I get emails or twitter mentions from other people who also thought some of my web experiments at &lt;em&gt;&lt;a href=&#34;https://killscreen.com/author/j-nicholas-geist/&#34;&gt;Kill Screen&lt;/a&gt;&lt;/em&gt; were neat, and wondering where they are. So (with &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;KS&lt;/span&gt;&lt;/em&gt;&amp;#8216;s permission) I&amp;#8217;m republishing &lt;a href=&#34;/oddities/&#34;&gt;some of those oddities here&lt;/a&gt;. The first of them is one of my favorite things I&amp;#8217;ve ever written, my review of &lt;a href=&#34;/oddities/infinity-blade/&#34;&gt;&lt;em&gt;Infinity Blade&lt;/em&gt;&lt;/a&gt;. I&amp;#8217;m glad it&amp;#8217;s back up&amp;nbsp;somewhere.&lt;/p&gt;
+&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Audiobooks and the Platonic Story</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -145,17 +160,5 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Contrary to appearances&hellip;</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/contrary-to-appearances"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/contrary-to-appearances</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;&lt;em&gt;Kill Screen&lt;/em&gt; is hosting some more of my &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;oddjob handiwork&lt;/a&gt;. I thought it a fitting tribute to the end of the Mass Effect series. (For a minor easter egg, check out the id I gave the script element. I’m&amp;nbsp;hilarious.)&lt;/p&gt;            </content>
         </entry>
     </feed>

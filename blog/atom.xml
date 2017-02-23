@@ -7,10 +7,41 @@
         <link href="/"/>
     
         
-    <updated>2017-02-23T10:12:34Z</updated>
+    <updated>2017-02-23T11:45:15Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">A Collection of Oddities</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/a-collection-of-oddities"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/a-collection-of-oddities</id>
+            
+            <content type="html">
+                                &lt;p&gt;
+
+&lt;p&gt;Over the past while, I&amp;#8217;ve kind of vanished from the internet.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a class=&#34;footnote-ref&#34; href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Back in the day, though, I used to do some cool stuff, especially for &lt;em&gt;&lt;a href=&#34;https://killscreen.com/author/j-nicholas-geist/&#34;&gt;Kill Screen&lt;/a&gt;.&lt;/em&gt; A lot of the stuff I did is broken now, with only a blank page where something neat used to be. For a while, &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KS&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; tried to wrestle my mostly bad code into submission with each website update, but there&amp;#8217;s only so much effort one can reasonably expect even &lt;em&gt;Kill Screen&amp;#8217;s&lt;/em&gt; awesome web team to put in micromanaging six-year-old structure-dependent javascript based on absurdly outdated versions of assorted offsite libraries. So mostly, my history at &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KS&lt;/span&gt;&lt;/span&gt;&lt;/em&gt; is full&amp;nbsp;of&amp;nbsp;holes.&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+
+&lt;p&gt;From time to time I get emails or twitter mentions from other people who also thought some of my web experiments at &lt;em&gt;&lt;a href=&#34;https://killscreen.com/author/j-nicholas-geist/&#34;&gt;Kill Screen&lt;/a&gt;&lt;/em&gt; were neat, and wondering where they are. So (with &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;KS&lt;/span&gt;&lt;/span&gt;&lt;/em&gt;&amp;#8216;s permission) I&amp;#8217;m republishing &lt;a href=&#34;/oddities/&#34;&gt;some of those oddities here&lt;/a&gt;. The first of them is one of my favorite things I&amp;#8217;ve ever written, my review of &lt;a href=&#34;/oddities/infinity-blade/&#34;&gt;&lt;em&gt;Infinity Blade&lt;/em&gt;&lt;/a&gt;. I&amp;#8217;m glad it&amp;#8217;s back&amp;nbsp;up&amp;nbsp;somewhere.&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;div class=&#34;footnote&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;With the notable exception of posting needlessly in-depth responses to irrelevant questions on esoteric subreddits, of course.&amp;#160;&lt;a class=&#34;footnote-backref&#34; href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Audiobooks and the Platonic Story</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -564,26 +595,6 @@ One of my greater frustrations is the fact that &lt;em&gt;&lt;span class=&#34;ca
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Contrary to appearances&hellip;</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/contrary-to-appearances"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/contrary-to-appearances</id>
-            
-            <content type="html">
-                                &lt;p&gt;So.&lt;/p&gt;
-
-&lt;p&gt;I’m&amp;nbsp;still&amp;nbsp;here.&lt;/p&gt;
-
-&lt;p&gt;I’ve been working on a redesign of this site for some long while now, and so I’ve been caught in the admittedly absurd mental trap wherein I don’t want to &lt;em&gt;write&lt;/em&gt; for my blog because I need to be working on the design. At this point, things are nearly (I hope) done, and so I’ll be resuming a more regular (or at least a more occasional)&amp;nbsp;publishing&amp;nbsp;calendar. &lt;/p&gt;
-
-&lt;p&gt;Unrelatedly, &lt;em&gt;Kill Screen&lt;/em&gt; is hosting some more of my &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;oddjob handiwork&lt;/a&gt;. I thought it a fitting tribute to the end of the Mass Effect series. (For a minor easter egg, check out the id I gave the script element.&amp;nbsp;I’m&amp;nbsp;hilarious.)&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;            </content>
