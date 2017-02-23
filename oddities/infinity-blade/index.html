@@ -32,6 +32,10 @@
 			padding: none;
 		}
 
+		#skipbuttons {
+			display: none;
+		}
+
 		button {
 			width: 160px;
 			height: 80px;
@@ -41,6 +45,15 @@
 
 		p {
 			margin: 0 auto 1.5em;
+		}
+
+		span {
+			display: none;
+			opacity: 0;
+		}
+		span.start {
+			display: inline;
+			opacity: 1;
 		}
 	</style>
     </head>
@@ -225,7 +238,12 @@
 	<button class="bloodline" data-bloodline=4 id='run4'>Begin Bloodline 4</button>
 	<button class="bloodline" data-bloodline=5 id='run5'>Begin Bloodline 5</button>
 
-
+	<div id='skipbuttons'>
+		<button class="bloodline" data-skip=1 data-bloodline=2 id='skip2'>Skip Bloodline 2</button>
+		<button class="bloodline" data-skip=1 data-bloodline=3 id='skip3'>Skip Bloodline 3</button>
+		<button class="bloodline" data-skip=1 data-bloodline=4 id='skip4'>Skip Bloodline 4</button>
+		<button class="bloodline" data-skip=1 data-bloodline=5 id='skip5'>Skip Bloodline 5</button>
+	</div>
 	<button id='reset'>Restart</button>
 </div>
 
