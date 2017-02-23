@@ -61,10 +61,10 @@
                 About
             </a>
         </li>        <li>
-            <a title="Now Playing"
+            <a title="Weird Stuff I've Made"
                 
-                href="/now_playing">
-                Now Playing
+                href="/oddities/">
+                Oddities
             </a>
         </li>    </ul>
     <a class='shownav' href="#sitenav">Navigation</a>
@@ -107,7 +107,7 @@
 <p>Since I need to drop these in at different times in different places and different formats, I&#8217;ve been trying to find a way to integrate them into my workflow that is both unobtrusive and pervasively accessible. At first, these were a series of <a href="http://smilesoftware.com/TextExpander/index.html">Textexpander</a> snippets, but the problem with that—at least for me—is that I ended up with a slurry of arcane abbreviations that I could never remember, and so I ultimately forgot I&#8217;d set them up. As a result, Textexpander flopped for this purpose pretty&nbsp;quickly.</p>
 <h2>Attempt 2: Keyboard Maestro Macro&nbsp;Group</h2>
 <p><a href="http://www.keyboardmaestro.com/main/">Keyboard Maestro</a> seemed a logical next step, especially when I realized that a <a href="http://www.keyboardmaestro.com/documentation/5/macrogroups.html">Macro Group</a> could be set to show a palette in response to a keystroke. So I set up a macro group to show a palette<sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">1</a></sup> in response to <code>⌘⌥T</code>, and I ended up with something like<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">2</a></sup> this:</p>
-<p><img alt="Attempt 2: One Big Keyboard Maestro Macro Group" src="/media/images/posts/2012-10-12-attempt-2.png" /> </p>
+<p><img height="711" width="406" alt="Attempt 2: One Big Keyboard Maestro Macro Group" src="/media/images/posts/2012-10-12-attempt-2.png" /> </p>
 <p>I sorted and grouped comments in a way that made sense to me at the time, but as things were, I ended up with a couple of commonplaces that didn&#8217;t quite fit well into an established category. It was also kind of difficult to sort through—I had a big long list of things, and no easy way to get to them. So the workflow for inserting a commonplace comment&nbsp;was:</p>
 <ol>
 <li><code>⌘⌥T</code></li>
@@ -124,25 +124,25 @@
 <p>What I really needed, though, was a <em>hierarchy</em> of macros—a group of groups, in essence. Since Keyboard Maestro doesn&#8217;t allow nesting macro groups in this way, I had to improvise. And because I&#8217;m demanding and fiddly, I had to improvise a&nbsp;lot.</p>
 <h3>3.1: Group&nbsp;Hotkeys</h3>
 <p>This is the easy way to do things, the way that Keyboard Maestro is most comfortable with. I broke my commonplaces into categorized Macro Groups and gave each macro group a hotkey. (This is identical to Weatherhead&#8217;s&nbsp;setup.)</p>
-<p><img alt="Attempt 3.1: Look at them macro groups." src="/media/images/posts/2012-10-12-attempt-3.1-mgroups.png" /></p>
+<p><img height="115" width="252" alt="Attempt 3.1: Look at them macro groups." src="/media/images/posts/2012-10-12-attempt-3.1-mgroups.png" /></p>
 <p>For <span class="caps">MLA</span> Style comments, I can simply hit <code>⌘^⌥F2</code> and get a comment palette.&nbsp;Easy. </p>
-<p><img alt="Attempt 3.1: My MLA Style Comment Palette" src="/media/images/posts/2012-10-12-attempt-3.1-mlapalette.png" /></p>
+<p><img height="129" width="299" alt="Attempt 3.1: My MLA Style Comment Palette" src="/media/images/posts/2012-10-12-attempt-3.1-mlapalette.png" /></p>
 <p>Of course, this leaves me with six different non-semantic keyboard shortcuts, with the possibility of expanding more or less infinitely as I add new categories and groupings. (In fact, even as I was typing the keyboard shortcut above, I got it wrong. I could try to sort out more meaningful shortcuts, but that&#8217;d still require me getting all that stuff sorted out in my memory, which is unreliable at&nbsp;best.)</p>
 <p>What would really be ideal is if I could get a macro palette that would allow me to choose from a number of <em>other</em> palettes. This seems&nbsp;trivial.</p>
 <h3>Attempt 3.2: A&nbsp;meta-group.</h3>
 <p>The obvious way to approach this is to set up another macro group intended to launch the palettes for each individual comment&nbsp;group. </p>
-<p><img alt="My meta-group" src="/media/images/posts/2012-10-12-attempt-3.2-metagroup.png" /></p>
+<p><img height="164" width="269" alt="My meta-group" src="/media/images/posts/2012-10-12-attempt-3.2-metagroup.png" /></p>
 <p>The obvious way to set up the macros is like&nbsp;this:</p>
-<p><img alt="Send a keystroke! What could be easier!" src="/media/images/posts/2012-10-12-attempt-3.2-bad-macro.png" /></p>
+<p><img height="295" width="492" alt="Send a keystroke! What could be easier!" src="/media/images/posts/2012-10-12-attempt-3.2-bad-macro.png" /></p>
 <p>The problem is that this doesn&#8217;t work. It seems that <span class="caps">KM</span> simulates the desired keystroke, but that the <span class="caps">KM</span> engine does <em>not</em> receive that simulated keystroke. 
 In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup> to have a Keyboard Maestro macro show a palette for another macro group for one action—which is exactly what I want, and <em>only</em> what I want. <span class="caps">KM</span> can <em>do</em> that, but the only ways it knows how is by a hotkey, the dropdown menu, or the intrusive (to me) global macro&nbsp;palette.</p>
 <h2>Current solution: Abuse&nbsp;Applescript!</h2>
 <p>It turns out I was only one step removed from a solution. What I needed was for <span class="caps">KM</span> to tell <em>something else</em> to send the keystroke in question to the <span class="caps">KM</span> engine. Applescript is the easiest way to do&nbsp;that.</p>
 <p>So my current&nbsp;setup:</p>
 <p>Macros grouped as above, with arbitrary hotkeys.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">5</a></sup></p>
-<p><img alt="Macros grouped as I desire" src="/media/images/posts/2012-10-12-solution-macro-groups.png" /></p>
+<p><img height="158" width="547" alt="Macros grouped as I desire" src="/media/images/posts/2012-10-12-solution-macro-groups.png" /></p>
 <p>Meta-palette keyed to <code>^;</code></p>
-<p><img alt="Meta-palette" src="/media/images/posts/2012-10-12-solution-meta-palette.png" /></p>
+<p><img height="209" width="938" alt="Meta-palette" src="/media/images/posts/2012-10-12-solution-meta-palette.png" /></p>
 <p>Palette launcher macros set up to run an Applescript like the following:<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup></p>
 <div class="codebox"><figure class="code"><div class="highlight"><pre><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;System Events&quot;</span> <span class="k">to</span> <span class="k">tell</span> <span class="nv">process</span> <span class="s2">&quot;Keyboard Maestro Engine&quot;</span><br />    <span class="na">key code</span> <span class="mi">120</span> <span class="nv">using</span> <span class="p">{</span><span class="nv">command</span> <span class="nv">down</span><span class="p">,</span> <span class="nb">control</span> <span class="nv">down</span><span class="p">,</span> <span class="nv">option</span> <span class="nv">down</span><span class="p">}</span><br /><span class="k">end</span> <span class="k">tell</span><br /></pre></div><br /><figcaption>AppleScript</figcaption></figure></div>
 
@@ -182,8 +182,7 @@ In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref
 
                     <!-- Javascript at the bottom for fast page loading -->
                             <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-                <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-                <script>window.jQuery || document.write('<script src="/media/js/libs/jquery-1.7.2.min.js">\x3C/script>')</script>
+                            	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
                                                     <script type="text/javascript" charset="utf-8" src="/media/js/geek.js"></script>
     
                 <script type="text/javascript">
@@ -198,7 +197,7 @@ In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref
                     })();
                 </script>
                 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66617351ns.gif" /></p></noscript>
-                          <!--[if lt IE 7 ]> <script src="/media/js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+                                        <!--[if lt IE 7 ]> <script src="/media/js/libs/dd_belatedpng.js"></script> <script>DD_belatedPNG.fix('img, .png_bg'); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
             <![endif]-->
             </body>
 </html>
