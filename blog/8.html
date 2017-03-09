@@ -8,13 +8,13 @@
     <head>
                 <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>A simple script for gathering missing Markdown links</title>
+        <title>Geek About Town</title>
         <meta name="content-type" content="text/html" />
-        <meta name="description" content="" />
+        <meta name="description" content="Essays into gamegeekery." />
         <meta name="author" content="J. Nicholas Geist" />
         <meta name="viewport" content="width=device-width" />
 
-        <link rel="canonical" href="/posts/a-simple-script-for-gathering-missing-markdown-links" />
+        <link rel="canonical" href="/blog/8" />
                     <link rel="shortcut icon" href="/media/favicon.ico" />
             <link rel="apple-touch-icon" href="/media/apple-touch-icon.png" />
         
@@ -25,7 +25,7 @@
             enables HTML5 elements & feature detects -->
             <script src="/media/js/libs/modernizr.custom.min.js"></script>
                     </head>
-    <body id="2012-07-05-a-simple-script-for-gathering-missing-markdown-links" class="post ">
+    <body id="index" class="">
     <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
         
 <header id='siteheader' class='siteheader'>
@@ -69,49 +69,67 @@
         </li>    </ul>
     <a class='shownav' href="#sitenav">Navigation</a>
 </nav>
-
+<div class='sidebar'>
+    <img height="321" width="278" class='logo' src="/media/images/gat_logo.png" alt="geek about town logo" />
+</div>
 <div id='main'>
-    <article class='post'>
-        <header class='post_header'>
+    
+
+
+<div class='posts'>
+        <header>
+                    <span class='flavor' data-key='Posts marked'>
+             A series of posts concerning 
+        </span>
+    
+        <h1>topics of recent&nbsp;interest</h1>
+    </header>
+
+                    <article class='post excerpt'>
+            <header class='post_header'>
         <hgroup>
-            <h2><a href="/posts/a-simple-script-for-gathering-missing-markdown-links">A simple script for gathering missing Markdown links</a></h2>
+            <h2><a href="/posts/art-and-attempt">Art and&nbsp;attempt</a></h2>
                     </hgroup>
             <span class="postinfo">             <span class='flavor' data-key='Category'>
             Being a rumination on 
         </span>
     
-        <a href='/categories/code' class='category'>code</a>
+        <a href='/categories/gaming' class='category'>gaming</a>
                     <span class='flavor' data-key='Date'>
              delivered on
         </span>
     
-        <time pubdate="pubdate" datetime="2012-07-05">
-            July 5, 2012
+        <time pubdate="pubdate" datetime="2010-07-08">
+            July 8, 2010
         </time>
     </span>
 
     </header>
 
-    <section class='content'>
-        <p>As I was writing something else<sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>, I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&#8217;m pretty much the opposite of <a href="http://brettterpstra.com">Brett Terpstra</a> when I write; his awesome <a href="http://brettterpstra.com/project/markdown-service-tools/">Markdown Service Tools</a> has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&#8217;s a lot easier to write first and find links later, as a lot of the time I&#8217;m not linking to research I&#8217;m doing now but research I&#8217;ve done in the past. So usually what I&#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&#8217;ve just put <code>[Brett Terpstra][TERPstra]</code>), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&#8217;ve forgotten to fill&nbsp;in.</p>
-<p>So I just threw this&nbsp;together:</p>
-<script src="https://gist.github.com/3057158.js?file=gather_missing_md_links.py"></script>
-
-<p>Essentially, it looks at a given file, identifies all the Markdown link references contained therein, and appends the reference marker at the end, waiting for the <span class="caps">URL</span>. So, running it on this file, I&#8217;ve got an eternally convenient <code>[TERPstra]:</code> reminding me to enter the <span class="caps">URL</span> at the bottom. I&#8217;m sure I&#8217;ll futz with this, and I&#8217;ll update this post when I do. (Immediate to-do: set it up to accept input from <span class="caps">STDIN</span>, so that I can use it as a filter in Sublime Text, and/or integrate it into my Markdown build&nbsp;system.)</p>
-<h2>Update: July 8,&nbsp;2012</h2>
-<p>A simpler way to do this occurred to me almost immediately: make this a <a href="http://docs.sublimetext.info/en/latest/extensibility/commands.html">Sublime Text 2 Command</a>. Since I&#8217;m already using Terpstra&#8217;s budding <a href="https://github.com/ttscoff/MarkdownEditing">MarkdownEditing package</a>, I just <a href="https://github.com/jngeist/MarkdownEditing.git">forked</a> his and added the <a href="https://github.com/jngeist/MarkdownEditing/blob/master/gather_missing_links.py">relevant command</a>. Now, I can just hit &#8997;&#8984;G, and all my markers are collected for&nbsp;me.</p>
-<div class="footnote">
-<hr />
-<ol>
-<li id="fn:1">
-<p>I swear, it&#8217;s an upcoming post about how easily distracted I am.&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
-</li>
-</ol>
-</div>            </section>
-        <footer>
+        <p>There&#8217;s a scene in <a href="http://www.amazon.com/Magicians-Novel-Lev-Grossman/dp/0452296293/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1278622307&amp;sr=8-1">The Magicians</a> where one character pounds the hell
+out of another, seemingly unprovoked.  A friend says of the fight that the
+pummeler&#8217;s agression had been building for a while.  &#8221;He was either going to
+hit you or start a blog,&#8221; the friend says.  &#8221;Honestly, I&#8217;m kind of glad he hit
+you.&#8221;  Starting a blog feels a little like farting in an elevator.  I&#8217;m doing
+something most people do at some point, intentionally or otherwise, but
+something that is nevertheless slightly embarrassing and very public.  But as
+you&#8217;ll see, I&#8217;ve had a growing discomfort with how people are talking and
+writing about video games, which is what I spend a lot of my time doing,
+mostly while my wife puts her fingers in her ears and goes &#8220;<span class="caps"><span class="caps">LA</span></span> <span class="caps"><span class="caps">LA</span></span> <span class="caps"><span class="caps">LA</span></span>.&#8221;  Two of
+the things at the core of my identity are gaming and essay writing, so this
+blog will in part be a space for me to rub those two things together in a way
+that is hopefully fruitful, and hopefully not&nbsp;too&nbsp;lascivious.</p>            <footer>
+                    <a href='/posts/art-and-attempt' class='more'>Read more&hellip;</a>
                     </footer>
 
-</article>
+    </article>
+
+    
+</div>
+
+    <a class='newer' href='/blog/7'>Newer&nbsp;posts</a>
+
+
 </div>
 
 

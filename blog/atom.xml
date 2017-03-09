@@ -7,10 +7,144 @@
         <link href="/"/>
     
         
-    <updated>2017-02-23T11:45:15Z</updated>
+    <updated>2017-03-08T12:27:48Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">The Phenomenology of Purpose</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/the-phenomenology-of-purpose"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/the-phenomenology-of-purpose</id>
+            
+            <content type="html">
+                                &lt;p&gt;Joseph-&lt;/p&gt;
+
+&lt;p&gt;There are a lot of questions here, and I don&amp;#8217;t know that I have answers. I think struggling with these kinds of questions might be the defining characteristic of a good writing teacher. I think it&amp;#8217;s really easy to start looking at ourselves as distributors of the Received Forms, and I&amp;#8217;m very, very wary of that&amp;#8212;which is why I got so unfairly snappy with Amble the&amp;nbsp;other&amp;nbsp;day.&lt;/p&gt;
+
+&lt;p&gt;On top of that, you&amp;#8217;ve asked this question during lent. I&amp;#8217;m approaching this lent with a somewhat inchoate discipline of contemplation, which I think will manifest itself in writing. So in lieu of an email, I am responding with a blog post. Hope&amp;nbsp;that&amp;#8217;s&amp;nbsp;okay.&lt;/p&gt;
+
+&lt;p&gt;Let me take some&amp;nbsp;small&amp;nbsp;steps.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;How do you negotiate &amp;#8230; the conflicts/tensions between student purposes in their writing and the purposes we assume they have to learn about in&amp;nbsp;academic&amp;nbsp;writing?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Allow me to interrogate your slash. Does it stand for &amp;#8220;or?&amp;#8221; Does it stand for &lt;em&gt;beziehungsweise?&lt;/em&gt; Does it clarify? Tension is not always conflict. Think &lt;a href=&#34;https://en.wikipedia.org/wiki/Tensegrity&#34;&gt;tensegrity&lt;/a&gt;: &lt;a href=&#34;http://static.panoramio.com/photos/large/62016957.jpg&#34;&gt;impossible things&lt;/a&gt; stand tall because their tension balances them. Tension is sometimes harmony, or at least tension can sometimes&amp;nbsp;be&amp;nbsp;harmonized.&lt;/p&gt;
+
+&lt;p&gt;There is tension, too, in your phrasing. &amp;#8220;We assume,&amp;#8221; implying we are not certain. &amp;#8220;Have to learn,&amp;#8221; as distinct from &amp;#8220;need to learn&amp;#8221;&amp;#8212;itself distinct from &amp;#8220;need&amp;nbsp;to&amp;nbsp;know.&amp;#8221;&lt;/p&gt;
+
+&lt;h2&gt;A Digression&amp;nbsp;into&amp;nbsp;Error&lt;/h2&gt;
+
+&lt;p&gt;In Joseph Williams&amp;#8217;s seminal essay &lt;a href=&#34;http://www.jstor.org/stable/356689?origin=JSTOR-pdf&amp;amp;seq=1#page_scan_tab_contents&#34;&gt;&amp;#8220;The Phenomenology of Error,&amp;#8221;&lt;/a&gt; he notes that in order for a grammatical error to exist in student writing, it must exist in at least five places along two axes. First, the error must&amp;nbsp;exist&amp;nbsp;in &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;the student&amp;#8217;s&amp;nbsp;paper,&amp;nbsp;and &lt;/li&gt;
+&lt;li&gt;the student&amp;#8217;s mind (i.e., a typo is not&amp;nbsp;an&amp;nbsp;error).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Second, the error must&amp;nbsp;exist&amp;nbsp;in &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li value=&#34;3&#34;&gt;the mind of the grammarian who identified the&amp;nbsp;rule,&amp;nbsp;and &lt;/li&gt;
+&lt;li value=&#34;4&#34;&gt;the text in which the grammarian recorded&amp;nbsp;the&amp;nbsp;rule. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These two axes&amp;nbsp;intersect&amp;nbsp;at &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li value=&#34;5&#34;&gt;the mind of the reader, who connects the error in the student&amp;#8217;s text (and thus the writer&amp;#8217;s mind) with the error in the handbook (and thus the&amp;nbsp;grammarian&amp;#8217;s&amp;nbsp;mind). &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div id=&#39;williams&#39;&gt;&lt;/div&gt;
+
+&lt;script type=&#34;text/coffeescript&#34;&gt;
+
+$ -&gt;
+    $(&#39;#williams&#39;).css({position: &#34;relative&#34;, width: &#39;100%&#39;, height: &#39;400px&#39;})
+
+    williams = 
+        pointsize: 3
+        board: JXG.JSXGraph.initBoard &#39;williams&#39;,
+                boundingbox: [0, 10, 10, 0]
+                axis:false
+
+        coords:
+            writer: [2, 9]
+            text: [4, 7]
+            grammarian: [2, 1]
+            handbook: [4, 3]
+            instructor: [6, 5]
+
+        makepoints: -&gt;
+            @points =
+                writer: @board.create &#39;point&#39;, @coords.writer, {name: &#34;Writer&#34;, size:@pointsize, color: &#39;#00FF00&#39;}
+                text: @board.create &#39;point&#39;, @coords.text, {name: &#34;Text&#34;, size:@pointsize}
+                grammarian: @board.create &#39;point&#39;, @coords.grammarian, {name: &#34;Grammarian&#34;, size:@pointsize}
+                handbook: @board.create &#39;point&#39;, @coords.handbook, {name: &#34;Handbook&#34;, size:@pointsize}
+                instructor: @board.create &#39;point&#39;, @coords.instructor, {name: &#34;Instructor&#34;, size:@pointsize}
+
+    williams.makepoints()
+
+&lt;/script&gt;
+
+&lt;p&gt;If this sounds complicated, that is because it &lt;em&gt;is&lt;/em&gt; complicated&amp;#8212;but its complexity is hidden by the ease and comfort with which most experienced native-language readers occupy position 5, and by the fact that position 5 is the intersection of those axes. In other words: when we see an error in student writing, it is easy to think the error is &lt;em&gt;here,&lt;/em&gt; and to forget that it stretches out in one direction through the paper into the mind of the student, and in another direction through (say) &lt;em&gt;The Elements of Style&lt;/em&gt; into the mind of E.&amp;nbsp;B.&amp;nbsp;White.&lt;/p&gt;
+
+&lt;p&gt;This idea&amp;#8212;that a concept like error is a collision of abstractions located in different physical and cognitive spaces&amp;#8212;is, I think, lurking beneath your question. What is &amp;#8220;purpose&amp;#8221; in a piece of classroom writing? I think it&amp;#8217;s more complicated even than Williams&amp;#8217;s model&amp;nbsp;of&amp;nbsp;error.&lt;/p&gt;
+
+&lt;p&gt;Again, we sit at the intersection. We look off in one direction toward&amp;nbsp;the&amp;nbsp;student: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;what does the student &lt;em&gt;want&lt;/em&gt;&amp;nbsp;to&amp;nbsp;accomplish? &lt;/li&gt;
+&lt;li&gt;how does the paper manifest&amp;nbsp;that&amp;nbsp;purpose? &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In another, we&amp;nbsp;look&amp;nbsp;inward: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li value=&#34;3&#34;&gt;what do I, as instructor, want students to accomplish in this assignment&amp;#8212;and we might forget that the path to that purpose&amp;nbsp;passes&amp;nbsp;through &lt;/li&gt;
+&lt;li value=&#34;4&#34;&gt;how effectively do I explain that purpose in&amp;nbsp;the&amp;nbsp;prompt? &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In a third direction, we look toward the academy, where the road forks. We first&amp;nbsp;pass&amp;nbsp;through &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li value=&#34;5&#34;&gt;what purposes are declared in the Course Outline for the course I am teaching? This is, of course, meant&amp;nbsp;to&amp;nbsp;reflect &lt;/li&gt;
+&lt;li value=&#34;6&#34;&gt;our institutional beliefs about what students need to know about academic writing. But there&amp;nbsp;is&amp;nbsp;also &lt;/li&gt;
+&lt;li value=&#34;7&#34;&gt;what actual academic writers do, which &lt;em&gt;only occasionally&amp;nbsp;resembles&amp;nbsp;1-6.&lt;/em&gt; &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div id=&#39;whatever&#39;&gt;&lt;/div&gt;
+
+&lt;h2&gt;Locating&amp;nbsp;our&amp;nbsp;purpose&lt;/h2&gt;
+
+&lt;p&gt;So what are we supposed to do? If&amp;nbsp;we&amp;nbsp;acknowledge &lt;/p&gt;
+
+&lt;script type=&#34;text/coffeescript&#34;&gt;
+
+$ -&gt;
+    me = [2, 1]
+    prompt = [5, 2]
+    intersect = [8, 3]
+    cor = [8, 5]
+    realacademy = [7, 9]
+    imagined = [9, 9]
+    student = [2, 9]
+    essay = [4, 7]
+
+    board = JXG.JSXGraph.initBoard &#39;whatever&#39;,
+        boundingbox: [0, 10, 10, 0]
+        axis:false
+
+
+
+&lt;/script&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&lt;/code&gt;&lt;/pre&gt;            </content>
+        </entry>
             <entry>
             <title type="html">A Collection of Oddities</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -552,49 +686,6 @@ One of my greater frustrations is the fact that &lt;em&gt;&lt;span class=&#34;ca
                                 &lt;p&gt;Exciting news! My essay &amp;#8220;A Murderer&amp;#8217;s Work&amp;#8221; has just been published in &lt;a href=&#34;https://www.creativenonfiction.org/cnfshop/product_info.php?cPath=24_26&amp;amp;products_id=323&#34;&gt;Issue 44&lt;/a&gt; of &lt;a href=&#34;http://www.creativenonfiction.org/&#34;&gt;Creative Nonfiction&lt;/a&gt;. It&amp;#8217;s an honor to be published alongside the like of &lt;a href=&#34;http://www.bjhollars.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;B. J.&lt;/span&gt;&lt;/span&gt; Hollars&lt;/a&gt; and &lt;a href=&#34;http://essays.quotidiana.org/&#34;&gt;Patrick Madden&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;And, if I do say so myself, the &lt;a href=&#34;http://t.co/Ar53M8kt&#34;&gt;typography&lt;/a&gt;&amp;nbsp;is&amp;nbsp;gorgeous.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Events! Excitement! Exclamation Points!</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/events-excitement-exclamation-points"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/events-excitement-exclamation-points</id>
-            
-            <content type="html">
-                                &lt;p&gt;As you can see, I&amp;#8217;ve shifted things around&amp;nbsp;a&amp;nbsp;bit. &lt;/p&gt;
-
-&lt;p&gt;I&amp;#8217;ve been wanting to do this for some time, inasmuch as my old site&amp;#8212;lovely as it was, to be sure&amp;#8212;had a few key&amp;nbsp;limitations,&amp;nbsp;namely:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;being&amp;nbsp;Wordpress&lt;/li&gt;
-&lt;li&gt;being&amp;nbsp;exclusively&amp;nbsp;gamery&lt;/li&gt;
-&lt;li&gt;being&amp;nbsp;dated&lt;/li&gt;
-&lt;li&gt;being&amp;nbsp;boring&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And so. Because I am a &lt;a href=&#34;http://geekabouttown.com/categories/geek/&#34;&gt;geek&lt;/a&gt;, I have made things as complicated as I possibly can without having my wife kill me.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a class=&#34;footnote-ref&#34; href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;I fully expect to spend a goodly bit of time tweaking this in the next few months/weeks/years/until the Internet ends, and I suspect I&amp;#8217;ll have more to say about the technologies I&amp;#8217;m using&amp;nbsp;as&amp;nbsp;well. &lt;/p&gt;
-
-&lt;p&gt;In short, the site is built on &lt;a href=&#34;http://hyde.github.com/&#34;&gt;Hyde&lt;/a&gt;, which is (as its name implies) &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&amp;#8216;s serially misunderstood, less-well-behaved alter-ego. There&amp;#8217;s plenty to love, and plenty to grumble about, but if you&amp;#8217;re choosing a static site generator, know this: the documentation for Hyde is a horsewreck.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a class=&#34;footnote-ref&#34; href=&#34;#fn:2&#34; rel=&#34;footnote&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;In any case,&amp;nbsp;hooray!&amp;nbsp;Website.&lt;/p&gt;
-
-&lt;div class=&#34;footnote&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Although, if I don&amp;#8217;t get this deployed tonight, I may have missed my window.&amp;#160;&lt;a class=&#34;footnote-backref&#34; href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;
-&lt;p&gt;Like a trainwreck, but more out-of-date.&amp;#160;&lt;a class=&#34;footnote-backref&#34; href=&#34;#fnref:2&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 2 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;            </content>

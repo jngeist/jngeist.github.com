@@ -7,10 +7,25 @@
         <link href="/"/>
     
         
-    <updated>2017-02-23T11:45:16Z</updated>
+    <updated>2017-03-08T12:27:49Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">The Phenomenology of Purpose</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/the-phenomenology-of-purpose"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/the-phenomenology-of-purpose</id>
+            
+            <content type="html">
+                
+                &lt;blockquote&gt;
+&lt;p&gt;How do you negotiate &amp;#8230; the conflicts/tensions between student purposes in their writing and the purposes we assume they have to learn about in academic&amp;nbsp;writing?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Allow me to interrogate your slash. Does it stand for &amp;#8220;or?&amp;#8221; Does it stand for &lt;em&gt;beziehungsweise?&lt;/em&gt; Does it clarify? Tension is not always conflict. Think &lt;a href=&#34;https://en.wikipedia.org/wiki/Tensegrity&#34;&gt;tensegrity&lt;/a&gt;: &lt;a href=&#34;http://static.panoramio.com/photos/large/62016957.jpg&#34;&gt;impossible things&lt;/a&gt; stand tall because their tension balances them. Tension is sometimes harmony, or at least tension can sometimes be&amp;nbsp;harmonized.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">A Collection of Oddities</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -132,33 +147,5 @@
                 
                 &lt;p&gt;Exciting news! My essay &amp;#8220;A Murderer&amp;#8217;s Work&amp;#8221; has just been published in &lt;a href=&#34;https://www.creativenonfiction.org/cnfshop/product_info.php?cPath=24_26&amp;amp;products_id=323&#34;&gt;Issue 44&lt;/a&gt; of &lt;a href=&#34;http://www.creativenonfiction.org/&#34;&gt;Creative Nonfiction&lt;/a&gt;. It&amp;#8217;s an honor to be published alongside the like of &lt;a href=&#34;http://www.bjhollars.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;B. J.&lt;/span&gt; Hollars&lt;/a&gt; and &lt;a href=&#34;http://essays.quotidiana.org/&#34;&gt;Patrick Madden&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;And, if I do say so myself, the &lt;a href=&#34;http://t.co/Ar53M8kt&#34;&gt;typography&lt;/a&gt; is&amp;nbsp;gorgeous.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Events! Excitement! Exclamation Points!</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/events-excitement-exclamation-points"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/events-excitement-exclamation-points</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;As you can see, I&amp;#8217;ve shifted things around a&amp;nbsp;bit. &lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ve been wanting to do this for some time, inasmuch as my old site&amp;#8212;lovely as it was, to be sure&amp;#8212;had a few key limitations,&amp;nbsp;namely:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;being&amp;nbsp;Wordpress&lt;/li&gt;
-&lt;li&gt;being exclusively&amp;nbsp;gamery&lt;/li&gt;
-&lt;li&gt;being&amp;nbsp;dated&lt;/li&gt;
-&lt;li&gt;being&amp;nbsp;boring&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And so. Because I am a &lt;a href=&#34;http://geekabouttown.com/categories/geek/&#34;&gt;geek&lt;/a&gt;, I have made things as complicated as I possibly can without having my wife kill me.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a class=&#34;footnote-ref&#34; href=&#34;#fn:1&#34; rel=&#34;footnote&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;div class=&#34;footnote&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;
-&lt;p&gt;Although, if I don&amp;#8217;t get this deployed tonight, I may have missed my window.&amp;#160;&lt;a class=&#34;footnote-backref&#34; href=&#34;#fnref:1&#34; rev=&#34;footnote&#34; title=&#34;Jump back to footnote 1 in the text&#34;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;            </content>
         </entry>
     </feed>
