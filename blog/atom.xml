@@ -7,10 +7,86 @@
         <link href="/"/>
     
         
-    <updated>2017-03-08T12:27:48Z</updated>
+    <updated>2017-03-14T14:55:24Z</updated>
 
     <id>/blog/atom.xml/</id>
 
+            <entry>
+            <title type="html">On Microwaves and Human Dignity</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/on-microwaves-and-human-dignity"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/on-microwaves-and-human-dignity</id>
+            
+            <content type="html">
+                                &lt;p&gt;One of the ongoing questions under discussion at my college these days is this: how can we best make use of our&amp;nbsp;embedded&amp;nbsp;tutors?&lt;/p&gt;
+
+&lt;p&gt;In answer to that question, I offer the following email conversation held between myself and my Augmented Instruction tutor&amp;nbsp;this&amp;nbsp;semester.&lt;/p&gt;
+
+&lt;p&gt;I think it will offer some valuable insight into the relationship between instructor and&amp;nbsp;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;AI&lt;/span&gt;&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;hr /&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On Mar 14, 2017 12:01 &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PM&lt;/span&gt;&lt;/span&gt;, &amp;#8220;Joshua Geist&amp;#8221; &lt;a href=&#34;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#60;&amp;#106;&amp;#110;&amp;#105;&amp;#99;&amp;#104;&amp;#111;&amp;#108;&amp;#97;&amp;#115;&amp;#103;&amp;#101;&amp;#105;&amp;#115;&amp;#116;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&#34;&gt;&amp;lt;&amp;#106;&amp;#110;&amp;#105;&amp;#99;&amp;#104;&amp;#111;&amp;#108;&amp;#97;&amp;#115;&amp;#103;&amp;#101;&amp;#105;&amp;#115;&amp;#116;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&lt;/a&gt;&amp;gt;&amp;nbsp;wrote:&lt;/p&gt;
+&lt;p&gt;In contrast to your spam-Add-Minute-and-wait-till-it-feels-done approach to timing, it occurred to me that perhaps not everybody gets frustrated that their microwave timer can&amp;#8217;t&amp;nbsp;do&amp;nbsp;half-seconds.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On Tue, Mar 14, 2017 at 12:49 &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;PM&lt;/span&gt;&lt;/span&gt;, Redacted Redacted &amp;lt;redacted@redacted.redacted&amp;gt;&amp;nbsp;wrote:&lt;/p&gt;
+&lt;p&gt;I am glad to get this email&amp;#8212; I was worried that still thinking about microwaves the whole drive back to Visalia&amp;nbsp;was&amp;nbsp;abnormal.&lt;/p&gt;
+&lt;p&gt;And yet, productive. I have concluded that the level of efficiency in the usage of microwave buttons is dependent on how much time you need something cooked for, due to the nature of the buttons. I argue that anything that will be cooked for four minutes or less should be cooked using the &amp;#8220;add&amp;nbsp;minute&amp;#8221;&amp;nbsp;button.&lt;/p&gt;
+&lt;p&gt;So in our example, we have two&amp;nbsp;different&amp;nbsp;choices:&lt;/p&gt;
+&lt;p&gt;1) Put in the amount of time you need, directly. This&amp;nbsp;formula&amp;nbsp;is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[cook time]+[minute]+[second]+[second]+[start]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I agree with you on this in general, but some microwaves&amp;#8212;microwaves which, to my mind, are vastly superior to the more common designs&amp;#8212;assume that numeric input &lt;em&gt;is&lt;/em&gt; cook time, which it obviously should be. That&amp;#8217;s what a microwave is &lt;em&gt;for,&lt;/em&gt; right? If I push &lt;code&gt;[1][3][0]&lt;/code&gt;, is there any better interpretation than that that is cook time? There is not. What, is my microwave also a remote control for my &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;TV&lt;/span&gt;&lt;/span&gt;? Am I using it to dial my phone? &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;NO&lt;/span&gt;&lt;/span&gt;. I am using it to&amp;nbsp;cook&amp;nbsp;food.&lt;/p&gt;
+&lt;p&gt;More importantly (for the below), if our microwave eschews the ludicrous Cook Time button, &lt;code&gt;[9][9]&lt;/code&gt; refers unambiguously to one minute and&amp;nbsp;39&amp;nbsp;seconds.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In this formula, we are assuming you know, to the second, how much time you require, so there is no need to cancel out remaining time. Also, there is the option of adding another button under &lt;code&gt;[minute]&lt;/code&gt;, but that doesn&amp;#8217;t come into play in&amp;nbsp;this&amp;nbsp;equation.&lt;/p&gt;
+&lt;p&gt;2) Use the &amp;#8220;add minute&amp;#8221; option, and, of course, cancel out leftover time.&amp;nbsp;This&amp;nbsp;gives:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[add minute]x+[cancel]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;dquo&#34;&gt;&lt;span class=&#34;dquo&#34;&gt;&amp;#8220;&lt;/span&gt;&lt;/span&gt;X&amp;#8221; in this equation is the amount of minutes you are adding, obviously, and therefore must be a positive, whole number. Because the &amp;#8220;add minute&amp;#8221; button begins the microwave automatically, we remove both the &amp;#8220;cook time&amp;#8221; and &amp;#8220;start&amp;#8221; variables. However, we do add in the need to cancel out&amp;nbsp;old&amp;nbsp;time.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;A minor objection: in most cases, the first press of &lt;code&gt;Cancel&lt;/code&gt; will stop the microwave, meaning that you have to press &lt;code&gt;Cancel&lt;/code&gt; again to clear the remaining time. I would submit that this&amp;nbsp;should&amp;nbsp;read&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Add Minute]x + [Cancel] + [Cancel]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Of course, you could open the door while it&amp;#8217;s running, but this is most likely dangerous, and at the very&amp;nbsp;least&amp;nbsp;distasteful.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The conclusion? The original formula requires the pressing of five-six buttons, total. Five is the minimum amount of buttons to&amp;nbsp;be&amp;nbsp;pressed.&lt;/p&gt;
+&lt;p&gt;In the second formula, two is the minimum amount of buttons to be pressed, if x is equal to 1, and can be up to 100, if x is equal to 99 (an argument could be made that it will take over a minute to press &amp;#8220;add minute&amp;#8221; 99 times, therefore the maximum could be increased. But this is a&amp;nbsp;different&amp;nbsp;argument).&lt;/p&gt;
+&lt;p&gt;Therefore, if 1&amp;lt;x&amp;lt;4, the second formula will be equally or more efficient than the first, because in those cases it would only require the pressing of two-five&amp;nbsp;buttons,&amp;nbsp;total.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;On an ideal microwave&amp;#8212;which &lt;em&gt;does&lt;/em&gt; exist; the microwave in the lunchroom at the Hanford Center works this way (and yes I will bring it to class for a demonstration if need be)&amp;#8212;the math&amp;nbsp;is&amp;nbsp;different.&lt;/p&gt;
+&lt;p&gt;1-9 seconds: I think we can stipulate that microwaving something for less than ten seconds is stupid; just hold it in the sun for a second&amp;nbsp;or&amp;nbsp;something.&lt;/p&gt;
+&lt;p&gt;10&amp;nbsp;seconds-60&amp;nbsp;seconds:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[6][0][start] = 3 buttons
+[AM][Cancel][Cancel] = 3 buttons
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;61&amp;nbsp;seconds-99&amp;nbsp;seconds:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[9][9][start] = 3 buttons
+[AM][AM][Cancel][Cancel] = 4 buttons
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;1:39-3:00&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[3][0][0][start] = 4 buttons
+[AM][AM][AM][Cancel][Cancel] = 5 buttons
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3:01-4:00&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[4][0][0][start] = 4 buttons
+[AM][AM][AM][AM][Cancel][Cancel] = 6 buttons
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And sadly it&amp;#8217;s all downhill&amp;nbsp;from&amp;nbsp;here.&lt;/p&gt;
+&lt;p&gt;If we add in the sadly-prevalent &lt;code&gt;[Cook Time]&lt;/code&gt;, this means that there is one case&amp;#8212;10-60 seconds&amp;#8212;where using the &lt;code&gt;[Add Minute]&lt;/code&gt; approach is more efficient. However, I would argue that trying to optimize that situation is foolish; the obvious approach is to go out and buy a better-designed microwave. Any time and opportunity cost therein incurred would be made up almost immediately by the button-press&amp;nbsp;time&amp;nbsp;savings.&lt;/p&gt;
+&lt;p&gt;And if you value efficiency above your own dignity and above the needs of others, you could omit the second &lt;code&gt;[Cancel]&lt;/code&gt; press in the &lt;code&gt;[Add Minute]&lt;/code&gt; approach and leave your leftover filthy shame seconds for others to see and know, which certainly changes the&amp;nbsp;equation&amp;nbsp;somewhat.&lt;/p&gt;
+&lt;p&gt;But given an ideal microwave, the add minute approach is almost always worse than specifying&amp;nbsp;cook&amp;nbsp;time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Plus there is less distance to move your fingers when repeatedly hitting one button up to four times, and less eye-search and mental processing time and power required. But that&amp;#8217;s another&amp;nbsp;point&amp;nbsp;altogether.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Let me finally add that these calculations leave out the moral and emotional aspects of this process. Certainly, we can reduce microwaving to a question of mere efficiency, but this loses all of the complicated nuance of the task. How does one account for the feeling of pride one gets with a careful, accurate estimation? How does one factor in the way the food tastes just a little bit better knowing that its perfect temperature is the result of my own insight and forethought, rather than haphazard button-slapping? How too the knowledge that those who share the microwave with me will feel my respect and admiration manifested in a&amp;nbsp;clean&amp;nbsp;timer?&lt;/p&gt;
+&lt;p&gt;These things are worth a little lost efficiency, to my mind. Honor the human soul within you. We are better than &lt;a href=&#34;https://en.wikipedia.org/wiki/Scientific_management&#34;&gt;Taylorism&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Quod&amp;nbsp;erat&amp;nbsp;demonstrandum.&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">The Phenomenology of Purpose</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -20,13 +96,9 @@
             <id>/posts/the-phenomenology-of-purpose</id>
             
             <content type="html">
-                                &lt;p&gt;Joseph-&lt;/p&gt;
+                                &lt;p&gt;A colleague sent me an email recently asking a question which initially I felt like I didn&amp;#8217;t understand. As I meditated on it, though, I found that my lack of understanding was deeper, richer, and more complex than I had at first appreciated. It speaks to some of the fundamental complexities of teaching writing, and just beneath its surface lurks some of my most passionate&amp;#8212;and sometimes most aggressively expressed&amp;#8212;beliefs about what the teaching of writing&amp;nbsp;is&amp;nbsp;for.&lt;/p&gt;
 
-&lt;p&gt;There are a lot of questions here, and I don&amp;#8217;t know that I have answers. I think struggling with these kinds of questions might be the defining characteristic of a good writing teacher. I think it&amp;#8217;s really easy to start looking at ourselves as distributors of the Received Forms, and I&amp;#8217;m very, very wary of that&amp;#8212;which is why I got so unfairly snappy with Amble the&amp;nbsp;other&amp;nbsp;day.&lt;/p&gt;
-
-&lt;p&gt;On top of that, you&amp;#8217;ve asked this question during lent. I&amp;#8217;m approaching this lent with a somewhat inchoate discipline of contemplation, which I think will manifest itself in writing. So in lieu of an email, I am responding with a blog post. Hope&amp;nbsp;that&amp;#8217;s&amp;nbsp;okay.&lt;/p&gt;
-
-&lt;p&gt;Let me take some&amp;nbsp;small&amp;nbsp;steps.&lt;/p&gt;
+&lt;p&gt;The question&amp;nbsp;is&amp;nbsp;this:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;How do you negotiate &amp;#8230; the conflicts/tensions between student purposes in their writing and the purposes we assume they have to learn about in&amp;nbsp;academic&amp;nbsp;writing?&lt;/p&gt;
@@ -35,6 +107,10 @@
 &lt;p&gt;Allow me to interrogate your slash. Does it stand for &amp;#8220;or?&amp;#8221; Does it stand for &lt;em&gt;beziehungsweise?&lt;/em&gt; Does it clarify? Tension is not always conflict. Think &lt;a href=&#34;https://en.wikipedia.org/wiki/Tensegrity&#34;&gt;tensegrity&lt;/a&gt;: &lt;a href=&#34;http://static.panoramio.com/photos/large/62016957.jpg&#34;&gt;impossible things&lt;/a&gt; stand tall because their tension balances them. Tension is sometimes harmony, or at least tension can sometimes&amp;nbsp;be&amp;nbsp;harmonized.&lt;/p&gt;
 
 &lt;p&gt;There is tension, too, in your phrasing. &amp;#8220;We assume,&amp;#8221; implying we are not certain. &amp;#8220;Have to learn,&amp;#8221; as distinct from &amp;#8220;need to learn&amp;#8221;&amp;#8212;itself distinct from &amp;#8220;need&amp;nbsp;to&amp;nbsp;know.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;And here, I think, you are speaking to the haze in which we operate as writing teachers. The naïve (to my mind) way of approaching writing instruction is to take for granted that as an experienced writer and certificated expert, I know the forms and purposes that students will need, and it is my job to ensure that my students conform to those forms and purposes. There must be a thesis statement, which must look like &lt;em&gt;this,&lt;/em&gt; and go &lt;em&gt;here,&lt;/em&gt; and contain &lt;em&gt;these components.&lt;/em&gt; Source X is valid support because it has 4 of the 7 features on my official list&amp;nbsp;of&amp;nbsp;support-validating-features. &lt;/p&gt;
+
+&lt;p&gt;But of course it is my general belief that whenever we think we know something for sure, it is simply because we haven&amp;#8217;t paid close&amp;nbsp;enough&amp;nbsp;attention.&lt;/p&gt;
 
 &lt;h2&gt;A Digression&amp;nbsp;into&amp;nbsp;Error&lt;/h2&gt;
 
@@ -61,38 +137,68 @@
 &lt;div id=&#39;williams&#39;&gt;&lt;/div&gt;
 
 &lt;script type=&#34;text/coffeescript&#34;&gt;
+    $ -&gt;
+        $(&#39;#williams&#39;).css({position: &#34;relative&#34;, width: &#39;100%&#39;, height: &#39;400px&#39;})
 
-$ -&gt;
-    $(&#39;#williams&#39;).css({position: &#34;relative&#34;, width: &#39;100%&#39;, height: &#39;400px&#39;})
+        williams = 
+            pointsize: 3
+            board: JXG.JSXGraph.initBoard &#39;williams&#39;,
+                    boundingbox: [0, 10, 10, 0]
+                    axis:false
 
-    williams = 
-        pointsize: 3
-        board: JXG.JSXGraph.initBoard &#39;williams&#39;,
-                boundingbox: [0, 10, 10, 0]
-                axis:false
+            coords:
+                writer: [2, 9]
+                text: [4, 7]
+                grammarian: [2, 1]
+                handbook: [4, 3]
+                instructor: [6, 5]
 
-        coords:
-            writer: [2, 9]
-            text: [4, 7]
-            grammarian: [2, 1]
-            handbook: [4, 3]
-            instructor: [6, 5]
+            makepoints: -&gt;
+                @points =
+                    writer: @board.create &#39;point&#39;, @coords.writer, 
+                        name: &#34;Writer&#34;
+                        size:@pointsize
+                        color: &#39;#00AA00&#39;
+                    text: @board.create &#39;point&#39;, @coords.text, 
+                        name: &#34;Text&#34;, 
+                        size:@pointsize, 
+                        color: &#39;#00AA00&#39;
+                    grammarian: @board.create &#39;point&#39;, @coords.grammarian, 
+                        name: &#34;Grammarian&#34; 
+                        size:@pointsize
+                        color: &#39;#0000AA&#39;
+                        label:
+                            offset: [10, -10]
+                    handbook: @board.create &#39;point&#39;, @coords.handbook, 
+                        name: &#34;Handbook&#34; 
+                        size:@pointsize 
+                        color: &#39;#0000AA&#39;
+                        label: 
+                            offset: [10, -10]
+                    instructor: @board.create &#39;point&#39;, @coords.instructor, {name: &#34;Reader&#34;, size:@pointsize, color: &#39;#00AAAA&#39;}
 
-        makepoints: -&gt;
-            @points =
-                writer: @board.create &#39;point&#39;, @coords.writer, {name: &#34;Writer&#34;, size:@pointsize, color: &#39;#00FF00&#39;}
-                text: @board.create &#39;point&#39;, @coords.text, {name: &#34;Text&#34;, size:@pointsize}
-                grammarian: @board.create &#39;point&#39;, @coords.grammarian, {name: &#34;Grammarian&#34;, size:@pointsize}
-                handbook: @board.create &#39;point&#39;, @coords.handbook, {name: &#34;Handbook&#34;, size:@pointsize}
-                instructor: @board.create &#39;point&#39;, @coords.instructor, {name: &#34;Instructor&#34;, size:@pointsize}
+            drawlines: -&gt;
+                @lines = 
+                    essay: @board.create &#39;line&#39;, [@points.writer, @points.instructor], 
+                        color: &#39;#00AA00&#39;
+                        straightFirst: false
+                        straightLast: false
+                    grammar: @board.create &#39;line&#39;, [@points.grammarian, @points.instructor], 
+                        color: &#39;#0000AA&#39;
+                        straightFirst: false
+                        straightLast: false
 
-    williams.makepoints()
-
+        williams.makepoints()
+        williams.drawlines()
 &lt;/script&gt;
 
 &lt;p&gt;If this sounds complicated, that is because it &lt;em&gt;is&lt;/em&gt; complicated&amp;#8212;but its complexity is hidden by the ease and comfort with which most experienced native-language readers occupy position 5, and by the fact that position 5 is the intersection of those axes. In other words: when we see an error in student writing, it is easy to think the error is &lt;em&gt;here,&lt;/em&gt; and to forget that it stretches out in one direction through the paper into the mind of the student, and in another direction through (say) &lt;em&gt;The Elements of Style&lt;/em&gt; into the mind of E.&amp;nbsp;B.&amp;nbsp;White.&lt;/p&gt;
 
-&lt;p&gt;This idea&amp;#8212;that a concept like error is a collision of abstractions located in different physical and cognitive spaces&amp;#8212;is, I think, lurking beneath your question. What is &amp;#8220;purpose&amp;#8221; in a piece of classroom writing? I think it&amp;#8217;s more complicated even than Williams&amp;#8217;s model&amp;nbsp;of&amp;nbsp;error.&lt;/p&gt;
+&lt;p&gt;This idea&amp;#8212;that a concept like error is a collision of abstractions located in different physical and cognitive spaces&amp;#8212;is, I think, lurking beneath&amp;nbsp;your&amp;nbsp;question. &lt;/p&gt;
+
+&lt;h2&gt;The Phenomenology&amp;nbsp;of&amp;nbsp;Purpose&lt;/h2&gt;
+
+&lt;p&gt;What is &amp;#8220;purpose&amp;#8221; in a piece of classroom writing? I think it&amp;#8217;s more complicated even than Williams&amp;#8217;s model&amp;nbsp;of&amp;nbsp;error.&lt;/p&gt;
 
 &lt;p&gt;Again, we sit at the intersection. We look off in one direction toward&amp;nbsp;the&amp;nbsp;student: &lt;/p&gt;
 
@@ -116,31 +222,159 @@ $ -&gt;
 &lt;li value=&#34;7&#34;&gt;what actual academic writers do, which &lt;em&gt;only occasionally&amp;nbsp;resembles&amp;nbsp;1-6.&lt;/em&gt; &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div id=&#39;whatever&#39;&gt;&lt;/div&gt;
+&lt;h2&gt;And it&amp;nbsp;gets&amp;nbsp;worse&lt;/h2&gt;
+
+&lt;p&gt;The phenomenological geometry of purpose is, I think, more complex than that of error because it is also &lt;em&gt;time-bound.&lt;/em&gt; If you have Javascript enabled, the below should animate things nicely; if not, hopefully it will still make a measure of sense. (Click on the buttons following each paragraph below, assuming&amp;nbsp;they&amp;nbsp;exist.)&lt;/p&gt;
+
+&lt;div id=&#39;purpose&#39;&gt;&amp;nbsp;&lt;/div&gt;
+
+&lt;div id=&#39;hideme&#39;&gt;
+
+&lt;p class=&#34;start&#34;&gt;First, we imagine a type of academic writing which we would like to see from our students. &lt;button class=&#39;parbutton&#39; data-step=&#39;PromptTarget&#39;&gt;》&lt;/button&gt; &lt;/p&gt;
+&lt;p class=&#34;PromptTarget&#34;&gt;&lt;button class=&#39;parbutton&#39; data-step=&#39;start&#39;&gt;《&lt;/button&gt; In imagining it, we reach toward the point where it lives&amp;#8212;in the world of academic writing, real or imagined, hopefully brought into range by way of the &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;COR&lt;/span&gt;&lt;/span&gt;. We write a prompt which, we hope, will invite that type of writing&amp;#8212;as an archer draws a bead on a distant target.&lt;button class=&#39;parbutton&#39; data-step=&#39;PromptSolid&#39;&gt;》&lt;/button&gt; &lt;/p&gt;
+&lt;p class=&#34;PromptSolid&#34;&gt;&lt;button class=&#39;parbutton&#39; data-step=&#39;PromptTarget&#39;&gt;《&lt;/button&gt; Our prompt may not actually point toward the kind of purpose we hope it will, of course; nonetheless, as prompts are visible to students in ways our inmost thoughts are not, they define what students aim for. &lt;button class=&#39;parbutton&#39; data-step=&#39;StudentTarget&#39;&gt;》&lt;/button&gt; &lt;/p&gt;
+&lt;p class=&#34;StudentTarget&#34;&gt;&lt;button class=&#39;parbutton&#39; data-step=&#39;PromptSolid&#39;&gt;《&lt;/button&gt; Once our students receive our prompts, they too have to craft a purpose which, they think, aligns with the purpose we have staked out for them. &lt;button class=&#39;parbutton&#39; data-step=&#39;StudentSolid&#39;&gt;》&lt;/button&gt; &lt;/p&gt;
+&lt;p class=&#34;StudentSolid&#34;&gt;&lt;button class=&#39;parbutton&#39; data-step=&#39;StudentTarget&#39;&gt;《&lt;/button&gt; Their essays represent their attempts, just as our prompts represent our attempts, to make real a particular kind of (authentic or synthetic)&amp;nbsp;academic&amp;nbsp;purpose. &lt;/p&gt;
+&lt;/div&gt;
 
 &lt;h2&gt;Locating&amp;nbsp;our&amp;nbsp;purpose&lt;/h2&gt;
 
-&lt;p&gt;So what are we supposed to do? If&amp;nbsp;we&amp;nbsp;acknowledge &lt;/p&gt;
+&lt;p&gt;So what are we supposed to do? If we acknowledge that the concept of &amp;#8220;purpose&amp;#8221; within the space of the college writing classroom is this complex, multidimensional thing, what do we&amp;nbsp;teach&amp;nbsp;students?&lt;/p&gt;
+
+&lt;h3&gt;Lift&amp;nbsp;the&amp;nbsp;curtain&lt;/h3&gt;
+
+&lt;p&gt;First, we must be honest about what we are doing. When we write assignments, we are trying to describe a particular kind of purpose which we perceive to be consistent with academic writing. That act of description is casting a ray into the field of possibility&amp;#8212;but it is not the full range of that possibility. I think we should engage that with&amp;nbsp;our&amp;nbsp;students. &lt;/p&gt;
+
+&lt;p&gt;Today, I was talking to my class about the assignment we&amp;#8217;re currently working on. I&amp;#8217;ve told them before that this is a new prompt, and that we should think about it as a starting point. In discussing it together, I&amp;#8217;ve been trying to revise and refine the purpose I have for them &lt;em&gt;in front of them,&lt;/em&gt; so that they can see both where I&amp;#8217;m standing and what I&amp;#8217;m pointing toward. Today, we talked about how this specific assignment&amp;#8212;analyzing the representation of the ghetto presented in a hip hop song from a historical perspective&amp;#8212;is artificial, but that the purposes represented within it are real within the space of academic writing. The idea of using one text (i.e., our historical readings) as a lens through which to analyze another (i.e., the song in question) is a very academic task, even within an&amp;nbsp;artificial&amp;nbsp;space.&lt;/p&gt;
+
+&lt;p&gt;In having that conversation, I hope that my students caught a glimpse into the field of academic possibility. This move represents a kind of thing they can do to accomplish a kind of purpose that exists within the space of&amp;nbsp;academic&amp;nbsp;writing.&lt;/p&gt;
+
+&lt;h3&gt;Teach targeting, not&amp;nbsp;the&amp;nbsp;target&lt;/h3&gt;
+
+&lt;p&gt;If we acknowledge that academic purposes are diverse, and in many cases unfamiliar to us, then we must necessarily acknowledge that we cannot teach our students all academic purposes. I&amp;#8217;ve never written a case study for &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;JAMA&lt;/span&gt;&lt;/span&gt;,&lt;/em&gt; nor an analysis of the decay rate of Uranium, nor a billion other things in disciplines other than my own. I can&amp;#8217;t teach my students those things. And I&amp;#8217;m not really supposed to&amp;#8212;I&amp;#8217;m teaching an introduction to academic writing, not a graduate-level writing class within a discipline. But I feel like it&amp;#8217;s important for us to remember that those purposes are out there, in our&amp;nbsp;students&amp;#8217;&amp;nbsp;futures. &lt;/p&gt;
+
+&lt;p&gt;If we teach only the kind of academic purposes with which we are most familiar, or only those purposes which &amp;#8220;we assume they have to learn about in academic writing,&amp;#8221; we prepare them to work toward those&amp;nbsp;purposes&amp;nbsp;alone. &lt;/p&gt;
+
+&lt;p&gt;In my English 1, I teach &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; style. The &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;COR&lt;/span&gt;&lt;/span&gt; says I&amp;#8217;m supposed to, and it&amp;#8217;s what I&amp;#8217;m most familiar with. But most of my students won&amp;#8217;t be literature critics, which means that &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; style will fall out of use very quickly for them. So I position both &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; and myself differently. I tell them that we are not learning &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; style. Rather, we are learning &lt;em&gt;how to learn a new citation style.&lt;/em&gt; What questions to ask of a new style guide, and how to find the answers. What kinds of things a citation style might describe. We are learning &lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;MLA&lt;/span&gt;&lt;/span&gt; style as a byproduct of learning how to do this kind&amp;nbsp;of&amp;nbsp;learning.&lt;/p&gt;
+
+&lt;p&gt;To me, this should also be how we approach the vast field of academic purposes. We should not be telling students &amp;#8220;this is how you do it,&amp;#8221; or even &amp;#8220;this is what you&amp;#8217;re supposed to do.&amp;#8221; We should be teaching them &lt;em&gt;how to figure out what they&amp;#8217;re supposed to do.&lt;/em&gt; How to identify the task and the kind of purpose being called for by a new assignment. How to read in a new discipline to identify the conventions of that discipline. How to understand the expectations and needs of our audience. How to craft a text which brings their own purpose into alignment with the purposes valued by the discipline in which they are writing. All of this is, of course, an extremely convoluted way to say that we should teach writing as rhetorical&amp;#8212;but I think it is easy to pay lipservice to that idea, and to forget the complex reality which it seeks&amp;nbsp;to&amp;nbsp;describe.&lt;/p&gt;
+
+&lt;p&gt;To say this more simply: our goal is not just to teach students to work toward the kind of purpose we believe they should be working toward, but rather to make choices about their purpose which allows them to align with the purposes their audiences will be&amp;nbsp;amenable&amp;nbsp;to. &lt;/p&gt;
+
+&lt;p&gt;If we hold to the model of writing as archery, with students&amp;#8217; essays representing shots at the hazy, moving target as academic writing, then we should care less about the target they are aiming at than we do about teaching them how&amp;nbsp;to&amp;nbsp;aim.&lt;/p&gt;
+
+&lt;h3&gt;And&amp;nbsp;a&amp;nbsp;warning&lt;/h3&gt;
+
+&lt;p&gt;Finally, we must must &lt;em&gt;not&lt;/em&gt; imagine ourselves to be entities who live at the Intersection. Moreover, we must not conflate the Intersection with the Real Academy. What I mean by this more concretely is that we shouldn&amp;#8217;t let ourselves get too comfortable with the idea that we know what kinds of writing students will need, or that we have communicated those purposes to them in a way that is clear and distinct. Of course, we &lt;em&gt;are&lt;/em&gt; more familiar with academic writing than our students, but it is so easy to reduce the vast field of possibility within that space into a&amp;nbsp;single&amp;nbsp;point. &lt;/p&gt;
+
+&lt;p&gt;That point is important and powerful. The Intersection&amp;#8212;where our students&amp;#8217; purposes, our own purposes, and the purposes we know and imagine in the academy collide&amp;#8212;is where we spend a lot of our time. It is and must be where evaluation happens, and it is good to sit there for a time and look at where we are, right now, in this moment. Is this essay doing what it&amp;#8217;s supposed to be doing? We should care&amp;nbsp;about&amp;nbsp;that.&lt;/p&gt;
+
+&lt;p&gt;In practicing archery, the target is of course important&amp;#8212;but most of one&amp;#8217;s time is spent at the line, loosing volley after volley at that target. We visit the target to see how we&amp;#8217;ve done, and to gather our arrows, and then we return to the line to practice&amp;nbsp;our&amp;nbsp;aim.&lt;/p&gt;
+
+&lt;p&gt;We should visit the Intersection, but we should not build a&amp;nbsp;house&amp;nbsp;there.&lt;/p&gt;
 
 &lt;script type=&#34;text/coffeescript&#34;&gt;
+    $ -&gt;
+        $(&#39;#purpose&#39;).css({position: &#34;relative&#34;, width: &#39;100%&#39;, height: &#39;300px&#39;, &#39;margin-top&#39;: &#39;1em&#39;, &#39;margin-bottom&#39;: &#39;1em&#39;})
 
-$ -&gt;
-    me = [2, 1]
-    prompt = [5, 2]
-    intersect = [8, 3]
-    cor = [8, 5]
-    realacademy = [7, 9]
-    imagined = [9, 9]
-    student = [2, 9]
-    essay = [4, 7]
+        purpose = 
+            pointsize: 3
+            board: JXG.JSXGraph.initBoard &#39;purpose&#39;,
+                    boundingbox: [0, 10, 10, 0]
+                    axis:false
 
-    board = JXG.JSXGraph.initBoard &#39;whatever&#39;,
-        boundingbox: [0, 10, 10, 0]
-        axis:false
+            coords: [
+                [&#39;Instructor&#39;, [2, 1], &#39;#00AA00&#39;],
+                [&#39;Prompt&#39;, [5, 2], &#39;#00AA00&#39;],
+                [&#39;COR&#39;, [8, 5], &#39;#FF8800&#39;],
+                [&#39;The Real Academy&#39;, [7, 9], &#39;#FF8800&#39;],
+                [&#39;The Imagined Academy&#39;, [9, 9], &#39;#FF8800&#39;],
+                [&#39;Student&#39;, [2, 9], &#39;#0000AA&#39;],
+                [&#39;Essay&#39;, [4, 7], &#39;#0000AA&#39;],
+                [&#39;Intersection&#39;, [8, 3], &#39;#AAAAAA&#39;],
+            ]
 
+            linecoords: [
+                [&#39;Acad1&#39;, [&#39;COR&#39;, &#39;The Real Academy&#39;], &#39;#FF8800&#39;, 0],
+                [&#39;Acad2&#39;, [&#39;COR&#39;, &#39;The Imagined Academy&#39;], &#39;#FF8800&#39;, 0],
+                [&#39;Acad3&#39;, [&#39;COR&#39;, &#39;Intersection&#39;], &#39;#FF8800&#39;, 0],
+                [&#39;PromptTarget&#39;, [&#39;Instructor&#39;, &#39;Intersection&#39;], &#39;#00AA00&#39;, 1],
+                [&#39;PromptSolid&#39;, [&#39;Instructor&#39;, &#39;Intersection&#39;], &#39;#00AA00&#39;, 0],
+                [&#39;StudentTarget&#39;, [&#39;Student&#39;, &#39;Intersection&#39;], &#39;#0000AA&#39;, 1],
+                [&#39;StudentSolid&#39;, [&#39;Student&#39;, &#39;Intersection&#39;], &#39;#0000AA&#39;, 0],
 
+            ]
+
+            points: {}
+            lines: {}
+
+            makepoint: (item) -&gt;
+                @points[item[0]] = @board.create &#39;point&#39;, item[1], 
+                    name: item[0]
+                    size: @pointsize
+                    color: item[2]
+
+            makepoints: -&gt;
+                @makepoint item for item in @coords    
+                @points[&#39;Prompt&#39;].hideElement()
+                @points[&#39;Essay&#39;].hideElement()
+
+            drawline: (item) -&gt;
+                @lines[item[0]] = @board.create &#39;line&#39;, [@points[item[1][0]], @points[item[1][1]]], 
+                        color: item[2],
+                        straightFirst: false,
+                        straightLast: false,
+                        dash: item[3],
+                        visible: false
+
+            drawlines:  -&gt;
+                @drawline item for item in @linecoords    
+                @lines[item].showElement() for item in [&#39;Acad1&#39;, &#39;Acad2&#39;, &#39;Acad3&#39;]
+
+            dostep: (event) -&gt;
+                action = $(event.target).attr(&#39;data-step&#39;)
+                $(&#39;#hideme p&#39;).hide()
+                $(&#39;#hideme p.&#39; + action).show()
+
+                switch action
+                    when &#34;start&#34;
+                        purpose.lines[&#39;PromptSolid&#39;].hideElement()
+                        purpose.points[&#39;Prompt&#39;].hideElement()
+                        purpose.lines[&#39;PromptTarget&#39;].hideElement()
+                        purpose.lines[&#39;StudentTarget&#39;].hideElement()
+                        purpose.points[&#39;Essay&#39;].hideElement()
+                        purpose.lines[&#39;StudentSolid&#39;].hideElement()
+                    when &#34;PromptTarget&#34;
+                        purpose.lines[&#39;PromptSolid&#39;].hideElement()
+                        purpose.points[&#39;Prompt&#39;].hideElement()
+                        purpose.lines[&#39;PromptTarget&#39;].showElement()
+                    when &#34;PromptSolid&#34;
+                        purpose.lines[&#39;PromptTarget&#39;].hideElement()
+                        purpose.points[&#39;Prompt&#39;].showElement()
+                        purpose.lines[&#39;PromptSolid&#39;].showElement()
+                        purpose.lines[&#39;StudentTarget&#39;].hideElement()
+                    when &#34;StudentTarget&#34;
+                        purpose.lines[&#39;StudentTarget&#39;].showElement()
+                        purpose.points[&#39;Essay&#39;].hideElement()
+                        purpose.lines[&#39;StudentSolid&#39;].hideElement()
+                    when &#34;StudentSolid&#34;
+                        purpose.lines[&#39;StudentTarget&#39;].hideElement()
+                        purpose.points[&#39;Essay&#39;].showElement()
+                        purpose.lines[&#39;StudentSolid&#39;].showElement()
+
+        purpose.makepoints()
+        purpose.drawlines()
+
+        $(&#39;.parbutton&#39;).show().click purpose.dostep
+        $(&#39;#hideme p:not(.start)&#39;).hide()
 
 &lt;/script&gt;
+
+&lt;style type=&#39;text/css&#39;&gt;
+    button {
+        display: none;
+    }
+&lt;/style&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;            </content>
@@ -670,22 +904,6 @@ One of my greater frustrations is the fact that &lt;em&gt;&lt;span class=&#34;ca
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&lt;/code&gt;&lt;/pre&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">"A Murderer's Work" out in *Creative Nonfiction*</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/a-murderers-work-out-in-creative-nonfiction"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/a-murderers-work-out-in-creative-nonfiction</id>
-            
-            <content type="html">
-                                &lt;p&gt;Exciting news! My essay &amp;#8220;A Murderer&amp;#8217;s Work&amp;#8221; has just been published in &lt;a href=&#34;https://www.creativenonfiction.org/cnfshop/product_info.php?cPath=24_26&amp;amp;products_id=323&#34;&gt;Issue 44&lt;/a&gt; of &lt;a href=&#34;http://www.creativenonfiction.org/&#34;&gt;Creative Nonfiction&lt;/a&gt;. It&amp;#8217;s an honor to be published alongside the like of &lt;a href=&#34;http://www.bjhollars.com/&#34;&gt;&lt;span class=&#34;caps&#34;&gt;&lt;span class=&#34;caps&#34;&gt;B. J.&lt;/span&gt;&lt;/span&gt; Hollars&lt;/a&gt; and &lt;a href=&#34;http://essays.quotidiana.org/&#34;&gt;Patrick Madden&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And, if I do say so myself, the &lt;a href=&#34;http://t.co/Ar53M8kt&#34;&gt;typography&lt;/a&gt;&amp;nbsp;is&amp;nbsp;gorgeous.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &lt;/code&gt;&lt;/pre&gt;            </content>
