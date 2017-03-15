@@ -1,15 +1,6 @@
 @import "normalize.css";
 
-  @font-face {
-      font-family: 'Inconsolata';
-      src: url('../fonts/inconsolata-webfont.eot');
-      src: url('../fonts/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/inconsolata-webfont.woff') format('woff'),
-url('../fonts/inconsolata-webfont.ttf') format('truetype'),
-url('../fonts/inconsolata-webfont.svg#inconsolatamedium') format('svg');
-      font-weight: normal;
-      font-style: normal;
-  }
+  @import url('https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i|Inconsolata|Lato:300,300i,700,700i');
 
   @font-face {
       font-family: 'League Gothic';
@@ -22,7 +13,7 @@ url('../fonts/league_gothic-webfont.svg#leaguegothicregular') format('svg');
       font-style: normal;
   }
 
-  /* Included as bold to prevent awful auto-bolding of League Gothic on some platforms.*/
+  // Included as bold to prevent awful auto-bolding of League Gothic on some platforms.
   @font-face {
       font-family: 'League Gothic';
       src: url('../fonts/league_gothic-webfont.eot');
@@ -33,14 +24,14 @@ url('../fonts/league_gothic-webfont.svg#leaguegothicregular') format('svg');
       font-weight: bold;
       font-style: normal;
   }
-
+/*
   @font-face {
       font-family: 'Colaborate';
       src: url('../fonts/colablig-webfont.eot');
       src: url('../fonts/colablig-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/colablig-webfont.woff') format('woff'),
-url('../fonts/colablig-webfont.ttf') format('truetype'),
-url('../fonts/colablig-webfont.svg#colaboratelightregular') format('svg');
+           url('../fonts/colablig-webfont.woff') format('woff'),
+           url('../fonts/colablig-webfont.ttf') format('truetype'),
+           url('../fonts/colablig-webfont.svg#colaboratelightregular') format('svg');
       font-weight: normal;
       font-style: normal;
   }
@@ -49,10 +40,21 @@ url('../fonts/colablig-webfont.svg#colaboratelightregular') format('svg');
       font-family: 'Colaborate';
       src: url('../fonts/colabreg-webfont.eot');
       src: url('../fonts/colabreg-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/colabreg-webfont.woff') format('woff'),
-url('../fonts/colabreg-webfont.ttf') format('truetype'),
-url('../fonts/colabreg-webfont.svg#colaborateregular') format('svg');
+           url('../fonts/colabreg-webfont.woff') format('woff'),
+           url('../fonts/colabreg-webfont.ttf') format('truetype'),
+           url('../fonts/colabreg-webfont.svg#colaborateregular') format('svg');
       font-weight: bold;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Inconsolata';
+      src: url('../fonts/inconsolata-webfont.eot');
+      src: url('../fonts/inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/inconsolata-webfont.woff') format('woff'),
+           url('../fonts/inconsolata-webfont.ttf') format('truetype'),
+           url('../fonts/inconsolata-webfont.svg#inconsolatamedium') format('svg');
+      font-weight: normal;
       font-style: normal;
   }
 
@@ -60,9 +62,9 @@ url('../fonts/colabreg-webfont.svg#colaborateregular') format('svg');
       font-family: 'Lato';
       src: url('../fonts/lato-lig-webfont.eot');
       src: url('../fonts/lato-lig-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/lato-lig-webfont.svg#LatoLight') format('svg'),
-url('../fonts/lato-lig-webfont.woff') format('woff'),
-url('../fonts/lato-lig-webfont.ttf') format('truetype');
+           url('../fonts/lato-lig-webfont.svg#LatoLight') format('svg'),
+           url('../fonts/lato-lig-webfont.woff') format('woff'),
+           url('../fonts/lato-lig-webfont.ttf') format('truetype');
       font-weight: normal;
       font-style: normal;
 
@@ -72,9 +74,9 @@ url('../fonts/lato-lig-webfont.ttf') format('truetype');
       font-family: 'Lato';
       src: url('../fonts/lato-ligita-webfont.eot');
       src: url('../fonts/lato-ligita-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/lato-ligita-webfont.svg#LatoLightItalic') format('svg'),
-url('../fonts/lato-ligita-webfont.woff') format('woff'),
-url('../fonts/lato-ligita-webfont.ttf') format('truetype');
+           url('../fonts/lato-ligita-webfont.svg#LatoLightItalic') format('svg'),
+           url('../fonts/lato-ligita-webfont.woff') format('woff'),
+           url('../fonts/lato-ligita-webfont.ttf') format('truetype');
       font-weight: normal;
       font-style: italic;
 
@@ -84,9 +86,9 @@ url('../fonts/lato-ligita-webfont.ttf') format('truetype');
       font-family: 'Lato';
       src: url('../fonts/lato-regita-webfont.eot');
       src: url('../fonts/lato-regita-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/lato-regita-webfont.svg#LatoItalic') format('svg'),
-url('../fonts/lato-regita-webfont.woff') format('woff'),
-url('../fonts/lato-regita-webfont.ttf') format('truetype');
+           url('../fonts/lato-regita-webfont.svg#LatoItalic') format('svg'),
+           url('../fonts/lato-regita-webfont.woff') format('woff'),
+           url('../fonts/lato-regita-webfont.ttf') format('truetype');
       font-weight: bold;
       font-style: italic;
 
@@ -96,9 +98,9 @@ url('../fonts/lato-regita-webfont.ttf') format('truetype');
       font-family: 'Lato';
       src: url('../fonts/lato-reg-webfont.eot');
       src: url('../fonts/lato-reg-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/lato-reg-webfont.svg#LatoRegular') format('svg'),
-url('../fonts/lato-reg-webfont.woff') format('woff'),
-url('../fonts/lato-reg-webfont.ttf') format('truetype');
+           url('../fonts/lato-reg-webfont.svg#LatoRegular') format('svg'),
+           url('../fonts/lato-reg-webfont.woff') format('woff'),
+           url('../fonts/lato-reg-webfont.ttf') format('truetype');
       font-weight: bold;
       font-style: normal;
 
@@ -108,9 +110,9 @@ url('../fonts/lato-reg-webfont.ttf') format('truetype');
       font-family: 'Alegreya';
       src: url('../fonts/alegreya-regular-webfont.eot');
       src: url('../fonts/alegreya-regular-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/alegreya-regular-webfont.woff') format('woff'),
-url('../fonts/alegreya-regular-webfont.ttf') format('truetype'),
-url('../fonts/alegreya-regular-webfont.svg#alegreyaregular') format('svg');
+           url('../fonts/alegreya-regular-webfont.woff') format('woff'),
+           url('../fonts/alegreya-regular-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-regular-webfont.svg#alegreyaregular') format('svg');
       font-weight: normal;
       font-style: normal;
   }
@@ -119,9 +121,9 @@ url('../fonts/alegreya-regular-webfont.svg#alegreyaregular') format('svg');
       font-family: 'Alegreya';
       src: url('../fonts/alegreya-italic-webfont.eot');
       src: url('../fonts/alegreya-italic-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/alegreya-italic-webfont.woff') format('woff'),
-url('../fonts/alegreya-italic-webfont.ttf') format('truetype'),
-url('../fonts/alegreya-italic-webfont.svg#alegreyaitalic') format('svg');
+           url('../fonts/alegreya-italic-webfont.woff') format('woff'),
+           url('../fonts/alegreya-italic-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-italic-webfont.svg#alegreyaitalic') format('svg');
       font-weight: normal;
       font-style: italic;
   }
@@ -130,9 +132,9 @@ url('../fonts/alegreya-italic-webfont.svg#alegreyaitalic') format('svg');
       font-family: 'Alegreya';
       src: url('../fonts/alegreya-bold-webfont.eot');
       src: url('../fonts/alegreya-bold-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/alegreya-bold-webfont.woff') format('woff'),
-url('../fonts/alegreya-bold-webfont.ttf') format('truetype'),
-url('../fonts/alegreya-bold-webfont.svg#alegreyabold') format('svg');
+           url('../fonts/alegreya-bold-webfont.woff') format('woff'),
+           url('../fonts/alegreya-bold-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-bold-webfont.svg#alegreyabold') format('svg');
       font-weight: bold;
       font-style: normal;
   }
@@ -141,12 +143,13 @@ url('../fonts/alegreya-bold-webfont.svg#alegreyabold') format('svg');
       font-family: 'Alegreya';
       src: url('../fonts/alegreya-bolditalic-webfont.eot');
       src: url('../fonts/alegreya-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
-url('../fonts/alegreya-bolditalic-webfont.woff') format('woff'),
-url('../fonts/alegreya-bolditalic-webfont.ttf') format('truetype'),
-url('../fonts/alegreya-bolditalic-webfont.svg#alegreyabolditalic') format('svg');
+           url('../fonts/alegreya-bolditalic-webfont.woff') format('woff'),
+           url('../fonts/alegreya-bolditalic-webfont.ttf') format('truetype'),
+           url('../fonts/alegreya-bolditalic-webfont.svg#alegreyabolditalic') format('svg');
       font-weight: bold;
       font-style: italic;
   }
+*/
 .nomargins,
 h1,
 h2,
@@ -213,6 +216,7 @@ html {
 body {
   color: #000;
   font-family: "Lato", "Verdana", sans;
+  font-weight: 300;
   background: url("../images/natural_paper.png") repeat;
   padding: 24px;
   margin: 0 auto;
@@ -364,8 +368,6 @@ article .content>p:last-of-type:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/gat_flourish.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/gat_flourish.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/gat_flourish.png, sizingMethod='scale')';
   content: '';
   height: 3.2rem;
   width: 3.2rem;
@@ -552,8 +554,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/gat_404.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/gat_404.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/gat_404.png, sizingMethod='scale')';
   max-width: 100%;
   height: 368px;
   margin: 0 auto 3.2rem auto;
@@ -689,8 +689,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/tumblr-inactive.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/tumblr-inactive.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/tumblr-inactive.png, sizingMethod='scale')';
 }
 .tumblr .pager .tumblr-pager {
   text-indent: 100%;
@@ -700,8 +698,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/tumblr-active.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/tumblr-active.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/tumblr-active.png, sizingMethod='scale')';
 }
 .pager .posts-pager {
   text-indent: 100%;
@@ -711,8 +707,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/posts-active.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/posts-active.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/posts-active.png, sizingMethod='scale')';
 }
 .twitter .pager .posts-pager,
 .tumblr .pager .posts-pager {
@@ -723,8 +717,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/posts-inactive.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/posts-inactive.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/posts-inactive.png, sizingMethod='scale')';
 }
 .pager .twitter-pager {
   text-indent: 100%;
@@ -734,8 +726,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/twitter-inactive.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/twitter-inactive.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/twitter-inactive.png, sizingMethod='scale')';
 }
 .twitter .pager .twitter-pager {
   text-indent: 100%;
@@ -745,8 +735,6 @@ dl.category dt:after {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/media/images/twitter-active.png");
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/twitter-active.png, sizingMethod='scale';
-  -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/twitter-active.png, sizingMethod='scale')';
 }
 .pulled_quote {
   box-sizing: border-box;
@@ -1002,8 +990,6 @@ body.notfound #main {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("/media/images/showmenu.png");
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/media/images/showmenu.png, sizingMethod='scale';
-    -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/media/images/showmenu.png, sizingMethod='scale')';
     position: absolute;
     top: 50%;
     margin-top: -0.8rem;
