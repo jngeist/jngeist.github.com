@@ -7,10 +7,24 @@
         <link href="/"/>
     
         
-    <updated>2017-03-14T14:55:25Z</updated>
+    <updated>2017-03-23T10:29:43Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">OMC must be stopped!</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/omc-must-be-stopped"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/omc-must-be-stopped</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;Come with me this far, at least: &lt;em&gt;March Fadness&lt;/em&gt; is in truth an essay made of essays, a great metaekphrasis[^1] using art and memory to heighten and sharpen one another&amp;#8217;s mystery. &lt;em&gt;March Fadness&lt;/em&gt; is rooted in a belief that art&amp;#8212;even the one-hit wonders of the 90s&amp;#8212;offers access to&amp;nbsp;humanity.&lt;/p&gt;
+&lt;p&gt;These votes are immensely complex; if two of us vote for the same song, can we say with any certainty that those two votes mean the same thing? We cannot. Are people voting for the songs? For the videos? For the memories? For the essays? For the essayists? For the preservation of their own brackets? Or &lt;em&gt;against&lt;/em&gt; any of those things, as I always root for whoever the Jets are playing?[^2] Or do all these strands braid around the maypole of a single radio button? Can we have a meaningful conversation about &amp;#8220;which song is the best&amp;#8221; if we are not in communion about what purpose art&amp;nbsp;serves?&lt;/p&gt;
+&lt;p&gt;That last question is why Justin St. Germain&amp;#8212;and, by extension, &lt;span class=&#34;caps&#34;&gt;OMC&lt;/span&gt;&amp;#8217;s &amp;#8220;How Bizarre&amp;#8221;&amp;#8212;must be&amp;nbsp;stopped. &lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">On Microwaves and Human Dignity</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -132,19 +146,5 @@
             <content type="html">
                 
                 &lt;p&gt;As I was writing something else[^1], I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&amp;#8217;m pretty much the opposite of &lt;a href=&#34;http://brettterpstra.com&#34;&gt;Brett Terpstra&lt;/a&gt; when I write; his awesome &lt;a href=&#34;http://brettterpstra.com/project/markdown-service-tools/&#34;&gt;Markdown Service Tools&lt;/a&gt; has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&amp;#8217;s a lot easier to write first and find links later, as a lot of the time I&amp;#8217;m not linking to research I&amp;#8217;m doing now but research I&amp;#8217;ve done in the past. So usually what I&amp;#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&amp;#8217;ve just put &lt;code&gt;[Brett Terpstra][TERPstra]&lt;/code&gt;), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&amp;#8217;ve forgotten to fill&amp;nbsp;in.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">On Endings</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/on-endings"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/on-endings</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;I think I have, if obliquely, &lt;a href=&#34;http://killscreendaily.com/articles/essays/we-changed-ending/&#34;&gt;expressed my feelings regarding the reductiveness of the ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;&lt;/a&gt;, and at this point I feel like things are still &lt;em&gt;unfinished&lt;/em&gt; in that realm. While I don&amp;#8217;t yet feel ready to write much about &lt;em&gt;the&lt;/em&gt; ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;, I do want to write about &lt;em&gt;an&lt;/em&gt;&amp;nbsp;ending. &lt;/p&gt;
-&lt;p&gt;The &lt;em&gt;Mass Effect&lt;/em&gt; series is full of fantastic writing, and particularly of moments wherein Shepard is (and therefore we are) forced to face decisions that are realistic in their complexity, if not their content. Even the game&amp;#8217;s paragon/renegade dichotomy speaks to this&amp;#8212;for one thing, there&amp;#8217;s nothing preventing a character from expressing both tendencies; for another, the tendencies align more with the &amp;#8220;lawful/chaotic&amp;#8221; spectrum[^1] than the more traditional &amp;#8220;good/evil&amp;#8221; one. In particular, the tactical decision at the end of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME1&lt;/span&gt;&lt;/em&gt; always stands out to me: sacrifice the council to minimize fleet losses, or let the fleet be culled to an unspecified amount at the expense of galactic leadership. There is no &amp;#8220;good&amp;#8221; answer (let alone a &amp;#8220;right&amp;#8221; one); instead, you have assess the risk to the fleet, assess the comparative value of this particular group of (kind of douchey) leaders, and decide which devastating loss is less devastating. It&amp;#8217;s that kind of tactical and moral sacrifice that is absent from the boxed ending of &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;.&lt;/em&gt; &lt;/p&gt;
-&lt;p&gt;((There is an ending to &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME3&lt;/span&gt;&lt;/em&gt;, I think, that is beautiful and poignant and expertly written and that captures the moral and tactical quagmire that is the &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;&lt;/em&gt; universe: the sequence after the mission on &lt;a href=&#34;http://www.youtube.com/watch?v=9zMGTb0K-PI&amp;amp;t=8m0s&#34;&gt;Thessia&lt;/a&gt;.))&lt;/p&gt;            </content>
         </entry>
     </feed>
