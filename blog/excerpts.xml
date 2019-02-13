@@ -7,10 +7,22 @@
         <link href="/"/>
     
         
-    <updated>2017-03-23T10:59:59Z</updated>
+    <updated>2019-02-13T14:48:01Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Now You're Thinking With Labels!</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/now-youre-thinking-with-labels"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/now-youre-thinking-with-labels</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;((Because at its worst, what we mean when we say &amp;#8220;I don&amp;#8217;t want to put labels on people&amp;#8221; is &amp;#8220;I haven&amp;#8217;t actually stopped dating my ex.&amp;#8221;)) It&amp;#8217;s a relationship cliche that &amp;#8220;I don&amp;#8217;t want to put a label on this&amp;#8221; is just another way of saying &amp;#8220;I&amp;#8217;m unwilling to commit,&amp;#8221; or &amp;#8220;I&amp;#8217;m excluding myself from this label because I want the benefits it implies, but not the obligations.&amp;#8221; When we refuse to add labels to who we are, we&amp;#8217;re refusing to recognize any commonality&amp;#8212;or at least, any nameable commonality&amp;#8212;with anyone. When my son calls me &amp;#8220;Dad,&amp;#8221; he labels me. To deny the label is to deny something essential about who we are to one&amp;nbsp;another.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">OMC must be stopped!</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -134,17 +146,5 @@
             <content type="html">
                 
                 &lt;p&gt;As I mentioned &lt;a href=&#34;/posts/a-simple-script-for-gathering-missing-markdown-links&#34;&gt;previously&lt;/a&gt;, I&amp;#8217;ve converted the little python link gathering doodad I did into a command for &lt;a href=&#34;http://sublimetext.com&#34;&gt;Sublime Text 2&lt;/a&gt;. But, because I am an &lt;a href=&#34;/posts/sometimes-comics-are-essays-too&#34;&gt;aggressive&lt;/a&gt; &lt;a href=&#34;/posts/feminism-marriage-proposals-comics&#34;&gt;footnoter&lt;/a&gt;, I decided I wanted some convenience functions for footnotes.[^4] And so I made some.&amp;nbsp;Hooray.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">A simple script for gathering missing Markdown links</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/a-simple-script-for-gathering-missing-markdown-links"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/a-simple-script-for-gathering-missing-markdown-links</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;As I was writing something else[^1], I got distracted by a common problem and threw together a quick script to deal with it. It seems like I&amp;#8217;m pretty much the opposite of &lt;a href=&#34;http://brettterpstra.com&#34;&gt;Brett Terpstra&lt;/a&gt; when I write; his awesome &lt;a href=&#34;http://brettterpstra.com/project/markdown-service-tools/&#34;&gt;Markdown Service Tools&lt;/a&gt; has a service to turn a group of tabs in Safari or Chrome to a list of Markdown reference links. But for me, it&amp;#8217;s a lot easier to write first and find links later, as a lot of the time I&amp;#8217;m not linking to research I&amp;#8217;m doing now but research I&amp;#8217;ve done in the past. So usually what I&amp;#8217;ll do when I want to link to something is simply include a link reference as I write (so, in the first link on this page, I&amp;#8217;ve just put &lt;code&gt;[Brett Terpstra][TERPstra]&lt;/code&gt;), and then promptly forget about them. When I finally get around to rendering the thing, I usually find a bunch of links I&amp;#8217;ve forgotten to fill&amp;nbsp;in.&lt;/p&gt;            </content>
         </entry>
     </feed>
