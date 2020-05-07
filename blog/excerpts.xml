@@ -7,10 +7,29 @@
         <link href="/"/>
     
         
-    <updated>2019-02-13T14:48:01Z</updated>
+    <updated>2020-05-07T09:20:39Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">@colin_loves_mat - a retrospective</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/colin-loves-mat-a-retrospective"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/colin-loves-mat-a-retrospective</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;mat.&lt;/p&gt;
+&lt;p&gt;hi&amp;nbsp;mat.&lt;/p&gt;
+&lt;p&gt;hi.&lt;/p&gt;
+&lt;p&gt;have you adequately prepared yourself? because&lt;br /&gt;
+i will now remove the mask&lt;br /&gt;
+of weird hipster affectations&lt;br /&gt;
+that I donned as &lt;a href=&#34;https://twitter.com/colin_loves_mat&#34;&gt;@colin_loves_mat&lt;/a&gt;, &lt;/p&gt;
+&lt;p&gt;and you will clearly observe from this website that I, &lt;a href=&#34;https://twitter.com/jnicholasgeist&#34;&gt;@jnicholasgeist&lt;/a&gt;, have &lt;span class=&#34;caps&#34;&gt;ABSOLUTELY&lt;/span&gt; &lt;span class=&#34;caps&#34;&gt;NO&lt;/span&gt; weird hipster affectations at&amp;nbsp;all.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">Now You're Thinking With Labels!</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -134,17 +153,5 @@
 &lt;/ol&gt;
 &lt;p&gt;Sometimes, when we&amp;#8217;re talking about software or something similar, I know up front what the limitations are; often, though, I only find out by playing around with it. Likewise, I often know what I need up front; other times, though, I only find out what I need by finding out where my needs rub up against the limitations of whatever it is I&amp;#8217;m trying to work&amp;nbsp;with.&lt;/p&gt;
 &lt;p&gt;As I was listening to &lt;a href=&#34;http://5by5.tv/b2w/71&#34;&gt;Back to Work 71&lt;/a&gt;, I started thinking about the problems that exist in organizations&amp;#8212;things like the &lt;a href=&#34;http://passiveaggressivenotes.com/&#34;&gt;passive aggression&lt;/a&gt; that Merlin and Dan were discussing&amp;#8212;as functions of that same pair of forces. More specifically, it made me think about the problems I have as a teacher with my students, the problems my students have with me as a teacher, and perhaps most importantly, the problems I have with myself as a teacher.  ((All these problems&amp;#8212;and perhaps all problems&amp;#8212;come down to a conflict between one party&amp;#8217;s expectations and another party&amp;#8217;s&amp;nbsp;limitations.))&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">Sublime Text 2 Markdown Footnote Goodness</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/sublime-text-2-markdown-footnote-goodness"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/sublime-text-2-markdown-footnote-goodness</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;As I mentioned &lt;a href=&#34;/posts/a-simple-script-for-gathering-missing-markdown-links&#34;&gt;previously&lt;/a&gt;, I&amp;#8217;ve converted the little python link gathering doodad I did into a command for &lt;a href=&#34;http://sublimetext.com&#34;&gt;Sublime Text 2&lt;/a&gt;. But, because I am an &lt;a href=&#34;/posts/sometimes-comics-are-essays-too&#34;&gt;aggressive&lt;/a&gt; &lt;a href=&#34;/posts/feminism-marriage-proposals-comics&#34;&gt;footnoter&lt;/a&gt;, I decided I wanted some convenience functions for footnotes.[^4] And so I made some.&amp;nbsp;Hooray.&lt;/p&gt;            </content>
         </entry>
     </feed>
