@@ -77,12 +77,12 @@
             <h2><a href="/posts/better-sorting-with-keyboard-maestro-macro-palettes">Better sorting with Keyboard Maestro Macro Palettes</a></h2>
                     </hgroup>
             <span class="postinfo">             <span class='flavor' data-key='Category'>
-            Being a brief treatise on 
+            Being a rumination on 
         </span>
     
         <a href='/categories/geek' class='category'>geekery</a> <span class='flavor vis'>and </span><a href='/categories/teaching' class='category'>teaching</a>
                     <span class='flavor' data-key='Date'>
-             furnished on
+             delivered on
         </span>
     
         <time pubdate="pubdate" datetime="2012-10-11">
@@ -144,7 +144,7 @@ In fact, there is <em>no</em> straightforward way I&#8217;ve found<sup id="fnref
 <p>Meta-palette keyed to <code>^;</code></p>
 <p><img height="209" width="938" alt="Meta-palette" src="/media/images/posts/2012-10-12-solution-meta-palette.png" /></p>
 <p>Palette launcher macros set up to run an Applescript like the following:<sup id="fnref:6"><a class="footnote-ref" href="#fn:6" rel="footnote">6</a></sup></p>
-<div class="codebox"><figure class="code"><div class="highlight"><pre><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;System Events&quot;</span> <span class="k">to</span> <span class="k">tell</span> <span class="nv">process</span> <span class="s2">&quot;Keyboard Maestro Engine&quot;</span><br />    <span class="na">key code</span> <span class="mi">120</span> <span class="nv">using</span> <span class="p">{</span><span class="nv">command</span> <span class="nv">down</span><span class="p">,</span> <span class="nb">control</span> <span class="nv">down</span><span class="p">,</span> <span class="nv">option</span> <span class="nv">down</span><span class="p">}</span><br /><span class="k">end</span> <span class="k">tell</span><br /></pre></div><br /><figcaption>AppleScript</figcaption></figure></div>
+<div class="codebox"><figure class="code"><div class="highlight"><pre><span></span><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&quot;System Events&quot;</span> <span class="k">to</span> <span class="k">tell</span> <span class="nv">process</span> <span class="s2">&quot;Keyboard Maestro Engine&quot;</span><br />    <span class="na">key code</span> <span class="mi">120</span> <span class="nv">using</span> <span class="p">{</span><span class="nv">command</span> <span class="nv">down</span><span class="p">,</span> <span class="nb">control</span> <span class="nv">down</span><span class="p">,</span> <span class="nv">option</span> <span class="nv">down</span><span class="p">}</span><br /><span class="k">end</span> <span class="k">tell</span><br /></pre></div><br /><figcaption>AppleScript</figcaption></figure></div>
 
 <p>This ensures that the keystroke actually gets to the <span class="caps">KM</span> engine, and so this <em>does</em> work to launch a palette for one action via another palette launched for one&nbsp;action. </p>
 <h2>The next&nbsp;step</h2>
