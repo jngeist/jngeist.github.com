@@ -7,10 +7,26 @@
         <link href="/"/>
     
         
-    <updated>2024-03-20T15:33:01Z</updated>
+    <updated>2026-11-23T22:10:47Z</updated>
 
     <id>/blog/excerpts.xml/</id>
 
+            <entry>
+            <title type="html">Do not avert your eyes.</title>
+            <author><name>J. Nicholas Geist</name></author>
+            <link href="/posts/do-not-avert-your-eyes"/>
+            <updated>2011-12-14T00:00:00Z</updated>
+            <published>2011-12-14T00:00:00Z</published>
+            <id>/posts/do-not-avert-your-eyes</id>
+            
+            <content type="html">
+                
+                &lt;p&gt;A lot has been said about Jacob Geller,[^1] and the nature and mystery of restorative justice, of what his victim is owed and of what we can and cannot know about the crime he committed, about the secret workings of his heart and whether his admission of guilt (such as it is) constitutes adequate self-recrimination for us to keep watching his&amp;nbsp;videos. &lt;/p&gt;
+&lt;p&gt;The question which is being batted around, with various levels of care and sincerity, is this: has Jacob Geller atoned? If we take Geller at his word (which is an enormous &amp;#8220;if&amp;#8221;), he made amends with the victim, turned himself in to the authorities, accepted the consequences (&amp;#8220;very mild, I concur&amp;#8221;), and has spent the last decade making up for his misdeed by&amp;#8212;&lt;em&gt;checks notes&lt;/em&gt;&amp;#8212;making YouTube videos about videogames. This version of the story assumes a &lt;em&gt;ton&lt;/em&gt; of facts not in evidence; in fact, each element of that story is tangibly unsupported even by his own narrative.[^2] But for some voices in the conversation, it has been ten years, during which Geller has comported himself admirably; is that not what restorative justice&amp;nbsp;means?&lt;/p&gt;
+&lt;p&gt;There is, I think, a deeper flaw in this logic than the minor inconvenience of all of its parts being wrong. Because this framing is asking about whether Geller has atoned for what he did in 2016. I cannot answer this question, nor can anyone other than his victim, who has wanted no part in this conversation. That is also, I think, &lt;em&gt;not the wrongdoing that is actually at issue&amp;nbsp;here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The reason we are discussing this now, the injustice that has us all spinning, &lt;em&gt;is not the sexual assault that Jacob Geller committed in 2016.&lt;/em&gt; That is the greatest of his transgressions, and it is plenty to reckon with on its own. It is horrible, and it is haunting, but it is &lt;em&gt;not&lt;/em&gt; what we are dealing with now. The reason that we are having this conversation is not the wrong thing Jacob Geller did in 2016. It is the wrong thing he has been doing, constantly and pervasively, for the last ten&amp;nbsp;years.&lt;/p&gt;
+&lt;p&gt;We are not victims of Geller&amp;#8217;s assault. But all of us, even those who just watched his videos once in a while, have been lied to about something essential. We have not all been hurt in the same way, nor to the same extent, and none of us suffered even a fraction of what his victim in 2016 did. But that doesn&amp;#8217;t mean we haven&amp;#8217;t been&amp;nbsp;harmed.&lt;/p&gt;            </content>
+        </entry>
             <entry>
             <title type="html">The Chappell Roan Digression</title>
             <author><name>J. Nicholas Geist</name></author>
@@ -133,18 +149,5 @@ that I donned as &lt;a href=&#34;https://twitter.com/colin_loves_mat&#34;&gt;@co
                 
                 &lt;p&gt;As a teacher, I &lt;a href=&#34;http://inthecourseofmyduties.tumblr.com&#34;&gt;comment&lt;/a&gt; on a &lt;em&gt;lot&lt;/em&gt; of student writing. I usually do this digitally, as my handwriting is so awful as to make doctors weep. And, because students in the same classes tend to be learning the same things at the same time, I often find myself needing to say the same thing over and over, to lots of students in lots of different&amp;nbsp;classes. &lt;/p&gt;
 &lt;p&gt;Since I need to be able to inject these comments quickly, easily, and repeatedly, I&amp;#8217;ve been trying to find a good way to automate them for some time now. In my last attempt, I&amp;#8217;ve figured out a pretty good way to do this—solving a long-standing problem I&amp;#8217;ve had with Keyboard Maestro in the&amp;nbsp;process.&lt;/p&gt;            </content>
-        </entry>
-            <entry>
-            <title type="html">*Assassin's Creed's* Identity Crisis</title>
-            <author><name>J. Nicholas Geist</name></author>
-            <link href="/posts/assassins-creeds-identity-crisis"/>
-            <updated>2011-12-14T00:00:00Z</updated>
-            <published>2011-12-14T00:00:00Z</published>
-            <id>/posts/assassins-creeds-identity-crisis</id>
-            
-            <content type="html">
-                
-                &lt;p&gt;Iteration is important. One of the most elegant things about the difference between, say, &lt;em&gt;Mass Effect&lt;/em&gt; and &lt;em&gt;Mass Effect 2&lt;/em&gt; is the way in which the combat system builds on what has come before. On the one hand, &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME2&lt;/span&gt;&lt;/em&gt; feels like &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;.&lt;/em&gt; On the other, it&amp;#8217;s streamlined. Simpler. More elegant. And what speaks most highly for it, I think, is that I feel like playing &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME2&lt;/span&gt;&lt;/em&gt; made me better understand what combat in &lt;em&gt;&lt;span class=&#34;caps&#34;&gt;ME&lt;/span&gt;&lt;/em&gt; was &lt;em&gt;supposed&lt;/em&gt; to&amp;nbsp;be.&lt;/p&gt;
-&lt;p&gt;So I recognize that games that come in series are &lt;em&gt;supposed&lt;/em&gt; to iterate. But having just finished &lt;em&gt;Assassin&amp;#8217;s Creed: Revelations,&lt;/em&gt; I&amp;#8217;m starting to remember the &lt;em&gt;dangers&lt;/em&gt; of&amp;nbsp;iteration.&lt;/p&gt;            </content>
         </entry>
     </feed>
